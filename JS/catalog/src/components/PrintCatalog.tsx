@@ -513,7 +513,7 @@ export default function PrintCatalog() {
                         {/* Row 1: Products */}
                         {[
                             { name: '라임엔틱', product: '/images/uvstone-products/lime-antique.jpg' },
-                            { name: '그레이엔틱', product: '/images/uvstone-products/gray-antique-v2.jpg' },
+                            { name: '그레이엔틱', product: '/images/uvstone-products/gray-antique-final.jpg' },
                             { name: '보티치노', product: '/images/uvstone-products/botticino.jpg' },
                         ].map((item) => (
                             <div key={item.name + '-product'} className="flex flex-col h-full">
