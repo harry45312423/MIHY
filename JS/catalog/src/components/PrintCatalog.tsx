@@ -323,21 +323,21 @@ export default function PrintCatalog() {
                         <div className="space-y-3">
                             <div className="grid grid-cols-3 gap-3">
                                 <div className="aspect-square rounded overflow-hidden bg-gray-50 border border-gray-100">
-                                    <Image src="/images/uvstone-products/gray-antique.jpg" alt="Gallery 1" width={300} height={300} className="w-full h-full object-cover" />
+                                    <Image src="/images/uvstone-interior/gray-antique-interior.png" alt="Gallery 1" width={300} height={300} className="w-full h-full object-cover" />
                                 </div>
                                 <div className="aspect-square rounded overflow-hidden bg-gray-50 border border-gray-100">
-                                    <Image src="/images/uvstone-interior/travertine-studio.png" alt="Gallery 2" width={300} height={300} className="w-full h-full object-cover" />
+                                    <Image src="/images/uvstone-interior/travertine-light-interior.png" alt="Gallery 2" width={300} height={300} className="w-full h-full object-cover" />
                                 </div>
                                 <div className="aspect-square rounded overflow-hidden bg-gray-50 border border-gray-100">
-                                    <Image src="/images/uvstone-interior/botticino.png" alt="Gallery 3" width={300} height={300} className="w-full h-full object-cover" />
+                                    <Image src="/images/uvstone-interior/botticino-interior-v2.png" alt="Gallery 3" width={300} height={300} className="w-full h-full object-cover" />
                                 </div>
                             </div>
                             <div className="grid grid-cols-2 gap-3 px-12">
                                 <div className="aspect-[4/3] rounded overflow-hidden bg-gray-50 border border-gray-100">
-                                    <Image src="/images/uvstone-interior/lime-antique.png" alt="Gallery 4" width={400} height={300} className="w-full h-full object-cover" />
+                                    <Image src="/images/uvstone-interior/lime-antique-interior-v2.png" alt="Gallery 4" width={400} height={300} className="w-full h-full object-cover" />
                                 </div>
                                 <div className="aspect-[4/3] rounded overflow-hidden bg-gray-50 border border-gray-100">
-                                    <Image src="/images/uvstone-interior/gray-antique-dark.jpg" alt="Gallery 5" width={400} height={300} className="w-full h-full object-cover" />
+                                    <Image src="/images/uvstone-interior/gray-antique-interior-v2.png" alt="Gallery 5" width={400} height={300} className="w-full h-full object-cover" />
                                 </div>
                             </div>
                         </div>
@@ -534,9 +534,9 @@ export default function PrintCatalog() {
 
                         {/* Row 2: Examples */}
                         {[
-                            { name: '라임엔틱', example: '/images/uvstone-interior/lime-antique.png' },
-                            { name: '그레이엔틱', example: '/images/uvstone-interior/gray-antique-dark-final.jpg' },
-                            { name: '보티치노', example: '/images/uvstone-interior/botticino.png' },
+                            { name: '라임엔틱', example: '/images/uvstone-interior/lime-antique-interior-v2.png' },
+                            { name: '그레이엔틱', example: '/images/uvstone-interior/gray-antique-interior-v2.png' },
+                            { name: '보티치노', example: '/images/uvstone-interior/botticino-interior-v2.png' },
                         ].map((item) => (
                             <div key={item.name + '-example'} className="flex flex-col h-full">
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
@@ -588,8 +588,8 @@ export default function PrintCatalog() {
 
                         {/* Row 2: Examples */}
                         {[
-                            { name: '비앙코', example: '/images/uvstone-interior/bianco.png' },
-                            { name: '트라브틴 라이트', example: '/images/uvstone-interior/travertine-studio.png' },
+                            { name: '비앙코', example: '/images/uvstone-interior/bianco-interior.png' },
+                            { name: '트라브틴 라이트', example: '/images/uvstone-interior/travertine-light-interior.png' },
                             { name: '트라브틴 베이지', example: '/images/uvstone-interior/travertine-studio.png' },
                         ].map((item) => (
                             <div key={item.name + '-example'} className="flex flex-col h-full">
@@ -620,7 +620,7 @@ export default function PrintCatalog() {
                         <Image src="/images/ultraboard/ub-product.png" alt="울트라보드" width={0} height={0} sizes="100vw" priority className="w-full h-full object-contain" />
                     </div>
                     <div className="mt-6 text-center">
-                        <p className="text-lg text-gray-600">두께: <span className="text-[#C9A86C] font-medium">3T ~ 12T</span></p>
+                        <p className="text-lg text-gray-600">두께: <span className="text-[#C9A86C] font-medium">50T</span></p>
                     </div>
                     <div className="mt-6 pt-6 border-t border-gray-200 grid grid-cols-4 gap-6 text-center text-sm">
                         <div>
@@ -644,14 +644,14 @@ export default function PrintCatalog() {
                 <div className="h-full flex flex-col">
                     <div className="mb-6">
                         <div className="text-xs text-[#C9A86C] tracking-[0.3em] mb-2">04</div>
-                        <h2 className="text-3xl font-light text-[#1a1a2e]">FF 판넬</h2>
+                        <h2 className="text-3xl font-light text-[#1a1a2e]">FF 보드</h2>
                         <p className="text-sm text-gray-500 mt-2">준불연 외벽 단열재 - 1220 x 2440 mm</p>
                     </div>
                     <div className="w-full aspect-[16/9] flex items-center justify-center overflow-hidden">
-                        <Image src="/images/ffpanel/ff-product.png" alt="FF 판넬" width={0} height={0} sizes="100vw" priority className="w-full h-full object-contain" />
+                        <Image src="/images/ffpanel/ff-product.png" alt="FF 보드" width={0} height={0} sizes="100vw" priority className="w-full h-full object-contain" />
                     </div>
                     <div className="mt-6 text-center">
-                        <p className="text-lg text-gray-600">두께: <span className="text-[#C9A86C] font-medium">30T / 50T / 75T / 100T</span></p>
+                        <p className="text-lg text-gray-600">두께: <span className="text-[#C9A86C] font-medium">60T / 120T</span></p>
                     </div>
                     <div className="mt-6 pt-6 border-t border-gray-200 grid grid-cols-4 gap-6 text-center text-sm">
                         <div>

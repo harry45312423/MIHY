@@ -1,0 +1,776 @@
+[00:00:13.329] Server  LOG      ✓ Ready in 10.5s
+[00:03:49.972] Server  LOG      ○ Compiling / ...
+[00:04:01.176] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k72.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k76.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k77.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k747.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k717s.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/k740.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:02.531] Browser WARN    Image with src "/images/spc/bianco.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:03.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k72.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k76.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k77.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k747.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k717s.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/k740.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:04.841] Browser WARN    Image with src "/images/spc/bianco.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:57.362] Server  LOG      ✓ Compiled in 179ms
+[00:09:32.996] Server  LOG      ✓ Compiled in 45ms
+[00:10:01.798] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:02.038] Browser WARN    Image with src "/images/spc/k72.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.038] Browser WARN    Image with src "/images/spc/k75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.038] Browser WARN    Image with src "/images/spc/k77.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.038] Browser WARN    Image with src "/images/spc/k747.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.038] Browser WARN    Image with src "/images/spc/k717s.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.038] Browser WARN    Image with src "/images/spc/k740.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.038] Browser WARN    Image with src "/images/spc/bianco.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:02.227] Browser WARN    Image with src "/images/spc/k76.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:09.697] Server  LOG      ✓ Compiled in 145ms
+[00:19:09.825] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:09.825] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:09.825] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone/UV-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone/UV-05.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone/UV-04.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone/UV-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.070] Browser WARN    Image with src "/images/uvstone/UV-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone/UV-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone/UV-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone/UV-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone/UV-04.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:10.848] Browser WARN    Image with src "/images/uvstone/UV-05.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:27.484] Server  LOG      ✓ Compiled in 88ms
+[00:45:30.610] Server  LOG      ✓ Compiled in 62ms
+[00:46:21.036] Server  LOG      ✓ Compiled in 76ms
+[00:50:19.203] Server  LOG      ✓ Compiled in 198ms
+[00:50:19.312] Browser ERROR   ./src/components/PrintCatalog.tsx:535:1
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                         );
+> 535 | }
+      | ^
+  536 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:50:19.855] Browser ERROR   ./src/components/PrintCatalog.tsx:535:1
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                         );
+> 535 | }
+      | ^
+  536 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:50:34.818] Server  LOG      ✓ Compiled in 87ms
+[00:50:34.921] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:50:35.853] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:21.121] Server  ERROR    ⨯ ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:52:21.262] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:21.854] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:22.273] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:22.444] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:23.364] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:23.364] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:23.487] Browser ERROR   uncaughtError: Error: ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:52:23.670] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:23.670] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:23.847] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:23.847] Browser ERROR   ./src/components/PrintCatalog.tsx:535:23
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 |             </section>
+      |                       ^
+> 536 |
+      | ^
+> 537 |             {/* PAGE: BACK COVER */}
+      | ^^^^^^^^^^^^^
+  538 |             <section className="catalog-page relative flex flex-col justify-center items-center overflow-hidden">
+  539 |                 {/* Background Grid of Installation Photos */}
+  540 |                 <div className="absolute inset-0 z-0 grid grid-cols-3 grid-rows-4 gap-1 p-1 bg-gray-100">
+
+Expected '</', got 'jsx text (
+
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:52:55.466] Server  LOG      ✓ Compiled in 45ms
+[00:52:59.898] Browser WARN    Image with src "/images/ultraboard/case-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:59.898] Browser WARN    Image with src "/images/ultraboard/case-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:59.898] Browser WARN    Image with src "/images/ultraboard/case-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:59.898] Browser WARN    Image with src "/images/ffpanel/case-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:59.898] Browser WARN    Image with src "/images/ffpanel/case-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:59.898] Browser WARN    Image with src "/images/ffpanel/case-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.220] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k72.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k77.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k76.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k717s.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k747.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/k740.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/spc/bianco.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone/UV-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone/UV-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone/UV-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone/UV-04.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone/UV-05.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:04:46.704] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:00.561] Browser WARN    Image with src "/images/ultraboard/case-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:00.561] Browser WARN    Image with src "/images/ultraboard/case-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:00.561] Browser WARN    Image with src "/images/ffpanel/case-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:00.561] Browser WARN    Image with src "/images/ffpanel/case-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:01.229] Browser WARN    Image with src "/images/ultraboard/case-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:01.229] Browser WARN    Image with src "/images/ffpanel/case-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:31.649] Server  LOG      ✓ Compiled in 151ms
+[01:07:15.489] Server  LOG      ✓ Compiled in 74ms
+[01:08:39.073] Server  LOG      ✓ Compiled in 93ms
+[01:08:39.177] Browser ERROR   ./src/components/PrintCatalog.tsx:811:3
+Parsing ecmascript source code failed
+  809 |     );
+  810 | }
+> 811 | ```
+      |   ^
+> 812 |
+      | ^
+
+Unterminated template
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:08:39.844] Browser ERROR   ./src/components/PrintCatalog.tsx:811:3
+Parsing ecmascript source code failed
+  809 |     );
+  810 | }
+> 811 | ```
+      |   ^
+> 812 |
+      | ^
+
+Unterminated template
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:10:34.245] Server  LOG      ✓ Compiled in 37ms
+[01:29:44.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:44.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k72.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k76.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k77.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k747.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k717s.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/k740.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/spc/bianco.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone/UV-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone/UV-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone/UV-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone/UV-04.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone/UV-05.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.123] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k72.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k76.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k77.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k747.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k717s.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/k740.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/spc/bianco.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone/UV-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone/UV-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone/UV-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone/UV-04.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone/UV-05.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:45.852] Browser WARN    Image with src "/images/ultraboard/case-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:54.860] Browser WARN    Image with src "/images/ultraboard/case-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:19.527] Server  LOG      ✓ Compiled in 41ms
+[01:31:19.644] Browser ERROR   ./src/components/PrintCatalog.tsx:535:1
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 | }
+      | ^
+  536 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:31:19.848] Browser ERROR   ./src/components/PrintCatalog.tsx:535:1
+Parsing ecmascript source code failed
+  533 |                         </div>
+  534 |                     </div>
+> 535 | }
+      | ^
+  536 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:31:59.490] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.490] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.490] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.490] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.490] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.490] Browser WARN    Image with src "/images/ultraboard/case-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.857] Browser WARN    Image with src "/images/uvstone-interior/bianco.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.857] Browser WARN    Image with src "/images/uvstone-interior/travertine-studio.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.857] Browser WARN    Image with src "/images/uvstone-interior/botticino.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.857] Browser WARN    Image with src "/images/uvstone-interior/lime-antique.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:59.857] Browser WARN    Image with src "/images/uvstone-interior/gray-antique.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:47:57.508] Server  LOG      ✓ Compiled in 353ms
+[01:50:39.672] Server  LOG      ✓ Compiled in 31ms
+[01:50:39.776] Browser ERROR   ./src/components/PrintCatalog.tsx:595:15
+Parsing ecmascript source code failed
+  593 |                     </div>
+  594 |                 </div>
+> 595 |         </div>
+      |               ^
+> 596 |                     </div >
+      | ^^^^^^^^^^^^^^^^^^^^^
+  597 |
+  598 |         {/* Decorative Subtle Lines */ }
+  599 |         < div className = "absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-100 to-transparent" ></div >
+
+Expected '</', got 'jsx text (
+                    )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:50:39.854] Browser ERROR   ./src/components/PrintCatalog.tsx:595:15
+Parsing ecmascript source code failed
+  593 |                     </div>
+  594 |                 </div>
+> 595 |         </div>
+      |               ^
+> 596 |                     </div >
+      | ^^^^^^^^^^^^^^^^^^^^^
+  597 |
+  598 |         {/* Decorative Subtle Lines */ }
+  599 |         < div className = "absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-100 to-transparent" ></div >
+
+Expected '</', got 'jsx text (
+                    )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:52:46.435] Server  LOG      ✓ Compiled in 43ms
+[01:52:46.538] Browser ERROR   ./src/components/PrintCatalog.tsx:598:15
+Parsing ecmascript source code failed
+  596 |                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-100 to-transparent"></div>
+  597 |                 <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-100 to-transparent"></div>
+> 598 |         </div>
+      |               ^
+> 599 |
+      | ^
+> 600 |                 {/* Bottom Section: Installation Photos Row 2 */ }
+      | ^^^^^^^^^^^^^^^^^
+  601 |     <div className="h-[25%] w-full grid grid-cols-3 gap-1 p-1 bg-gray-50">
+  602 |         {[
+  603 |             '/images/uvstone-interior/lime-antique.png',
+
+Expected '</', got 'jsx text (
+
+                )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:52:46.850] Browser ERROR   ./src/components/PrintCatalog.tsx:598:15
+Parsing ecmascript source code failed
+  596 |                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-100 to-transparent"></div>
+  597 |                 <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-100 to-transparent"></div>
+> 598 |         </div>
+      |               ^
+> 599 |
+      | ^
+> 600 |                 {/* Bottom Section: Installation Photos Row 2 */ }
+      | ^^^^^^^^^^^^^^^^^
+  601 |     <div className="h-[25%] w-full grid grid-cols-3 gap-1 p-1 bg-gray-50">
+  602 |         {[
+  603 |             '/images/uvstone-interior/lime-antique.png',
+
+Expected '</', got 'jsx text (
+
+                )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/PrintCatalog.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/PrintCatalog.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:54:27.163] Server  LOG      ✓ Compiled in 45ms
+[02:10:48.469] Server  LOG      ✓ Compiled in 87ms
+[02:25:35.408] Server  LOG      ✓ Compiled in 66ms
+[02:28:19.704] Server  LOG      ✓ Compiled in 94ms
