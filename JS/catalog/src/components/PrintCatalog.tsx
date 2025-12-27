@@ -512,9 +512,9 @@ export default function PrintCatalog() {
                     <div className="flex-1 grid grid-cols-3 grid-rows-2 gap-2 min-h-0">
                         {/* Row 1: Products */}
                         {[
-                            { name: '라임엔틱', product: '/images/uvstone-products/lime-antique.jpg' },
+                            { name: '라임엔틱', product: '/images/uvstone-products/lime-antique-final.jpg' },
                             { name: '그레이엔틱', product: '/images/uvstone-products/gray-antique-final.jpg' },
-                            { name: '보티치노', product: '/images/uvstone-products/botticino.jpg' },
+                            { name: '보티치노', product: '/images/uvstone-products/botticino-final.png' },
                         ].map((item) => (
                             <div key={item.name + '-product'} className="flex flex-col h-full">
                                 <div className="pb-1.5 text-center">
