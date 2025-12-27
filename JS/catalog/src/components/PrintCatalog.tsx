@@ -567,8 +567,8 @@ export default function PrintCatalog() {
                         {/* Row 1: Products */}
                         {[
                             { name: '비앙코', product: '/images/uvstone-products/bianco-new.jpg' },
-                            { name: '트라브틴 라이트', product: '/images/uvstone-products/travertine-light.jpg' },
-                            { name: '트라브틴 베이지', product: '/images/uvstone-products/travertine-beige.jpg' },
+                            { name: '트라브틴 라이트', product: '/images/uvstone-products/travertine-light-v3.jpg' },
+                            { name: '트라브틴 베이지', product: '/images/uvstone-products/travertine-beige-v3.jpg' },
                         ].map((item) => (
                             <div key={item.name + '-product'} className="flex flex-col h-full">
                                 <div className="pb-1.5 text-center">
