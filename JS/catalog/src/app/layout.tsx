@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR, Inter } from "next/font/google";
+// import { Noto_Sans_KR, Inter } from "next/font/google";
 import "./globals.css";
 
-
+/*
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
   subsets: ["latin"],
@@ -13,6 +13,7 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+*/
 
 export const metadata: Metadata = {
   title: "진성종합무역 - 글로벌 건설자재 공급의 신뢰 파트너",
@@ -37,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${notoSansKr.variable} ${inter.variable} font-sans antialiased`}
+        className="font-sans antialiased"
       >
         <main className="min-h-screen">
           {children}
