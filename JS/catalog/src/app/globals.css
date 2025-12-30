@@ -271,45 +271,8 @@
     display: none !important;
   }
 
-  /* 이미지 비율 유지 */
-  .catalog-page img {
-    object-fit: contain !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-  }
-
-  .catalog-page .relative {
-    position: relative !important;
-  }
-
-  /* flex 컨테이너 인쇄 보정 */
-  .catalog-page .flex-1 {
-    flex: 1 1 0% !important;
-    min-height: 0 !important;
-  }
-
-  .catalog-page .grid {
-    display: grid !important;
-  }
-
-  /* 높이 1/4 인쇄 보정 */
-  .catalog-page .h-1\/4 {
-    height: 25% !important;
-    max-height: 25% !important;
-  }
-
-  /* flex-col 인쇄 보정 */
-  .catalog-page .flex-col {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  /* 이미지 인쇄 보정 */
-  .catalog-page img {
-    max-height: 100% !important;
-    width: 100% !important;
-    object-fit: cover !important;
-  }
+  /* 이미지 비율 유지 - Removing global overrides that break logos */
+  /* Components should handle their own print sizing via Tailwind classes */
 
   /* 페이지 레이아웃 유지 */
   .catalog-page {

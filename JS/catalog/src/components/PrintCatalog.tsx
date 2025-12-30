@@ -7,52 +7,66 @@ import { Phone, Mail, MapPin, Globe } from 'lucide-react';
 export default function PrintCatalog() {
     return (
         <div className="print-catalog">
-            {/* PAGE 1: COVER */}
-            <section className="catalog-page bg-white flex relative overflow-hidden">
-                <div className="w-[45%] h-full flex flex-col justify-between p-20 z-20">
-                    <div className="flex items-center gap-5">
-                        <Image src="/images/logo.png" alt="Logo" width={52} height={52} priority className="object-contain opacity-90" />
-                        <div className="flex flex-col">
-                            <span className="text-xl font-bold tracking-tight text-[#1A1A28] leading-tight">JINSUNG</span>
-                            <span className="text-[12px] font-semibold tracking-[0.3em] text-[#C9A86C] uppercase">진성종합무역</span>
+            {/* PAGE 1: COVER - VARIANT 01: ARCHITECT'S GRID */}
+            <section className="catalog-page bg-white flex relative overflow-hidden h-[1123px] w-[794px]">
+                {/* Left Column: 35% - Typography & Negative Space */}
+                <div className="w-[35%] h-full flex flex-col justify-between p-12 z-20 bg-white relative">
+                    {/* Top: Minimal Brand Identifier */}
+                    <div className="flex flex-col items-start pt-4">
+                        <div className="w-8 h-8 relative mb-4 opacity-90">
+                            <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
                         </div>
+                        <span className="text-[10px] font-bold tracking-[0.4em] text-[#1A1A28] uppercase ml-1">
+                            Jinsung
+                        </span>
                     </div>
 
-                    <div className="flex flex-col">
+                    {/* Middle: Intentional Negative Space (Empty) */}
+
+                    {/* Bottom: Title Block & Info */}
+                    <div className="flex flex-col pb-8">
+                        {/* Season Label */}
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="w-8 h-[1px] bg-[#C9A86C]/60" />
-                            <span className="text-[10px] tracking-[0.5em] text-[#8B7355] font-medium uppercase opacity-70">
-                                2026 — 2027 Season Collection
+                            <div className="w-6 h-[1px] bg-[#C9A86C]" />
+                            <span className="text-[9px] tracking-[0.3em] text-[#C9A86C] font-bold uppercase">
+                                2026 — 2027 Season
                             </span>
                         </div>
-                        <h1 className="flex flex-col leading-[1.1]">
-                            <span className="text-[68px] font-bold tracking-tight text-[#1A1A28]">
-                                진성
-                            </span>
-                            <span className="text-[82px] font-bold tracking-tighter text-[#1A1A28] -mt-1">
-                                CATALOG
-                            </span>
-                        </h1>
-                        <div className="w-16 h-[3px] bg-[#C9A86C]/80 mt-10" />
-                    </div>
 
-                    <div className="space-y-4">
-                        <div className="flex flex-col gap-1">
-                            <div className="text-[13px] font-bold text-[#1A1A28] tracking-tight">
-                                진성종합무역 주식회사
-                            </div>
-                            <div className="text-[10px] text-[#8B7355] font-medium tracking-[0.1em] uppercase">
-                                Premium Interior Materials & Global Trading
-                            </div>
+                        {/* Main Title Group */}
+                        <div className="flex flex-col mb-8">
+                            <h1 className="flex flex-col leading-[0.9]">
+                                <span className="text-[52px] font-medium tracking-tight text-[#1A1A28] mb-1">
+                                    진성
+                                </span>
+                                <span className="text-[56px] font-black tracking-tighter text-[#1A1A28]">
+                                    CATALOG
+                                </span>
+                            </h1>
                         </div>
-                        <div className="pt-5 border-t border-gray-100 flex items-center justify-between max-w-[240px]">
-                            <span className="text-[12px] text-[#C9A86C] font-bold tracking-wide">www.jinsungco.com</span>
-                            <span className="text-[9px] text-gray-300 font-normal">© 2026 JINSUNG</span>
+
+                        {/* Divider Line */}
+                        <div className="w-full h-[1px] bg-gray-100 mb-6" />
+
+                        {/* Descriptor & URL */}
+                        <div className="space-y-4">
+                            <div className="flex flex-col gap-1">
+                                <div className="text-[11px] font-bold text-[#1A1A28] tracking-tight">
+                                    진성종합무역 주식회사
+                                </div>
+                                <div className="text-[8px] text-[#8B7355] font-medium tracking-[0.1em] uppercase">
+                                    Premium Interior Materials<br />& Global Trading
+                                </div>
+                            </div>
+                            <div className="pt-2">
+                                <span className="text-[9px] text-[#C9A86C] font-bold tracking-widest uppercase">www.jinsungco.com</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="w-[55%] h-full relative">
+                {/* Right Column: 65% - Full Bleed Image */}
+                <div className="w-[65%] h-full relative">
                     <Image
                         src="/images/uvstone-interior/travertine-beige-main.jpg"
                         alt="Travertine Beige Premium Interior"
@@ -60,7 +74,15 @@ export default function PrintCatalog() {
                         className="object-cover"
                         priority
                     />
-                    <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black/5 to-transparent pointer-events-none" />
+                    {/* Subtle Gradient Overlay for depth */}
+                    <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black/10 to-transparent pointer-events-none mix-blend-multiply" />
+
+                    {/* Optional: 'Material Art' Tag/Floating Element */}
+                    <div className="absolute bottom-12 right-12 text-right z-10">
+                        <p className="text-white/80 text-[10px] tracking-[0.2em] uppercase font-light drop-shadow-md">
+                            Architectural<br />Collection
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -101,52 +123,106 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 3: SPC 설명 및 자격증사진들 */}
+            {/* PAGE 3: SPC FLOORING - REFINED EDITORIAL LAYOUT */}
             <section className="catalog-page bg-white p-12">
-                <div className="h-full flex flex-col">
-                    <div className="mb-10">
-                        <div className="text-[#C9A86C] text-[10px] tracking-[0.4em] mb-2 uppercase font-bold">Selection 01</div>
-                        <h2 className="text-4xl font-bold text-[#1a1a2e] mb-4">SPC Flooring <span className="text-lg font-normal text-gray-400 ml-2">Stone Plastic Composite</span></h2>
-                        <p className="text-sm text-gray-500 leading-relaxed max-w-2xl break-keep font-medium">
-                            천연 석회석과 고분자 수지를 결합한 SPC 마루는 강력한 내구성과 100% 방수 기능을 자랑합니다.
-                            접착제가 필요 없는 클릭 시공 방식으로 친환경적이며, 습기와 온도 변화에 의한 변형이 거의 없는 차세대 바닥재입니다.
-                        </p>
+                <div className="h-full flex flex-col pt-4">
+                    {/* 1. HEADER */}
+                    <div className="flex justify-between items-start border-b-[4px] border-[#1a1a2e] pb-6 mb-8">
+                        <div>
+                            <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.3em] uppercase block mb-1">
+                                Product Series 01
+                            </span>
+                            <h1 className="text-5xl font-black text-[#1a1a2e] tracking-tighter leading-none mb-1">
+                                SPC 마루
+                            </h1>
+                            <span className="text-xl font-light text-gray-400 block tracking-tight">
+                                Stone Plastic Composite Flooring
+                            </span>
+                        </div>
+                        <div className="max-w-md pt-2">
+                            <p className="text-[11px] text-gray-600 font-medium leading-relaxed break-keep text-right">
+                                천연 석회석 기반의 고밀도 코어(Rigid Core)를 적용하여 습기와 충격에 완벽하게 대응합니다.<br />
+                                접착제가 필요 없는 클릭 시공으로 빠르고 쾌적한 공간을 완성하는 차세대 친환경 바닥재입니다.
+                            </p>
+                        </div>
                     </div>
 
-                    <div className="flex-1 grid grid-cols-2 gap-8 mb-10">
-                        <div className="space-y-6">
-                            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                                <Image src="/images/spc/K72_example_pic.png" alt="SPC Intro" fill className="object-cover" />
-                            </div>
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="p-5 bg-gray-50 rounded-xl border border-gray-100">
-                                    <div className="text-[#C9A86C] text-sm font-bold mb-1">Waterproof</div>
-                                    <p className="text-[10px] text-gray-500">100% 방수로 물에 의한 변형 차단</p>
+                    {/* 2. MAIN CONTENT: Left Info & Right Hero */}
+                    <div className="flex-1 flex gap-10 min-h-0 mb-6">
+                        {/* Left Column: Features & Tech Data */}
+                        <div className="w-[35%] flex flex-col gap-10">
+                            {/* Key Features */}
+                            <div>
+                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-6">Key Features</h3>
+                                <div className="flex flex-col gap-6">
+                                    {[
+                                        { id: '01', title: '100% 완벽 방수', desc: '습기에 의한 변형이나 뒤틀림이 없는 내수성' },
+                                        { id: '02', title: '고강도 표면 코팅', desc: '찍힘, 긁힘 및 생활 오염에 강한 내구성' },
+                                        { id: '03', title: '친환경 클릭 시공', desc: '접착제 없이 결합하는 Unilin Click 시스템' },
+                                        { id: '04', title: '탁월한 열 전도율', desc: '온돌 난방에 최적화된 두께와 열 효율성' }
+                                    ].map((feat) => (
+                                        <div key={feat.id} className="flex flex-col border-l-2 border-[#C9A86C] pl-4">
+                                            <span className="text-[10px] text-[#C9A86C] font-bold mb-0.5">{feat.id}</span>
+                                            <h4 className="text-[13px] font-bold text-[#1a1a2e] mb-1">{feat.title}</h4>
+                                            <p className="text-[11px] text-gray-500 font-medium leading-tight break-keep">{feat.desc}</p>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div className="p-5 bg-gray-50 rounded-xl border border-gray-100">
-                                    <div className="text-[#C9A86C] text-sm font-bold mb-1">Durability</div>
-                                    <p className="text-[10px] text-gray-500">스크래치와 충격에 강한 고강도 표면</p>
+                            </div>
+
+                            {/* Technical Data */}
+                            <div>
+                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-4 border-b border-black pb-2">기술 사양 <span className="text-[9px] text-gray-400 ml-1 font-normal tracking-normal">Technical Data</span></h3>
+                                <div className="grid grid-cols-1 gap-y-2">
+                                    {[
+                                        { l: '규격 (Size)', v: '150 x 900 mm / 180 x 1220 mm' },
+                                        { l: '두께 (Thickness)', v: '4.0 mm / 5.0 mm (+ Pad)' },
+                                        { l: '표면 (Wear Layer)', v: '0.3mm / 0.5mm (Heavy Commercial)' },
+                                        { l: '코어 (Core)', v: 'Limestone Rigid Core' },
+                                        { l: '시공 (Install)', v: 'Unilin Click System (비접착)' },
+                                    ].map((spec, i) => (
+                                        <div key={i} className="flex flex-col border-b border-gray-100 pb-1.5 last:border-b-0 last:pb-0">
+                                            <span className="text-[9px] text-gray-400 font-medium mb-0.5">{spec.l}</span>
+                                            <span className="text-[11px] font-bold text-[#1a1a2e]">{spec.v}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-                            <h3 className="text-lg font-bold text-[#1a1a2e] mb-6 border-b border-gray-200 pb-2">Quality Certificates</h3>
-                            <div className="grid grid-cols-2 gap-4">
-                                {[
-                                    '1727056439494.png',
-                                    '1727056621369.png',
-                                    '1727056630493.png',
-                                    '1727056636934.png'
-                                ].map((img, idx) => (
-                                    <div key={idx} className="aspect-square bg-white rounded-lg p-2 shadow-sm border border-gray-100 flex items-center justify-center">
-                                        <Image src={`/images/certificates/${img}`} alt={`Cert ${idx}`} width={100} height={100} className="object-contain" />
+                        {/* Right Column: Hero Image */}
+                        <div className="w-[65%] relative h-full bg-gray-100">
+                            <Image src="/images/spc/K72_example_pic.png" alt="SPC Install" fill className="object-cover grayscale-[10%]" />
+                            <div className="absolute bottom-0 right-0 bg-white/90 backdrop-blur px-4 py-2">
+                                <div className="text-[9px] font-bold text-[#1a1a2e] uppercase tracking-wider text-right">Installation View</div>
+                                <div className="text-[8px] text-gray-500 text-right">Urban Modern Style / Living Room</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 3. BOTTOM: Certificates (Full Width) */}
+                    <div className="pt-6 border-t border-gray-200">
+                        <h3 className="text-[11px] font-bold text-[#1a1a2e] tracking-[0.1em] mb-4 flex items-center gap-2">
+                            인증 및 시험 성적 <span className="text-[9px] text-gray-400 font-normal tracking-normal uppercase">Certified Quality</span>
+                        </h3>
+                        <div className="grid grid-cols-4 gap-6">
+                            {[
+                                { img: '1727056439494.png', label: 'FloorScore 인증', sub: 'Indoor Air Quality' },
+                                { img: '1727056621369.png', label: '유해물질 미검출', sub: 'No Heavy Metals' },
+                                { img: '1727056630493.png', label: '친환경 건축자재', sub: 'Eco-Label Certified' },
+                                { img: '1727056621369.png', label: '내화성 테스트', sub: 'Fire Resistance' }
+                            ].map((cert, idx) => (
+                                <div key={idx} className="flex gap-4 items-center border border-gray-100 p-3 bg-gray-50/50">
+                                    <div className="relative w-12 h-16 shrink-0 bg-white border border-gray-100">
+                                        <Image src={`/images/certificates/${cert.img}`} alt={cert.label} fill className="object-contain p-1" />
                                     </div>
-                                ))}
-                            </div>
-                            <div className="mt-6 text-[10px] text-gray-400 text-center uppercase tracking-widest">
-                                Certified for Safety & Environment
-                            </div>
+                                    <div className="flex flex-col justify-center">
+                                        <span className="text-[11px] font-bold text-[#1a1a2e] leading-tight mb-0.5">{cert.label}</span>
+                                        <span className="text-[9px] text-gray-400 font-medium uppercase tracking-tight">{cert.sub}</span>
+                                        <span className="text-[8px] text-gray-300 mt-1">TEST REPORT</span>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -247,109 +323,254 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 6: 온수보드 + 누드보드 */}
+            {/* PAGE 4: BOARDS (HEATING & NUDE) - SWISS SYSTEM LAYOUT */}
             <section className="catalog-page bg-white p-12">
-                <div className="h-full flex flex-col gap-8">
-                    {/* TOP: 온수보드 (Heating Board) */}
-                    <div className="flex-1 flex flex-col border-b border-gray-100 pb-8">
-                        <div className="mb-4">
-                            <div className="text-xs text-[#C9A86C] tracking-[0.3em] mb-1 uppercase font-bold">Selection 02 — Product A</div>
-                            <h2 className="text-2xl font-bold text-[#1a1a2e]">온수보드 <span className="text-sm font-normal text-gray-400">Heating Board</span></h2>
-                            <p className="text-[11px] text-gray-500 mt-1 uppercase tracking-wider">건식난방 시스템 | 600 x 1200 mm</p>
+                <div className="h-full flex flex-col pt-4">
+                    {/* 1. HEADER */}
+                    <div className="flex justify-between items-start border-b-[4px] border-[#1a1a2e] pb-6 mb-8">
+                        <div>
+                            <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.3em] uppercase block mb-1">
+                                Selection 02
+                            </span>
+                            <h1 className="text-5xl font-black text-[#1a1a2e] tracking-tighter leading-none">
+                                BOARDS
+                            </h1>
+                            <span className="text-xl font-light text-gray-400 mt-1 block tracking-tight">
+                                건식 난방 및 프리미엄 인테리어 보드 솔루션
+                            </span>
                         </div>
-                        <div className="flex-1 flex gap-8 items-center">
-                            <div className="w-1/2 flex items-center justify-center overflow-hidden bg-gray-50 rounded-2xl relative aspect-[4/3] border border-gray-100 p-8">
-                                <Image src="/images/heatingboard/hb-product.png" alt="온수보드" fill className="object-contain p-6" />
+                        {/* Quick Comparison Strip */}
+                        <div className="flex gap-8 pt-2">
+                            <div className="text-right border-r border-gray-200 pr-8">
+                                <div className="text-[9px] font-bold text-gray-400 uppercase tracking-wider mb-1">Product A</div>
+                                <div className="text-[14px] font-bold text-[#1a1a2e]">600 x 1200 mm</div>
+                                <div className="text-[10px] text-gray-500">건식 난방 시스템</div>
                             </div>
-                            <div className="w-1/2 space-y-4">
-                                <div className="grid grid-cols-2 gap-3">
-                                    <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 text-center">
-                                        <div className="text-[#C9A86C] text-sm font-bold leading-tight">에너지<br />절감</div>
-                                    </div>
-                                    <div className="p-4 bg-[#1a1a2e] rounded-xl text-center text-white">
-                                        <div className="text-[#C9A86C] text-sm font-bold leading-tight">초고속<br />난방</div>
-                                    </div>
-                                </div>
-                                <p className="text-[12px] text-gray-500 leading-relaxed break-keep font-medium">
-                                    특수 알루미늄 코팅으로 열 전도율을 극대화하여 난방비를 획기적으로 절감합니다.
-                                    강력한 하중 지지력으로 변형이나 꿀렁임이 없는 스마트한 난방 시스템입니다.
-                                </p>
+                            <div className="text-right">
+                                <div className="text-[9px] font-bold text-gray-400 uppercase tracking-wider mb-1">Product B</div>
+                                <div className="text-[14px] font-bold text-[#1a1a2e]">1220 x 2440 mm</div>
+                                <div className="text-[10px] text-gray-500">인테리어 마감 보드</div>
                             </div>
                         </div>
                     </div>
 
-                    {/* BOTTOM: 누드보드 (Nude Board) */}
-                    <div className="flex-1 flex flex-col pt-4">
-                        <div className="mb-4">
-                            <div className="text-xs text-[#C9A86C] tracking-[0.3em] mb-1 uppercase font-bold">Selection 02 — Product B</div>
-                            <h2 className="text-2xl font-bold text-[#1a1a2e]">누드보드 <span className="text-sm font-normal text-gray-400">Nude Board</span></h2>
-                            <p className="text-[11px] text-gray-500 mt-1 uppercase tracking-wider">자연 질감 프리미엄 보드 | 1220 x 2440 mm</p>
+                    {/* 2. PRODUCT A: HEATING BOARD */}
+                    <div className="flex-1 flex gap-10 border-b border-gray-200 pb-8 mb-8">
+                        {/* Image Left */}
+                        <div className="w-1/2 relative h-full bg-gray-50/50">
+                            <Image src="/images/heatingboard/hb-product.png" alt="Heating Board" fill className="object-contain p-8" />
+                            <div className="absolute bottom-0 left-0 bg-[#1a1a2e] text-white px-3 py-1">
+                                <span className="text-[9px] font-bold tracking-widest uppercase">Product A</span>
+                            </div>
                         </div>
-                        <div className="flex-1 flex gap-8 items-center">
-                            <div className="w-1/2 space-y-4">
-                                <div className="grid grid-cols-1 gap-3">
-                                    <div className="p-4 bg-gray-50 rounded-xl border border-gray-100">
-                                        <div className="text-[#C9A86C] text-sm font-bold">Natural Texture</div>
-                                        <p className="text-[10px] text-gray-500 mt-1">가공되지 않은 원석 그대로의 질감을 재현한 하이엔드 자재</p>
+                        {/* Content Right */}
+                        <div className="w-1/2 flex flex-col justify-between">
+                            <div>
+                                <h3 className="text-2xl font-bold text-[#1a1a2e] mb-1">온수보드 <span className="text-lg font-light text-gray-400">Heating Board</span></h3>
+                                <p className="text-[11px] text-[#C9A86C] font-bold uppercase tracking-wider mb-6">Energy Saving Dry Heating System</p>
+
+                                {/* Benefits List */}
+                                <div className="flex flex-col gap-3 mb-6">
+                                    {[
+                                        { title: '에너지 절감', desc: '특수 알루미늄 코팅으로 난방비 획기적 절감' },
+                                        { title: '초고속 난방', desc: '뛰어난 열 전도율로 즉각적인 온도 상승' },
+                                        { title: '고강도 지지력', desc: '꿀렁임 없는 견고한 바닥 지지 하중' },
+                                        { title: '간편한 시공', desc: '건식 공법으로 공기 단축 및 시공 용이' }
+                                    ].map((item, i) => (
+                                        <div key={i} className="flex items-center gap-3">
+                                            <div className="w-1 h-1 bg-[#1a1a2e] rounded-full"></div>
+                                            <span className="text-[12px] font-bold text-[#1a1a2e] w-20">{item.title}</span>
+                                            <span className="text-[11px] text-gray-500 flex-1">{item.desc}</span>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                {/* Spec Table */}
+                                <div className="border-t border-black pt-4">
+                                    <div className="grid grid-cols-2 gap-y-3">
+                                        {[
+                                            { l: 'Dimension', v: '600 x 1200 mm' },
+                                            { l: 'Thickness', v: '별도 문의 (TBD)' },
+                                            { l: 'Material', v: 'XPS / Aluminum' },
+                                            { l: 'Usage', v: 'Floor Heating' }
+                                        ].map((spec, i) => (
+                                            <div key={i} className="flex flex-col">
+                                                <span className="text-[9px] text-gray-400 uppercase tracking-tight">{spec.l}</span>
+                                                <span className="text-[11px] font-bold text-[#1a1a2e]">{spec.v}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
-                                <p className="text-[12px] text-gray-500 leading-relaxed break-keep font-medium">
-                                    공간에 깊이감을 더하는 내추럴한 텍스처와 뛰어난 내구성의 조화.
-                                    모던하고 고급스러운 인테리어 디자인을 위한 최적의 솔루션입니다.
-                                </p>
                             </div>
-                            <div className="w-1/2 aspect-[4/3] bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 overflow-hidden relative group">
-                                <Image src="/images/uvstone-interior/travertine-studio.png" alt="Nude Board" fill className="object-cover transition-transform group-hover:scale-110" />
+                            {/* Actions */}
+                            <div className="text-right mt-4">
+                                <span className="text-[9px] text-[#C9A86C] font-bold uppercase tracking-widest cursor-pointer hover:underline">
+                                    Request Sample / Inquiry →
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 3. PRODUCT B: NUDE BOARD */}
+                    <div className="flex-1 flex gap-10">
+                        {/* Content Left (Mirrors Above) */}
+                        <div className="w-1/2 flex flex-col justify-between">
+                            <div>
+                                <h3 className="text-2xl font-bold text-[#1a1a2e] mb-1">누드보드 <span className="text-lg font-light text-gray-400">Nude Board</span></h3>
+                                <p className="text-[11px] text-[#C9A86C] font-bold uppercase tracking-wider mb-6">Premium Natural Texture Panel</p>
+
+                                {/* Benefits List */}
+                                <div className="flex flex-col gap-3 mb-6">
+                                    {[
+                                        { title: 'Natural Texture', desc: '원석 그대로의 질감을 재현한 하이엔드 자재' },
+                                        { title: 'Premium Design', desc: '모던하고 고급스러운 공간 연출 가능' },
+                                        { title: 'High Durability', desc: '외부 충격과 스크래치에 강한 표면 물성' },
+                                        { title: 'Versatility', desc: '벽체, 가구 등 다양한 인테리어 마감 적용' }
+                                    ].map((item, i) => (
+                                        <div key={i} className="flex items-center gap-3">
+                                            <div className="w-1 h-1 bg-[#1a1a2e] rounded-full"></div>
+                                            <span className="text-[12px] font-bold text-[#1a1a2e] w-24">{item.title}</span>
+                                            <span className="text-[11px] text-gray-500 flex-1">{item.desc}</span>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                {/* Spec Table */}
+                                <div className="border-t border-black pt-4">
+                                    <div className="grid grid-cols-2 gap-y-3">
+                                        {[
+                                            { l: 'Dimension', v: '1220 x 2440 mm' },
+                                            { l: 'Thickness', v: '별도 문의 (TBD)' },
+                                            { l: 'Core Type', v: 'High Density Fiber' },
+                                            { l: 'Usage', v: 'Wall / Furniture' }
+                                        ].map((spec, i) => (
+                                            <div key={i} className="flex flex-col">
+                                                <span className="text-[9px] text-gray-400 uppercase tracking-tight">{spec.l}</span>
+                                                <span className="text-[11px] font-bold text-[#1a1a2e]">{spec.v}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Actions */}
+                            <div className="text-left mt-4">
+                                <span className="text-[9px] text-[#C9A86C] font-bold uppercase tracking-widest cursor-pointer hover:underline">
+                                    ← Request Sample / Inquiry
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Image Right */}
+                        <div className="w-1/2 relative h-full">
+                            <Image src="/images/uvstone-interior/travertine-studio.png" alt="Nude Board" fill className="object-cover grayscale-[10%]" />
+                            <div className="absolute bottom-0 right-0 bg-[#1a1a2e] text-white px-3 py-1">
+                                <span className="text-[9px] font-bold tracking-widest uppercase">Product B</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* PAGE 7: UV 벽체 설명 + 자격증 사진들 */}
+            {/* PAGE 7: UV STONE WALL - REFINED EDITORIAL LAYOUT */}
             <section className="catalog-page bg-white p-12">
-                <div className="h-full flex flex-col">
-                    <div className="mb-10">
-                        <div className="text-[#C9A86C] text-[10px] tracking-[0.4em] mb-2 uppercase font-bold">Selection 03</div>
-                        <h2 className="text-4xl font-bold text-[#1a1a2e] mb-4">UV Stone Wall <span className="text-lg font-normal text-gray-400 ml-2">Premium Wall Panel</span></h2>
-                        <p className="text-sm text-gray-500 leading-relaxed max-w-2xl break-keep font-medium">
-                            천연 대리석의 화려한 패턴을 고해상도로 구현한 UV 벽판넬입니다.
-                            표면의 특수 UV 코팅으로 오염과 스크래치에 강하며, 대형 판넬 사이즈로 이음새 없는 시공이 가능합니다.
-                            공간에 웅장함을 더하는 고품격 인테리어 마감재입니다.
-                        </p>
+                <div className="h-full flex flex-col pt-4">
+                    {/* 1. HEADER */}
+                    <div className="flex justify-between items-start border-b-[4px] border-[#1a1a2e] pb-6 mb-8">
+                        <div>
+                            <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.3em] uppercase block mb-1">
+                                Selection 03
+                            </span>
+                            <h1 className="text-5xl font-black text-[#1a1a2e] tracking-tighter leading-none mb-1">
+                                UV Stone 벽체
+                            </h1>
+                            <span className="text-xl font-light text-gray-400 block tracking-tight">
+                                Premium Interior Wall Panel
+                            </span>
+                        </div>
+                        <div className="max-w-md pt-2">
+                            <p className="text-[11px] text-gray-600 font-medium leading-relaxed break-keep text-right">
+                                천연 대리석의 웅장한 패턴을 고해상도로 구현한 하이엔드 UV 벽판넬입니다.<br />
+                                특수 코팅 처리로 오염에 강하며, 대형 기성 사이즈로 이음새 없는 시공이 가능합니다.
+                            </p>
+                        </div>
                     </div>
 
-                    <div className="flex-1 grid grid-cols-2 gap-8 mb-10">
-                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 order-2 md:order-1">
-                            <h3 className="text-lg font-bold text-[#1a1a2e] mb-6 border-b border-gray-200 pb-2">Material Certificates</h3>
-                            <div className="grid grid-cols-2 gap-4">
-                                {[
-                                    '1727056645186.png',
-                                    '1727056649554.png',
-                                    '1727056653977.png',
-                                    '1727056694350.png'
-                                ].map((img, idx) => (
-                                    <div key={idx} className="aspect-square bg-white rounded-lg p-2 shadow-sm border border-gray-100 flex items-center justify-center">
-                                        <Image src={`/images/certificates/${img}`} alt={`Cert ${idx}`} width={100} height={100} className="object-contain" />
-                                    </div>
-                                ))}
+                    {/* 2. MAIN CONTENT: Left Info & Right Hero */}
+                    <div className="flex-1 flex gap-10 min-h-0 mb-6">
+                        {/* Left Column: Features & Tech Data */}
+                        <div className="w-[35%] flex flex-col gap-10">
+                            {/* Key Features */}
+                            <div>
+                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-6">Key Features</h3>
+                                <div className="flex flex-col gap-6">
+                                    {[
+                                        { id: '01', title: '강력한 표면 코팅', desc: '특수 UV 처리를 통한 생활 오염 및 스크래치 방지' },
+                                        { id: '02', title: '리얼 대리석 질감', desc: '천연석의 깊이감과 텍스처를 완벽하게 구현' },
+                                        { id: '03', title: '간편한 건식 시공', desc: '경량화된 소재로 접착 시공이 가능하여 공기 단축' },
+                                        { id: '04', title: '대형 규격 사이즈', desc: '1220*2440mm 광폭 사이즈로 웅장한 공간 연출' }
+                                    ].map((feat) => (
+                                        <div key={feat.id} className="flex flex-col border-l-2 border-[#C9A86C] pl-4">
+                                            <span className="text-[10px] text-[#C9A86C] font-bold mb-0.5">{feat.id}</span>
+                                            <h4 className="text-[13px] font-bold text-[#1a1a2e] mb-1">{feat.title}</h4>
+                                            <p className="text-[11px] text-gray-500 font-medium leading-tight break-keep">{feat.desc}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Technical Data (Moved Here) */}
+                            <div>
+                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-4 border-b border-black pb-2">기술 사양 <span className="text-[9px] text-gray-400 ml-1 font-normal tracking-normal">Technical Data</span></h3>
+                                <div className="grid grid-cols-1 gap-y-2">
+                                    {[
+                                        { l: '규격 (Dimension)', v: '1220 x 2440 mm' },
+                                        { l: '두께 (Thickness)', v: '3.8 mm (+/- 0.2)' },
+                                        { l: '표면 (Surface)', v: 'High Gloss UV Coating' },
+                                        { l: '소재 (Base)', v: 'Stone Powder Composite' },
+                                        { l: '시공 (Install)', v: '구조용 접착제 (건식)' },
+                                    ].map((spec, i) => (
+                                        <div key={i} className="flex flex-col border-b border-gray-100 pb-1.5 last:border-b-0 last:pb-0">
+                                            <span className="text-[9px] text-gray-400 font-medium mb-0.5">{spec.l}</span>
+                                            <span className="text-[11px] font-bold text-[#1a1a2e]">{spec.v}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
-                        <div className="space-y-6 order-1 md:order-2">
-                            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                                <Image src="/images/uvstone-interior/travertine-beige-main.jpg" alt="UV Stone Intro" fill className="object-cover" />
+                        {/* Right Column: Hero Image */}
+                        <div className="w-[65%] relative h-full bg-gray-100">
+                            <Image src="/images/uvstone-interior/travertine-beige-main.jpg" alt="UV Stone Context" fill className="object-cover grayscale-[5%]" />
+                            <div className="absolute bottom-0 right-0 bg-white/90 backdrop-blur px-4 py-2">
+                                <div className="text-[9px] font-bold text-[#1a1a2e] uppercase tracking-wider text-right">Application View</div>
+                                <div className="text-[8px] text-gray-500 text-right">Travertine Beige / Bathroom Wall</div>
                             </div>
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="p-5 bg-[#1a1a2e] rounded-xl text-white">
-                                    <div className="text-[#C9A86C] text-sm font-bold mb-1">UV Gloss</div>
-                                    <p className="text-[10px] text-gray-400">고광택 코어로 깊이감 있는 시각 효과</p>
+                        </div>
+                    </div>
+
+                    {/* 3. BOTTOM: Certificates (Full Width) */}
+                    <div className="pt-6 border-t border-gray-200">
+                        <h3 className="text-[11px] font-bold text-[#1a1a2e] tracking-[0.1em] mb-4 flex items-center gap-2">
+                            인증 및 시험 성적 <span className="text-[9px] text-gray-400 font-normal tracking-normal uppercase">Certified Quality</span>
+                        </h3>
+                        <div className="grid grid-cols-4 gap-6">
+                            {[
+                                { img: '1727056645186.png', label: '친환경 인증', sub: 'Eco-Friendly' },
+                                { img: '1727056649554.png', label: '항균 테스트', sub: 'Antibacterial' },
+                                { img: '1727056653977.png', label: '화재 안전', sub: 'Fire Safety' },
+                                { img: '1727056694350.png', label: '강도 테스트', sub: 'High Strength' }
+                            ].map((cert, idx) => (
+                                <div key={idx} className="flex gap-4 items-center border border-gray-100 p-3 bg-gray-50/50">
+                                    <div className="relative w-12 h-16 shrink-0 bg-white border border-gray-100">
+                                        <Image src={`/images/certificates/${cert.img}`} alt={cert.label} fill className="object-contain p-1" />
+                                    </div>
+                                    <div className="flex flex-col justify-center">
+                                        <span className="text-[11px] font-bold text-[#1a1a2e] leading-tight mb-0.5">{cert.label}</span>
+                                        <span className="text-[9px] text-gray-400 font-medium uppercase tracking-tight">{cert.sub}</span>
+                                        <span className="text-[8px] text-gray-300 mt-1">TEST REPORT</span>
+                                    </div>
                                 </div>
-                                <div className="p-5 bg-gray-50 rounded-xl border border-gray-100">
-                                    <div className="text-[#C9A86C] text-sm font-bold mb-1">Easy Care</div>
-                                    <p className="text-[10px] text-gray-500">항균 및 방오 기능으로 간편한 유지보수</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -514,13 +735,12 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        {/* Product Photos: Main + Side Detail */}
                         <div className="flex-1 flex gap-6 pb-4">
                             <div className="flex-[3] relative overflow-hidden">
-                                <Image src="/images/ultraboard/ub-product-final-v2.png" alt="ULTRA BOARD Main" fill className="object-contain" priority />
+                                <Image src="/images/ultraboard/ub-side-detail-v19.png" alt="ULTRA BOARD Main" fill className="object-contain" priority />
                             </div>
                             <div className="flex-[2] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
-                                <Image src="/images/ultraboard/ub-side-detail-v5.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
+                                <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
                             </div>
                         </div>
                     </div>
