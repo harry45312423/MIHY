@@ -792,90 +792,97 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 11: ULTRA BOARD - Art Director's Redesign */}
+            {/* PAGE 11: 울트라보드 (ULTRA BOARD) */}
             <section className="catalog-page bg-white p-12 overflow-hidden">
                 <div className="h-full flex flex-col">
 
-                    {/* 1. HEADER MODULE */}
-                    <div className="flex justify-between items-baseline mb-10 border-b-2 border-[#1a1a2e] pb-6">
-                        <div>
-                            <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.4em] uppercase">Selection 05</span>
-                                <div className="h-[1px] w-10 bg-[#C9A86C]/40" />
+                    {/* 1. HEADER MODULE - Refined Typography */}
+                    <div className="flex justify-between items-baseline border-b-2 border-[#1a1a2e] pb-8 mb-10">
+                        <div className="flex flex-col">
+                            <div className="flex items-center gap-3 mb-3">
+                                <span className="text-[#C9A86C] text-[11px] font-extrabold tracking-[0.4em] uppercase">Selection 05</span>
+                                <div className="h-[1px] w-12 bg-[#C9A86C]/40" />
                             </div>
-                            <h1 className="text-[52px] font-black text-[#1a1a2e] tracking-tighter leading-none">ULTRA BOARD</h1>
+                            <h1 className="text-[56px] font-black text-[#1a1a2e] tracking-tighter leading-none">
+                                ULTRA <span className="text-[#C9A86C]">BOARD</span>
+                            </h1>
                         </div>
                         <div className="text-right">
-                            <div className="flex items-center gap-4 text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em] mb-3 justify-end">
-                                <span>High Strength</span>
+                            <div className="flex items-center gap-4 text-[11px] text-gray-400 font-bold uppercase tracking-[0.2em] mb-4 justify-end">
+                                <span>고강도 설계</span>
                                 <span>•</span>
-                                <span>Waterproof</span>
-                                <span>•</span>
-                                <span>Eco-Friendly</span>
+                                <span>친환경 소재</span>
                             </div>
                             <div className="flex items-center gap-6 justify-end">
-                                <div className="text-3xl font-black text-[#C9A86C]">50T</div>
-                                <div className="flex items-center gap-3">
-                                    <span className="text-[14px] font-bold text-[#1a1a2e] tabular-nums tracking-tighter">600 × 3000</span>
-                                    <span className="text-gray-200">|</span>
-                                    <span className="text-[14px] font-bold text-[#1a1a2e] tabular-nums tracking-tighter">600 × 2850</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* PRODUCT GALLERY CLUSTER - Tight Fit Zigzag */}
-                        <div className="mb-12">
-                            <div className="flex gap-8 items-start">
-                                {/* Left: Dominant Hero (7/12 columns) - Perfectly Square */}
-                                <div className="flex-[7] relative aspect-square rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-transform duration-500 hover:shadow-md">
-                                    <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Hero" fill className="object-contain" priority />
-                                </div>
-
-                                {/* Right Stack: Description (Top) + Detail (Bottom) */}
-                                <div className="flex-[5] flex flex-col gap-8">
-                                    {/* TOP SLOT: Editorial Description */}
-                                    <div className="pt-2 pr-4">
-                                        <h4 className="text-[18px] font-black text-[#1a1a2e] tracking-tight mb-2 uppercase italic leading-tight">
-                                            Ultra Board:<br />Architectural Specification
-                                        </h4>
-                                        <p className="text-[11.5px] text-gray-500 font-medium leading-relaxed break-keep">
-                                            고성능 단열과 정밀 시공을 위한 최적의 솔루션.<br />
-                                            극한의 환경에서도 변함없는 내구성을 제안합니다.
-                                        </p>
-                                    </div>
-
-                                    {/* BOTTOM SLOT: Detail Image - Perfectly Square to match */}
-                                    <div className="relative aspect-square rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-transform duration-500 hover:shadow-md">
-                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail View" fill className="object-contain" priority />
-                                    </div>
+                                <div className="text-4xl font-black text-[#C9A86C]">50T</div>
+                                <div className="flex flex-col items-end gap-1">
+                                    <span className="text-[14px] font-bold text-[#1a1a2e] tabular-nums tracking-tight">600 × 3000</span>
+                                    <span className="text-[14px] font-bold text-[#1a1a2e] tabular-nums tracking-tight">600 × 2850</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* 3. INSTALLATION EXAMPLE MODULE */}
-                    <div className="flex-1 flex flex-col min-h-0">
-                        <div className="flex items-center gap-4 mb-5">
-                            <h2 className="text-[12px] font-bold text-[#1a1a2e] tracking-[0.2em] uppercase">Installation Example</h2>
-                            <div className="flex-1 h-[1px] bg-gray-100" />
+
+                    {/* 2. PRODUCT GALLERY & SPEC MODULE */}
+                    <div className="flex gap-12 items-start mb-12">
+                        {/* Left: Product Hero (7/12) */}
+                        <div className="flex-[7] relative aspect-[4/4.2] rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm p-6 group">
+                            <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD" fill className="object-contain transition-transform duration-700 group-hover:scale-105" priority />
                         </div>
 
-                        <div className="flex-1 flex flex-col gap-4 min-h-0">
-                            {/* Main Case Photo */}
-                            <div className="relative flex-[1.8] rounded-2xl overflow-hidden shadow-xl border border-gray-50 bg-gray-50">
-                                <Image src="/images/ultraboard/ub-site-2-new.jpg" alt="Installation Hero" fill className="object-cover" priority />
-                                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 pt-12">
-                                    <div className="flex items-center gap-2 mb-1.5">
-                                        <div className="w-1 h-1 rounded-full bg-[#C9A86C]" />
-                                        <span className="text-[10px] font-bold tracking-[0.3em] text-[#C9A86C] uppercase">Case Study</span>
+                        {/* Right: Technical Specification (5/12) */}
+                        <div className="flex-[5] flex flex-col justify-center self-stretch py-2">
+                            <div className="mb-10">
+                                <h3 className="text-[22px] font-black text-[#1a1a2e] tracking-tight mb-5 leading-tight break-keep border-l-[5px] border-[#C9A86C] pl-5 uppercase italic">
+                                    건축용 프리미엄<br />고성능 단열 보드
+                                </h3>
+                                <p className="text-[12.5px] text-gray-500 font-medium leading-relaxed break-keep">
+                                    울트라보드는 최첨단 압축 기술로 탄생한 고성능 건축 소재입니다. 극한의 하중을 견디는 강력한 지지력과 친환경적인 구성 요소로 프리미엄 주거 및 상업 공간의 새로운 기준을 제시합니다.
+                                </p>
+                            </div>
+
+                            <div className="space-y-8">
+                                {[
+                                    { title: '압도적인 구조적 강도', desc: '고밀도 압축 코어로 상하부의 강력한 지지력과 뛰어난 내충격성을 확보했습니다.' },
+                                    { title: '지속 가능한 친환경 소재', desc: '유해 물질이 없는 안전한 성분만을 사용하여 주거 환경의 품질을 높였습니다.' }
+                                ].map((item, i) => (
+                                    <div key={i} className="flex flex-col">
+                                        <div className="flex items-center gap-3 mb-2">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-[#C9A86C]" />
+                                            <span className="text-[12px] font-black text-[#1a1a2e] tracking-tight uppercase leading-none">{item.title}</span>
+                                        </div>
+                                        <p className="text-[11px] text-gray-400 font-medium leading-snug pl-4.5">{item.desc}</p>
                                     </div>
-                                    <h4 className="text-2xl text-white font-medium tracking-tight">모듈러 하우스 건축 현장</h4>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 3. INSTALLATION PORTFOLIO MODULE */}
+                    <div className="flex-1 flex flex-col min-h-0 pt-6 border-t border-gray-100">
+                        <div className="flex items-center gap-4 mb-6">
+                            <h2 className="text-[13px] font-extrabold text-[#1a1a2e] tracking-[0.25em] uppercase">Installation Example</h2>
+                            <div className="flex-1 h-[0.5px] bg-gray-200" />
+                        </div>
+
+                        <div className="flex-1 flex flex-col gap-5 min-h-0">
+                            {/* Main Case Photo */}
+                            <div className="relative flex-[2] rounded-3xl overflow-hidden shadow-2xl group border border-gray-100">
+                                <Image src="/images/ultraboard/ub-site-2-new.jpg" alt="Installation Example" fill className="object-cover transition-transform duration-1000 group-hover:scale-110" priority />
+                                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-8 pt-20">
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#C9A86C]" />
+                                        <span className="text-[11px] font-extrabold tracking-[0.3em] text-[#C9A86C] uppercase">Modular Project</span>
+                                    </div>
+                                    <h4 className="text-3xl text-white font-medium tracking-tight">모듈러 하우스 건축 현장</h4>
                                 </div>
                             </div>
 
                             {/* Thumbnails Row */}
-                            <div className="flex-[1] grid grid-cols-4 gap-4">
+                            <div className="grid grid-cols-4 gap-5 flex-1">
                                 {['ub-site-1.jpg', 'ub-site-3.jpg', 'ub-site-4.jpg', 'case-1.jpg'].map((img, idx) => (
-                                    <div key={idx} className="relative rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-white">
-                                        <Image src={`/images/ultraboard/${img}`} alt={`UB Case ${idx}`} fill className="object-cover" />
+                                    <div key={idx} className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50 group">
+                                        <Image src={`/images/ultraboard/${img}`} alt={`Case Detail ${idx}`} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
                                     </div>
                                 ))}
                             </div>
