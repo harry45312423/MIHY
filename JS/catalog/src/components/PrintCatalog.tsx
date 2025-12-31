@@ -824,20 +824,20 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        {/* PRODUCT HERO SECTION - Professional Layout */}
+                        {/* PRODUCT HERO SECTION - Seamless & Uncut Layout */}
                         <div className="flex-1 flex gap-8 mb-8">
-                            {/* Main Grid View - Expanded with tight framing */}
-                            <div className="flex-[2.5] relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50">
-                                <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Product Grid" fill className="object-cover" priority />
+                            {/* Main Grid View - Contain for no cropping, blending with white background */}
+                            <div className="flex-[2.5] relative rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white p-4">
+                                <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Product Grid" fill className="object-contain" priority />
                             </div>
 
-                            {/* Side Detail - Focused & Floating effect */}
-                            <div className="flex-1 relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg bg-white flex flex-col group">
-                                <div className="flex-1 relative">
-                                    <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-cover" priority />
+                            {/* Side Detail - High concentration on detail */}
+                            <div className="flex-1 relative rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white flex flex-col">
+                                <div className="flex-1 relative p-4">
+                                    <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
                                 </div>
-                                <div className="bg-[#1a1a2e] py-3 text-center">
-                                    <span className="text-[10px] text-[#C9A86C] font-bold tracking-widest uppercase">Cross Section</span>
+                                <div className="bg-gray-50 py-2 text-center border-t border-gray-100">
+                                    <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Cross Section Details</span>
                                 </div>
                             </div>
                         </div>
