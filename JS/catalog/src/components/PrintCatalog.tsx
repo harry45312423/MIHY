@@ -824,13 +824,39 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        <div className="flex-1 flex gap-6 pb-4">
-                            <div className="flex-[4] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white p-2">
-                                <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Product Grid" fill className="object-contain" priority />
+                        {/* PRODUCT HERO SECTION - Professional Layout */}
+                        <div className="flex-1 flex gap-8 mb-8">
+                            {/* Main Grid View - Expanded with tight framing */}
+                            <div className="flex-[2.5] relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50">
+                                <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Product Grid" fill className="object-cover" priority />
                             </div>
-                            <div className="flex-[1] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white p-2">
-                                <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
+
+                            {/* Side Detail - Focused & Floating effect */}
+                            <div className="flex-1 relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg bg-white flex flex-col group">
+                                <div className="flex-1 relative">
+                                    <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-cover" priority />
+                                </div>
+                                <div className="bg-[#1a1a2e] py-3 text-center">
+                                    <span className="text-[10px] text-[#C9A86C] font-bold tracking-widest uppercase">Cross Section</span>
+                                </div>
                             </div>
+                        </div>
+
+                        {/* PRODUCT FEATURES GRID - Added for Professional Density */}
+                        <div className="grid grid-cols-3 gap-8 border-t border-gray-100 pt-8 pb-4">
+                            {[
+                                { title: '초고강도 내구성', desc: '고밀도 압축 공법으로 제작되어 일반 단열재 대비 탁월한 내충격성과 하부 지지력을 자랑합니다.' },
+                                { title: '완전 방수 시스템', desc: '습기에 강한 소재로 지하 공간이나 습한 환경에서도 변형 없이 반영구적으로 성능을 유지합니다.' },
+                                { title: '친환경 소재', desc: '유해 물질이 없는 안전한 소재를 사용하여 주거 공간부터 상업 시설까지 안심하고 사용 가능합니다.' }
+                            ].map((item, i) => (
+                                <div key={i} className="flex flex-col">
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#C9A86C]" />
+                                        <span className="text-[13px] font-bold text-[#1a1a2e]">{item.title}</span>
+                                    </div>
+                                    <p className="text-[11px] text-gray-500 leading-relaxed break-keep font-medium">{item.desc}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
