@@ -154,21 +154,20 @@ export default function PrintCatalog() {
                     {/* 2. MAIN CONTENT: Left Info & Right Hero */}
                     <div className="flex-1 flex gap-10 min-h-0 mb-6">
                         {/* Left Column: Features & Tech Data */}
-                        <div className="w-[35%] flex flex-col gap-8">
+                        <div className="w-[35%] flex flex-col gap-4">
                             {/* Key Features */}
                             <div>
-                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-5">Key Features</h3>
-                                <div className="flex flex-col gap-5">
+                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-4">Key Features</h3>
+                                <div className="flex flex-col gap-4">
                                     {[
                                         { id: '01', title: '친환경 인증', desc: '유해물질 미검출로 입증된 인체에 무해한 건강한 바닥재' },
-                                        { id: '02', title: '고강도 표면 코팅', desc: '찍힘, 긁힘 및 생활 오염에 강한 내구성' },
-                                        { id: '03', title: '친환경 클릭 시공', desc: '접착제 없이 결합하는 Unilin Click 시스템' },
-                                        { id: '04', title: '생활방수, 습기에 강함', desc: '습기에 의한 변형이나 뒤틀림이 없는 뛰어난 내수성' }
+                                        { id: '02', title: '친환경 클릭 시공', desc: '접착제 없이 결합하는 Unilin Click 시스템' },
+                                        { id: '03', title: '생활방수, 습기에 강함', desc: '습기에 의한 변형이나 뒤틀림이 없는 뛰어난 내수성' }
                                     ].map((feat) => (
                                         <div key={feat.id} className="flex flex-col border-l-2 border-[#C9A86C] pl-4">
                                             <span className="text-[10px] text-[#C9A86C] font-bold mb-0.5">{feat.id}</span>
-                                            <h4 className="text-[13px] font-bold text-[#1a1a2e] mb-1">{feat.title}</h4>
-                                            <p className="text-[11px] text-gray-500 font-medium leading-tight break-keep">{feat.desc}</p>
+                                            <h4 className="text-[12px] font-bold text-[#1a1a2e] mb-0.5">{feat.title}</h4>
+                                            <p className="text-[10px] text-gray-500 font-medium leading-tight break-keep">{feat.desc}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -176,26 +175,27 @@ export default function PrintCatalog() {
 
                             {/* Technical Data */}
                             <div>
-                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-3 border-b border-black pb-2">기술 사양 <span className="text-[9px] text-gray-400 ml-1 font-normal tracking-normal">Technical Data</span></h3>
-                                <div className="grid grid-cols-1 gap-y-2">
+                                <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-2 border-b border-black pb-2">기술 사양 <span className="text-[9px] text-gray-400 ml-1 font-normal tracking-normal">Technical Data</span></h3>
+                                <div className="grid grid-cols-1 gap-y-1">
                                     {[
-                                        { l: '시공 (Install)', v: 'Unilin Click System (비접착)' },
+                                        { l: '시공', v: '유니린 클릭 시스템 (비접착)' },
                                     ].map((spec, i) => (
-                                        <div key={i} className="flex flex-col border-b border-gray-100 pb-1 last:border-b-0 last:pb-0">
+                                        <div key={i} className="flex flex-col">
                                             <span className="text-[9px] text-gray-400 font-medium mb-0.5">{spec.l}</span>
                                             <span className="text-[11px] font-bold text-[#1a1a2e]">{spec.v}</span>
                                         </div>
                                     ))}
                                 </div>
-                                {/* Spec Diagram */}
-                                <div className="mt-2 relative w-full h-48">
-                                    <Image src="/images/spc/spc-spec-diagram.png" alt="SPC 구조 다이어그램" fill className="object-contain object-top" />
-                                </div>
+                            </div>
+
+                            {/* SPC Layer Structure Diagram - Fill remaining space */}
+                            <div className="flex-1 relative min-h-[180px]">
+                                <Image src="/spc_layer_final.png" alt="SPC 구조 다이어그램" fill className="object-contain object-left object-top" />
                             </div>
                         </div>
 
                         {/* Right Column: Hero Image */}
-                        <div className="w-[65%] relative h-full bg-gray-50 overflow-hidden">
+                        <div className="w-[65%] relative bg-gray-50 overflow-hidden">
                             <Image
                                 src="/images/spc/spc-hero-kcc-style.png"
                                 alt="SPC Luxury Interior"
@@ -203,11 +203,15 @@ export default function PrintCatalog() {
                                 className="object-cover"
                                 style={{ objectPosition: 'center center' }}
                             />
+                            {/* Overlay Text - Premium Style */}
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-4">
+                                <span className="text-[10px] text-white/90 font-medium tracking-wide">K75, Natural Wood</span>
+                            </div>
                         </div>
                     </div>
 
                     {/* 3. BOTTOM: Certified Quality (Redesigned - No Container) */}
-                    <div className="pt-6 border-t-[2px] border-[#1a1a2e] mt-auto">
+                    <div className="pt-4 border-t-[2px] border-[#1a1a2e] mt-auto">
                         <div className="flex items-stretch h-full">
                             {/* Left: Certified Quality (42%) */}
                             <div className="w-[42%] pr-10">
@@ -221,7 +225,7 @@ export default function PrintCatalog() {
                                         { img: 'kc-certificate.png', label: 'KC 인증마크', sub: 'Korea Cert.' }
                                     ].map((cert, idx) => (
                                         <div key={idx} className="flex flex-col items-center text-center">
-                                            <div className="relative w-full aspect-[3/4] mb-3">
+                                            <div className="relative w-full aspect-[3/4] mb-6">
                                                 <Image src={`/images/certificates/${cert.img}`} alt={cert.label} fill className="object-contain" />
                                             </div>
                                             <span className="text-[10px] font-bold text-[#1a1a2e] leading-tight mb-1">{cert.label}</span>
@@ -234,7 +238,7 @@ export default function PrintCatalog() {
                             {/* Right: Pattern Lineup (58%) - 4x2 Grid */}
                             <div className="w-[58%] pl-10 border-l border-gray-200">
                                 <div className="flex justify-between items-baseline mb-5">
-                                    <h3 className="text-[10px] font-bold text-[#1a1a2e] uppercase tracking-[0.15em]">Main Lineup</h3>
+                                    <h3 className="text-[10px] font-bold text-[#1a1a2e] uppercase tracking-[0.15em]">Pattern Lineup</h3>
                                     <span className="text-[8px] text-gray-400">8 Variants / 7T 돌마루 컬렉션</span>
                                 </div>
                                 <div className="grid grid-cols-4 gap-x-4 gap-y-4">
@@ -243,14 +247,14 @@ export default function PrintCatalog() {
                                         { id: 'K75', img: '/images/spc/K75_product_new.png' },
                                         { id: 'K76', img: '/images/spc/K76_product_new.png' },
                                         { id: 'K77', img: '/images/spc/K77_product.png' },
-                                        { id: 'K747', img: '/images/spc/K747_product.jpg' },
-                                        { id: 'K717S', img: '/images/spc/Grigio_product.jpg' },
-                                        { id: 'K740', img: '/images/spc/Chanelgrey_Product.jpg' },
-                                        { id: 'COCO', img: '/images/spc/cocobaige_product.jpg' }
+                                        { id: '샴페인화이트', img: '/images/spc/K747_product.jpg' },
+                                        { id: '그리지오', img: '/images/spc/Grigio_product.jpg' },
+                                        { id: '샤넬그레이', img: '/images/spc/Chanelgrey_Product.jpg' },
+                                        { id: '코코베이지', img: '/images/spc/cocobaige_product.jpg' }
                                     ].map((item, i) => (
                                         <div key={i} className="flex flex-col text-center">
-                                            <div className="relative aspect-square overflow-hidden mb-1.5 border border-gray-100 shadow-sm bg-gray-50">
-                                                <Image src={item.img} alt={item.id} fill className="object-cover" />
+                                            <div className="relative aspect-square overflow-hidden mb-1.5">
+                                                <Image src={item.img} alt={item.id} fill className="object-cover" style={{ transform: 'scale(1.3)', transformOrigin: 'top center' }} />
                                             </div>
                                             <span className="text-[9px] font-bold text-[#1a1a2e] tracking-tight tabular-nums leading-none">{item.id}</span>
                                         </div>
@@ -273,10 +277,10 @@ export default function PrintCatalog() {
 
                     <div className="grid grid-cols-2 gap-x-4 mb-1 px-1">
                         <div className="text-[8px] font-medium text-gray-400 tracking-widest uppercase">Product Sample</div>
-                        <div className="text-[8px] font-medium text-gray-400 tracking-widest uppercase">Installation View</div>
+                        <div className="text-[8px] font-medium text-gray-400 tracking-widest uppercase">Installation Example</div>
                     </div>
 
-                    <div className="flex-1 grid grid-cols-2 grid-rows-4 gap-2 min-h-0">
+                    <div className="flex-1 grid grid-cols-2 grid-rows-4 gap-3 min-h-0">
                         {[
                             { id: 'K72', name: 'IVORY BEIGE', product: '/images/spc/k72.jpg', example: '/images/spc/K72_example_pic.png' },
                             { id: 'K75', name: 'NATURAL WOOD', product: '/images/spc/K75_product_new.png', example: '/images/spc/K75_example_pic.png' },
@@ -284,24 +288,24 @@ export default function PrintCatalog() {
                             { id: 'K77', name: 'GREY WOOD', product: '/images/spc/K77_product.png', example: '/images/spc/K77_example_pic.png' },
                         ].map((item) => (
                             <React.Fragment key={item.id}>
-                                <div className="flex flex-col border border-gray-100 rounded overflow-hidden shadow-sm bg-white h-full">
-                                    <div className="flex-1 relative bg-gray-50 flex items-center justify-center overflow-hidden">
-                                        <Image src={item.product} alt={item.id} fill priority className="object-cover object-top" />
-                                    </div>
-                                    <div className="px-2 py-0.5 bg-white border-t border-gray-50 flex justify-between items-center">
-                                        <div>
-                                            <span className="text-[10px] font-bold text-[#1a1a2e] mr-1">{item.id}</span>
-                                            <span className="text-[8px] text-[#C9A86C] font-medium tracking-tight">{item.name}</span>
+                                {/* Product Sample - Overlay Style */}
+                                <div className="relative h-full overflow-hidden">
+                                    <Image src={item.product} alt={item.id} fill priority className="object-cover object-top" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/25 to-transparent px-3 py-2">
+                                        <div className="flex justify-between items-end">
+                                            <div>
+                                                <span className="text-[11px] font-bold text-white mr-1.5">{item.id}</span>
+                                                <span className="text-[9px] text-[#C9A86C] font-medium tracking-tight">{item.name}</span>
+                                            </div>
+                                            <span className="text-[8px] text-white/70">7T</span>
                                         </div>
-                                        <div className="text-[7px] text-gray-400">7T</div>
                                     </div>
                                 </div>
-                                <div className="flex flex-col border border-gray-100 rounded overflow-hidden shadow-sm bg-white h-full">
-                                    <div className="flex-1 relative bg-gray-50 flex items-center justify-center overflow-hidden">
-                                        <Image src={item.example} alt={`${item.id} Installation`} fill priority className="object-cover" />
-                                    </div>
-                                    <div className="px-2 py-0.5 bg-white border-t border-gray-50">
-                                        <span className="text-[8px] text-gray-500">{item.name}</span>
+                                {/* Installation View - Overlay Style */}
+                                <div className="relative h-full overflow-hidden">
+                                    <Image src={item.example} alt={`${item.id} Installation`} fill priority className="object-cover" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/20 to-transparent px-3 py-2">
+                                        <span className="text-[9px] text-white/90 font-medium">{item.name}</span>
                                     </div>
                                 </div>
                             </React.Fragment>
@@ -324,7 +328,7 @@ export default function PrintCatalog() {
                         <div className="text-[8px] font-medium text-gray-400 tracking-widest uppercase">시공 사례</div>
                     </div>
 
-                    <div className="flex-1 grid grid-cols-2 grid-rows-4 gap-2 min-h-0">
+                    <div className="flex-1 grid grid-cols-2 grid-rows-4 gap-3 min-h-0">
                         {[
                             { id: 'K747', name: '샴페인화이트', product: '/images/spc/K747_product.jpg', example: '/images/spc/ChampagneWhite_example_pic.png' },
                             { id: 'K717S', name: '그리지오', product: '/images/spc/Grigio_product.jpg', example: '/images/spc/Grigio_example_pic.png' },
@@ -332,23 +336,23 @@ export default function PrintCatalog() {
                             { id: 'COCO', name: '코코베이지', product: '/images/spc/cocobaige_product.jpg', example: '/images/spc/CocoBeige_example_pic.png' },
                         ].map((item) => (
                             <React.Fragment key={item.id}>
-                                <div className="flex flex-col border border-gray-100 rounded overflow-hidden shadow-sm bg-white h-full">
-                                    <div className="flex-1 relative bg-gray-50 flex items-center justify-center overflow-hidden">
-                                        <Image src={item.product} alt={item.id} fill priority className="object-cover" />
-                                    </div>
-                                    <div className="px-2 py-0.5 bg-white border-t border-gray-50 flex justify-between items-center">
-                                        <div>
-                                            <span className="text-[10px] font-bold text-[#1a1a2e]">{item.name}</span>
+                                {/* Product Sample - Overlay Style */}
+                                <div className="relative h-full overflow-hidden">
+                                    <Image src={item.product} alt={item.id} fill priority className="object-cover object-top" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/25 to-transparent px-3 py-2">
+                                        <div className="flex justify-between items-end">
+                                            <div>
+                                                <span className="text-[11px] font-bold text-white mr-1.5">{item.name}</span>
+                                            </div>
+                                            <span className="text-[8px] text-white/70">7T</span>
                                         </div>
-                                        <div className="text-[7px] text-gray-400">7T</div>
                                     </div>
                                 </div>
-                                <div className="flex flex-col border border-gray-100 rounded overflow-hidden shadow-sm bg-white h-full">
-                                    <div className="flex-1 relative bg-gray-50 flex items-center justify-center overflow-hidden">
-                                        <Image src={item.example} alt={`${item.id} Installation`} fill priority className="object-cover" />
-                                    </div>
-                                    <div className="px-2 py-0.5 bg-white border-t border-gray-50">
-                                        <span className="text-[8px] text-gray-500">{item.name}</span>
+                                {/* Installation Example - Overlay Style */}
+                                <div className="relative h-full overflow-hidden">
+                                    <Image src={item.example} alt={`${item.id} Installation`} fill priority className="object-cover" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/20 to-transparent px-3 py-2">
+                                        <span className="text-[9px] text-white/90 font-medium">{item.name}</span>
                                     </div>
                                 </div>
                             </React.Fragment>
@@ -385,12 +389,14 @@ export default function PrintCatalog() {
                         </div>
 
                         {/* Hero Image - Clean Framing */}
-                        <div className="relative w-full overflow-hidden mb-5" style={{ height: '48%' }}>
+                        <div className="relative w-full overflow-hidden mb-4" style={{ height: '55%' }}>
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="relative w-full h-full" style={{ transform: 'scale(1.15)', transformOrigin: 'center center' }}>
                                     <Image src="/images/heatingboard/hb-product.png" alt="Heating Board" fill className="object-contain" />
                                 </div>
                             </div>
+                            {/* Watermark cover */}
+                            <div className="absolute bottom-0 right-0 w-8 h-8 bg-white" />
                         </div>
 
                         {/* Features + Specs - Grid Aligned */}
