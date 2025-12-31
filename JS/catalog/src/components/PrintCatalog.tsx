@@ -792,98 +792,99 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 11: 울트라보드 (UTB) */}
-            <section className="catalog-page bg-white p-12">
-                <div className="h-full flex flex-col justify-between">
-                    {/* TOP: Header & Product Photo */}
-                    <div className="h-[50%] flex flex-col pt-4">
-                        <div className="flex justify-between items-end mb-12">
-                            <div>
-                                <div className="flex items-center gap-2 mb-2">
-                                    <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.4em] uppercase">Selection 05</span>
-                                    <div className="h-[1px] w-8 bg-[#C9A86C]/40" />
-                                </div>
-                                <h1 className="text-7xl font-black text-[#1a1a2e] tracking-tighter leading-none">ULTRA <span className="text-[#C9A86C]">BOARD</span></h1>
+            {/* PAGE 11: ULTRA BOARD - Art Director's Redesign */}
+            <section className="catalog-page bg-white p-12 overflow-hidden">
+                <div className="h-full flex flex-col">
+
+                    {/* 1. HEADER MODULE */}
+                    <div className="flex justify-between items-baseline mb-10 border-b-2 border-[#1a1a2e] pb-6">
+                        <div>
+                            <div className="flex items-center gap-3 mb-2">
+                                <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.4em] uppercase">Selection 05</span>
+                                <div className="h-[1px] w-10 bg-[#C9A86C]/40" />
                             </div>
-                            <div className="text-right">
-                                <div className="flex items-center gap-4 text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em] mb-2 justify-end">
-                                    <span>High Strength</span>
-                                    <span>•</span>
-                                    <span>Waterproof</span>
-                                    <span>•</span>
-                                    <span>Eco-Friendly</span>
-                                </div>
-                                <div className="text-4xl font-black text-[#C9A86C] mb-4">50T</div>
-                                <div className="flex items-center gap-4 justify-end">
-                                    <span className="text-[9px] text-gray-400 uppercase tracking-widest">Size</span>
-                                    <div className="w-6 h-[1px] bg-[#C9A86C]" />
-                                    <span className="text-[15px] font-bold text-[#1a1a2e] tracking-tight">600 × 3000</span>
-                                    <span className="text-gray-300">/</span>
-                                    <span className="text-[15px] font-bold text-[#1a1a2e] tracking-tight">600 × 2850</span>
-                                </div>
-                            </div>
+                            <h1 className="text-[52px] font-black text-[#1a1a2e] tracking-tighter leading-none">ULTRA BOARD</h1>
                         </div>
-
-                        {/* EDITORIAL ASYMMETRIC CLUSTER - 12 Column Grid */}
-                        <div className="flex-1 flex flex-col mb-12">
-                            <div className="flex gap-4 items-start">
-                                {/* Left: Dominant Hero (7 Columns) */}
-                                <div className="flex-[7] relative aspect-[3/4] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-transform hover:scale-[1.01] duration-500">
-                                    <Image src="/images/ultraboard/ub-grid-v2.png" alt="Ultra Board Hero" fill className="object-contain p-8" priority />
-                                </div>
-
-                                {/* RightStack: Vertical Offset (5 Columns) */}
-                                <div className="flex-[5] flex flex-col gap-4 mt-12"> {/* Offset for Zigzag effect */}
-                                    {/* Top Detail */}
-                                    <div className="relative aspect-square rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm">
-                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail View" fill className="object-contain p-6" priority />
-                                    </div>
-                                    {/* Bottom Detail - Zoom effect for variety */}
-                                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm">
-                                        <div className="absolute inset-0 p-4">
-                                            <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Macro Detail" fill className="object-contain scale-150 transition-transform duration-700" priority />
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="text-right">
+                            <div className="flex items-center gap-4 text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em] mb-3 justify-end">
+                                <span>High Strength</span>
+                                <span>•</span>
+                                <span>Waterproof</span>
+                                <span>•</span>
+                                <span>Eco-Friendly</span>
                             </div>
-
-                            {/* EDITORIAL DESCRIPTION - Aligned to Hero Left */}
-                            <div className="mt-10 max-w-[58%]">
-                                <h3 className="text-[17px] font-black text-[#1a1a2e] tracking-tight mb-2 uppercase italic">
-                                    Ultra Board: Architectural Specification
-                                </h3>
-                                <p className="text-[12px] text-gray-400 font-medium leading-relaxed tracking-tight break-keep">
-                                    울트라보드는 고성능 단열 성능과 정밀한 시공성을 결합한 차세대 건축 보드로, <br />
-                                    극한의 환경에서도 변함없는 내구성과 방수 성능을 제안하는 전문 소재입니다.
-                                </p>
+                            <div className="flex items-center gap-6 justify-end">
+                                <div className="text-3xl font-black text-[#C9A86C]">50T</div>
+                                <div className="flex items-center gap-3">
+                                    <span className="text-[14px] font-bold text-[#1a1a2e] tabular-nums tracking-tighter">600 × 3000</span>
+                                    <span className="text-gray-200">|</span>
+                                    <span className="text-[14px] font-bold text-[#1a1a2e] tabular-nums tracking-tighter">600 × 2850</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* INSTALLATION PORTFOLIO - Added Heading */}
-                    <div className="h-[45%] flex flex-col pt-6">
-                        <div className="flex items-center gap-4 mb-4">
-                            <h2 className="text-[14px] font-bold text-[#1a1a2e] tracking-widest uppercase">Installation Example</h2>
-                            <div className="flex-1 h-[1px] bg-gray-200" />
-                        </div>
+                    {/* 2. PRODUCT GALLERY MODULE (Zigzag Asymmetry) */}
+                    <div className="mb-12">
+                        <div className="flex gap-6 items-start relative">
+                            {/* Left: Hero Image (7/12 columns) */}
+                            <div className="flex-[7] relative aspect-[3/3.8] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm shadow-black/5">
+                                <div className="absolute inset-0 p-8 flex items-center justify-center">
+                                    <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Hero" fill className="object-contain" priority />
+                                </div>
+                                <div className="absolute inset-0 border border-gray-100/50 rounded-xl pointer-events-none" />
+                            </div>
 
-                        <div className="flex-1 flex flex-col gap-4">
-                            {/* Row 1: 1 large centered image */}
-                            <div className="flex justify-center h-[62%]">
-                                <div className="w-full relative rounded-xl overflow-hidden shadow-2xl group">
-                                    <Image src="/images/ultraboard/ub-site-2-new.jpg" alt="UTB Main Installation" fill className="object-cover" priority />
-                                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                                        <span className="text-[9px] font-bold tracking-wider text-[#C9A86C] block mb-0.5 uppercase">Completed Project</span>
-                                        <h4 className="text-xl text-white font-light">모듈러 하우스 건축 현장</h4>
+                            {/* Right: Stacked Images (5/12 columns) with 8mm Offset */}
+                            <div className="flex-[5] flex flex-col gap-6 mt-8">
+                                <div className="relative aspect-[1.1/1] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm shadow-black/5">
+                                    <div className="absolute inset-0 p-6 flex items-center justify-center">
+                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail 1" fill className="object-contain" priority />
+                                    </div>
+                                </div>
+                                <div className="relative aspect-[1.1/1] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm shadow-black/5">
+                                    <div className="absolute inset-0 p-6 flex items-center justify-center">
+                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail 2" fill className="object-contain scale-125" priority />
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Row 2: 4 small images in a row */}
-                            <div className="grid grid-cols-4 gap-4 h-[35%]">
+                        {/* Editorial 2-line Description */}
+                        <div className="mt-8 pl-1">
+                            <h4 className="text-[16px] font-bold text-[#1a1a2e] tracking-tight mb-1">Architectural High-Performance Insulation Board</h4>
+                            <p className="text-[11px] text-gray-500 font-medium leading-relaxed max-w-[550px] break-keep">
+                                울트라보드는 고밀도 압축 코어와 균일한 표면 처리를 통해 최상의 단열 성능과 압도적인 내구성을 제공합니다.<br />
+                                정밀한 규격과 방수 성능으로 상하부 지지력이 중요한 모든 건축 현장에 최적화된 토탈 솔루션입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 3. INSTALLATION EXAMPLE MODULE */}
+                    <div className="flex-1 flex flex-col min-h-0">
+                        <div className="flex items-center gap-4 mb-5">
+                            <h2 className="text-[12px] font-bold text-[#1a1a2e] tracking-[0.2em] uppercase">Installation Example</h2>
+                            <div className="flex-1 h-[1px] bg-gray-100" />
+                        </div>
+
+                        <div className="flex-1 flex flex-col gap-4 min-h-0">
+                            {/* Main Case Photo */}
+                            <div className="relative flex-[1.8] rounded-2xl overflow-hidden shadow-xl border border-gray-50 bg-gray-50">
+                                <Image src="/images/ultraboard/ub-site-2-new.jpg" alt="Installation Hero" fill className="object-cover" priority />
+                                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 pt-12">
+                                    <div className="flex items-center gap-2 mb-1.5">
+                                        <div className="w-1 h-1 rounded-full bg-[#C9A86C]" />
+                                        <span className="text-[10px] font-bold tracking-[0.3em] text-[#C9A86C] uppercase">Case Study</span>
+                                    </div>
+                                    <h4 className="text-2xl text-white font-medium tracking-tight">모듈러 하우스 건축 현장</h4>
+                                </div>
+                            </div>
+
+                            {/* Thumbnails Row */}
+                            <div className="flex-[1] grid grid-cols-4 gap-4">
                                 {['ub-site-1.jpg', 'ub-site-3.jpg', 'ub-site-4.jpg', 'case-1.jpg'].map((img, idx) => (
-                                    <div key={idx} className="relative rounded-lg overflow-hidden border border-gray-100 shadow-sm">
-                                        <Image src={`/images/ultraboard/${img}`} alt={`UTB Detail ${idx}`} fill className="object-cover" />
+                                    <div key={idx} className="relative rounded-xl overflow-hidden border border-gray-100 shadow-sm bg-white">
+                                        <Image src={`/images/ultraboard/${img}`} alt={`UB Case ${idx}`} fill className="object-cover" />
                                     </div>
                                 ))}
                             </div>
