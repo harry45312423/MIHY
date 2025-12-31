@@ -824,37 +824,54 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        {/* PRODUCT HERO SECTION - Seamless & Uncut Layout */}
-                        <div className="flex-1 flex gap-8 mb-8">
-                            {/* Main Grid View - Contain for no cropping, blending with white background */}
-                            <div className="flex-[2.5] relative rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white p-4">
-                                <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Product Grid" fill className="object-contain" priority />
+                        {/* REDESIGN: TOP IMAGE SECTION (Option A - Balanced Gallery) */}
+                        <div className="flex-1 flex gap-6 mb-10">
+                            {/* Card 1: PRODUCT OVERVIEW */}
+                            <div className="flex-1 flex flex-col">
+                                <div className="relative aspect-[4/3] rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden group">
+                                    <div className="absolute inset-0 p-6 flex items-center justify-center">
+                                        <Image src="/images/ultraboard/ub-grid-v2.png" alt="Product Overview" fill className="object-contain p-2" priority />
+                                    </div>
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/2 transition-colors duration-300" />
+                                </div>
+                                <div className="mt-3 flex items-center gap-3">
+                                    <span className="text-[10px] font-bold text-[#C9A86C] tracking-[0.2em] uppercase">Angle 01</span>
+                                    <div className="h-[1px] flex-1 bg-gray-100" />
+                                    <span className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-wider">Product Overview</span>
+                                </div>
                             </div>
 
-                            {/* Side Detail - High concentration on detail */}
-                            <div className="flex-1 relative rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white flex flex-col">
-                                <div className="flex-1 relative p-4">
-                                    <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
+                            {/* Card 2: CROSS SECTION DETAIL */}
+                            <div className="flex-1 flex flex-col">
+                                <div className="relative aspect-[4/3] rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden group">
+                                    <div className="absolute inset-0 p-6 flex items-center justify-center">
+                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Cross Section Detail" fill className="object-contain p-2" priority />
+                                    </div>
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/2 transition-colors duration-300" />
                                 </div>
-                                <div className="bg-gray-50 py-2 text-center border-t border-gray-100">
-                                    <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Cross Section Details</span>
+                                <div className="mt-3 flex items-center gap-3">
+                                    <span className="text-[10px] font-bold text-[#C9A86C] tracking-[0.2em] uppercase">Angle 02</span>
+                                    <div className="h-[1px] flex-1 bg-gray-100" />
+                                    <span className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-wider">Cross Section Detail</span>
                                 </div>
                             </div>
                         </div>
 
-                        {/* PRODUCT FEATURES GRID - Added for Professional Density */}
-                        <div className="grid grid-cols-3 gap-8 border-t border-gray-100 pt-8 pb-4">
+                        {/* PRODUCT FEATURES GRID - Balanced with Top Cards */}
+                        <div className="grid grid-cols-3 gap-10 border-t border-gray-100 pt-10 pb-4">
                             {[
                                 { title: '초고강도 내구성', desc: '고밀도 압축 공법으로 제작되어 일반 단열재 대비 탁월한 내충격성과 하부 지지력을 자랑합니다.' },
                                 { title: '완전 방수 시스템', desc: '습기에 강한 소재로 지하 공간이나 습한 환경에서도 변형 없이 반영구적으로 성능을 유지합니다.' },
                                 { title: '친환경 소재', desc: '유해 물질이 없는 안전한 소재를 사용하여 주거 공간부터 상업 시설까지 안심하고 사용 가능합니다.' }
                             ].map((item, i) => (
                                 <div key={i} className="flex flex-col">
-                                    <div className="flex items-center gap-2 mb-2">
+                                    <h4 className="text-[14px] font-bold text-[#1a1a2e] mb-3 flex items-center gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-[#C9A86C]" />
-                                        <span className="text-[13px] font-bold text-[#1a1a2e]">{item.title}</span>
-                                    </div>
-                                    <p className="text-[11px] text-gray-500 leading-relaxed break-keep font-medium">{item.desc}</p>
+                                        {item.title}
+                                    </h4>
+                                    <p className="text-[11px] text-gray-500 leading-relaxed break-keep font-medium">
+                                        {item.desc}
+                                    </p>
                                 </div>
                             ))}
                         </div>
