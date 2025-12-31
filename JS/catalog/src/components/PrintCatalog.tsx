@@ -822,44 +822,35 @@ export default function PrintCatalog() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* 2. PRODUCT GALLERY MODULE (Zigzag Asymmetry) */}
-                    <div className="mb-12">
-                        <div className="flex gap-6 items-start relative">
-                            {/* Left: Hero Image (7/12 columns) */}
-                            <div className="flex-[7] relative aspect-[3/3.8] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm shadow-black/5">
-                                <div className="absolute inset-0 p-8 flex items-center justify-center">
+                        {/* PRODUCT GALLERY CLUSTER - Tight Fit Zigzag */}
+                        <div className="mb-12">
+                            <div className="flex gap-8 items-start">
+                                {/* Left: Dominant Hero (7/12 columns) - Perfectly Square */}
+                                <div className="flex-[7] relative aspect-square rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-transform duration-500 hover:shadow-md">
                                     <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Hero" fill className="object-contain" priority />
                                 </div>
-                                <div className="absolute inset-0 border border-gray-100/50 rounded-xl pointer-events-none" />
-                            </div>
 
-                            {/* Right: Stacked Images (5/12 columns) with 8mm Offset */}
-                            <div className="flex-[5] flex flex-col gap-6 mt-8">
-                                <div className="relative aspect-[1.1/1] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm shadow-black/5">
-                                    <div className="absolute inset-0 p-6 flex items-center justify-center">
-                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail 1" fill className="object-contain" priority />
+                                {/* Right Stack: Description (Top) + Detail (Bottom) */}
+                                <div className="flex-[5] flex flex-col gap-8">
+                                    {/* TOP SLOT: Editorial Description */}
+                                    <div className="pt-2 pr-4">
+                                        <h4 className="text-[18px] font-black text-[#1a1a2e] tracking-tight mb-2 uppercase italic leading-tight">
+                                            Ultra Board:<br />Architectural Specification
+                                        </h4>
+                                        <p className="text-[11.5px] text-gray-500 font-medium leading-relaxed break-keep">
+                                            고성능 단열과 정밀 시공을 위한 최적의 솔루션.<br />
+                                            극한의 환경에서도 변함없는 내구성을 제안합니다.
+                                        </p>
+                                    </div>
+
+                                    {/* BOTTOM SLOT: Detail Image - Perfectly Square to match */}
+                                    <div className="relative aspect-square rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-transform duration-500 hover:shadow-md">
+                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail View" fill className="object-contain" priority />
                                     </div>
                                 </div>
-                                <div className="relative aspect-[1.1/1] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm shadow-black/5">
-                                    <div className="absolute inset-0 p-6 flex items-center justify-center">
-                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail 2" fill className="object-contain scale-125" priority />
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-
-                        {/* Editorial 2-line Description */}
-                        <div className="mt-8 pl-1">
-                            <h4 className="text-[16px] font-bold text-[#1a1a2e] tracking-tight mb-1">Architectural High-Performance Insulation Board</h4>
-                            <p className="text-[11px] text-gray-500 font-medium leading-relaxed max-w-[550px] break-keep">
-                                울트라보드는 고밀도 압축 코어와 균일한 표면 처리를 통해 최상의 단열 성능과 압도적인 내구성을 제공합니다.<br />
-                                정밀한 규격과 방수 성능으로 상하부 지지력이 중요한 모든 건축 현장에 최적화된 토탈 솔루션입니다.
-                            </p>
                         </div>
                     </div>
-
                     {/* 3. INSTALLATION EXAMPLE MODULE */}
                     <div className="flex-1 flex flex-col min-h-0">
                         <div className="flex items-center gap-4 mb-5">
