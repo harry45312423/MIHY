@@ -475,10 +475,10 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        {/* Right: Interior Image + Spec */}
+                        {/* Right: Product Image */}
                         <div className="w-[60%] flex flex-col">
-                            <div className="flex-1 relative">
-                                <Image src="/images/uvstone-interior/travertine-studio.png" alt="Nude Board Application" fill className="object-cover" />
+                            <div className="flex-1 relative bg-gray-50/30 rounded-xl overflow-hidden">
+                                <Image src="/images/nudeboard/nbb-product.png" alt="Nude Board Product" fill className="object-contain" priority />
                             </div>
                         </div>
                     </div>
@@ -730,23 +730,48 @@ export default function PrintCatalog() {
                         </div>
 
                         {/* Product Photos: Main + Side Detail */}
-                        <div className="flex-1 flex gap-6 pb-4">
-                            <div className="flex-[3] relative overflow-hidden">
+                        <div className="flex-1 flex gap-6 mb-6">
+                            <div className="flex-[3] relative overflow-hidden rounded-xl bg-gray-50/50">
                                 <Image src="/images/ffpanel/ff-product-user-v2.png" alt="FF BOARD Main" fill className="object-contain" priority />
                             </div>
-                            <div className="flex-[2] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
+                            <div className="flex-[2] relative overflow-hidden rounded-xl border border-gray-100 shadow-sm bg-white">
                                 <Image src="/images/ffpanel/ff-side-detail.png" alt="FF BOARD Side Detail" fill className="object-contain" priority />
                             </div>
+                        </div>
+
+                        {/* Product Description Grid */}
+                        <div className="grid grid-cols-3 gap-8 border-t border-gray-100 pt-6">
+                            {[
+                                { title: '준불연 성능', desc: '화재 시 유독가스 발생을 최소화하여 인명과 자산을 안전하게 보호합니다.' },
+                                { title: '고성능 단열', desc: '낮은 열전도율을 가진 심재를 사용하여 냉난방 에너지를 혁신적으로 절감합니다.' },
+                                { title: '간편한 시공', desc: '경량 소재로 이동 및 정밀한 절단이 용이하여 시공 시간을 획기적으로 단축시킵니다.' }
+                            ].map((item, i) => (
+                                <div key={i} className="flex flex-col">
+                                    <span className="text-[13px] font-bold text-[#1a1a2e] mb-1.5 flex items-center gap-2">
+                                        <div className="w-1 h-3 bg-[#C9A86C]" />
+                                        {item.title}
+                                    </span>
+                                    <p className="text-[11px] text-gray-500 leading-relaxed break-keep">{item.desc}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
 
-                    {/* INSTALLATION PORTFOLIO */}
-                    <div className="h-[42%] flex flex-col">
+                    {/* INSTALLATION PORTFOLIO - Enhanced Heading */}
+                    <div className="h-[42%] flex flex-col pt-8">
+                        <div className="flex items-center justify-between mb-4">
+                            <div className="flex items-baseline gap-3">
+                                <h2 className="text-[18px] font-bold text-[#1a1a2e] tracking-tight">시공 사례</h2>
+                                <span className="text-[10px] text-[#C9A86C] font-bold uppercase tracking-widest">Installation Example</span>
+                            </div>
+                            <div className="flex-1 h-[1px] bg-gray-200 ml-6" />
+                        </div>
+
                         <div className="flex-1 flex flex-col gap-4">
                             {/* Row 1: 1 large centered image */}
                             <div className="flex justify-center h-[62%]">
-                                <div className="w-full relative rounded-xl overflow-hidden shadow-2xl">
+                                <div className="w-full relative rounded-xl overflow-hidden shadow-lg border border-gray-100">
                                     <Image src="/images/ffpanel/ff-case-new.jpg" alt="FF Main Installation" fill className="object-cover" priority />
                                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-6">
                                         <span className="text-[11px] text-white font-bold tracking-tight">외벽 단열 시스템 시공 사례</span>
@@ -758,7 +783,7 @@ export default function PrintCatalog() {
                             <div className="grid grid-cols-4 gap-4 h-[35%]">
                                 {['ff-case-3-new.jpg', 'case-1.jpg', 'case-2.jpg', 'case-3.jpg'].map((img, idx) => (
                                     <div key={idx} className="relative rounded-lg overflow-hidden border border-gray-100 shadow-sm">
-                                        <Image src={`/ images / ffpanel / ${img}`} alt={`FF Detail ${idx}`} fill className="object-cover" />
+                                        <Image src={`/images/ffpanel/${img}`} alt={`FF Detail ${idx}`} fill className="object-cover" />
                                     </div>
                                 ))}
                             </div>
@@ -809,8 +834,13 @@ export default function PrintCatalog() {
                         </div>
                     </div>
 
-                    {/* INSTALLATION PORTFOLIO */}
-                    <div className="h-[42%] flex flex-col">
+                    {/* INSTALLATION PORTFOLIO - Added Heading */}
+                    <div className="h-[45%] flex flex-col pt-6">
+                        <div className="flex items-center gap-4 mb-4">
+                            <h2 className="text-[14px] font-bold text-[#1a1a2e] tracking-widest uppercase">Installation Example</h2>
+                            <div className="flex-1 h-[1px] bg-gray-200" />
+                        </div>
+
                         <div className="flex-1 flex flex-col gap-4">
                             {/* Row 1: 1 large centered image */}
                             <div className="flex justify-center h-[62%]">
@@ -827,7 +857,7 @@ export default function PrintCatalog() {
                             <div className="grid grid-cols-4 gap-4 h-[35%]">
                                 {['ub-site-1.jpg', 'ub-site-3.jpg', 'ub-site-4.jpg', 'case-1.jpg'].map((img, idx) => (
                                     <div key={idx} className="relative rounded-lg overflow-hidden border border-gray-100 shadow-sm">
-                                        <Image src={`/ images / ultraboard / ${img}`} alt={`UTB Detail ${idx}`} fill className="object-cover" />
+                                        <Image src={`/images/ultraboard/${img}`} alt={`UTB Detail ${idx}`} fill className="object-cover" />
                                     </div>
                                 ))}
                             </div>
