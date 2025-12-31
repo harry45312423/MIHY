@@ -824,16 +824,38 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        {/* PURE IMAGE SECTION - Minimalist Focus */}
-                        <div className="flex-1 flex gap-12 mb-4">
-                            {/* Left: Main Product Grid (Expanded, No Container) */}
-                            <div className="flex-[3.5] relative">
-                                <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Grid" fill className="object-contain" priority />
+                        {/* EDITORIAL ASYMMETRIC CLUSTER - 12 Column Grid */}
+                        <div className="flex-1 flex flex-col mb-12">
+                            <div className="flex gap-4 items-start">
+                                {/* Left: Dominant Hero (7 Columns) */}
+                                <div className="flex-[7] relative aspect-[3/4] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-transform hover:scale-[1.01] duration-500">
+                                    <Image src="/images/ultraboard/ub-grid-v2.png" alt="Ultra Board Hero" fill className="object-contain p-8" priority />
+                                </div>
+
+                                {/* RightStack: Vertical Offset (5 Columns) */}
+                                <div className="flex-[5] flex flex-col gap-4 mt-12"> {/* Offset for Zigzag effect */}
+                                    {/* Top Detail */}
+                                    <div className="relative aspect-square rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm">
+                                        <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Detail View" fill className="object-contain p-6" priority />
+                                    </div>
+                                    {/* Bottom Detail - Zoom effect for variety */}
+                                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-white border border-gray-100 shadow-sm">
+                                        <div className="absolute inset-0 p-4">
+                                            <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="Macro Detail" fill className="object-contain scale-150 transition-transform duration-700" priority />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            {/* Right: Side Detail (Smaller, No Container) */}
-                            <div className="flex-[1] relative">
-                                <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
+                            {/* EDITORIAL DESCRIPTION - Aligned to Hero Left */}
+                            <div className="mt-10 max-w-[58%]">
+                                <h3 className="text-[17px] font-black text-[#1a1a2e] tracking-tight mb-2 uppercase italic">
+                                    Ultra Board: Architectural Specification
+                                </h3>
+                                <p className="text-[12px] text-gray-400 font-medium leading-relaxed tracking-tight break-keep">
+                                    울트라보드는 고성능 단열 성능과 정밀한 시공성을 결합한 차세대 건축 보드로, <br />
+                                    극한의 환경에서도 변함없는 내구성과 방수 성능을 제안하는 전문 소재입니다.
+                                </p>
                             </div>
                         </div>
                     </div>
