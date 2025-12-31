@@ -825,10 +825,10 @@ export default function PrintCatalog() {
                         </div>
 
                         <div className="flex-1 flex gap-6 pb-4">
-                            <div className="flex-[3] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
+                            <div className="flex-[4] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
                                 <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD Product Grid" fill className="object-cover" priority />
                             </div>
-                            <div className="flex-[2] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
+                            <div className="flex-[1] relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
                                 <Image src="/images/ultraboard/ub-side-detail-v21.png" alt="ULTRA BOARD Side Detail" fill className="object-contain" priority />
                             </div>
                         </div>
