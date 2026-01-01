@@ -84,48 +84,32 @@ export function CoverC() {
                 alignItems: 'center',
                 zIndex: 10,
             }}>
-                {/* Left: Logo + Brand */}
+                {/* Left: Logo (includes JINSUNG text) */}
                 <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '16px',
+                    width: '120px',
+                    height: '80px',
+                    position: 'relative',
                 }}>
-                    <div style={{
-                        width: '60px',
-                        height: '60px',
-                        position: 'relative',
-                    }}>
-                        <Image
-                            src="/images/logo-transparent.png"
-                            alt="Jinsung"
-                            fill
-                            className="object-contain"
-                            style={{ filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.4))' }}
-                        />
-                    </div>
-                    <span style={{
-                        fontSize: '14px',
-                        fontWeight: 700,
-                        letterSpacing: '0.15em',
-                        color: '#FFFFFF',
-                        textTransform: 'uppercase',
-                        textShadow: '0 1px 3px rgba(0,0,0,0.3)',
-                    }}>
-                        Jinsung
-                    </span>
+                    <Image
+                        src="/images/logo-gold.png"
+                        alt="Jinsung"
+                        fill
+                        className="object-contain"
+                        style={{
+                            filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.4))',
+                            objectPosition: 'left center',
+                        }}
+                    />
                 </div>
 
                 {/* Right: Year Badge */}
-                <div style={{
-                    background: 'rgba(255,255,255,0.95)',
-                    padding: '8px 16px',
-                    borderRadius: '2px',
-                }}>
+                <div>
                     <span style={{
-                        fontSize: '11px',
+                        fontSize: '12px',
                         fontWeight: 600,
-                        letterSpacing: '0.1em',
-                        color: '#1a1a2e',
+                        letterSpacing: '0.12em',
+                        color: '#FFFFFF',
+                        textShadow: '0 2px 6px rgba(0,0,0,0.5)',
                     }}>
                         2026 — 2027
                     </span>
