@@ -194,7 +194,7 @@ export function CoverC() {
                         fontWeight: 700,
                         color: '#1a1a2e',
                     }}>
-                        주식회사 진성종합무역
+                        진성종합무역 주식회사
                     </span>
                     <span style={{
                         fontSize: '10px',
