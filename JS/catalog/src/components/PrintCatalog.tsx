@@ -3,88 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Globe } from 'lucide-react';
+import { CoverC } from './CoverVariants';
 
 export default function PrintCatalog() {
     return (
         <div className="print-catalog">
-            {/* PAGE 1: COVER - VARIANT 01: ARCHITECT'S GRID */}
-            <section className="catalog-page bg-white flex relative overflow-hidden h-[1123px] w-[794px]">
-                {/* Left Column: 35% - Typography & Negative Space */}
-                <div className="w-[35%] h-full flex flex-col justify-between p-12 z-20 bg-white relative">
-                    {/* Top: Minimal Brand Identifier */}
-                    <div className="flex flex-col items-start pt-4">
-                        <div className="w-8 h-8 relative mb-4 opacity-90">
-                            <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
-                        </div>
-                        <span className="text-[10px] font-bold tracking-[0.4em] text-[#1A1A28] uppercase ml-1">
-                            Jinsung
-                        </span>
-                    </div>
-
-                    {/* Middle: Intentional Negative Space (Empty) */}
-
-                    {/* Bottom: Title Block & Info */}
-                    <div className="flex flex-col pb-8">
-                        {/* Season Label */}
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-6 h-[1px] bg-[#C9A86C]" />
-                            <span className="text-[9px] tracking-[0.3em] text-[#C9A86C] font-bold uppercase">
-                                2026 — 2027 Season
-                            </span>
-                        </div>
-
-                        {/* Main Title Group */}
-                        <div className="flex flex-col mb-8">
-                            <h1 className="flex flex-col leading-[0.9]">
-                                <span className="text-[52px] font-medium tracking-tight text-[#1A1A28] mb-1">
-                                    진성
-                                </span>
-                                <span className="text-[56px] font-black tracking-tighter text-[#1A1A28]">
-                                    CATALOG
-                                </span>
-                            </h1>
-                        </div>
-
-                        {/* Divider Line */}
-                        <div className="w-full h-[1px] bg-gray-100 mb-6" />
-
-                        {/* Descriptor & URL */}
-                        <div className="space-y-4">
-                            <div className="flex flex-col gap-1">
-                                <div className="text-[11px] font-bold text-[#1A1A28] tracking-tight">
-                                    진성종합무역 주식회사
-                                </div>
-                                <div className="text-[8px] text-[#8B7355] font-medium tracking-[0.1em] uppercase">
-                                    Premium Interior Materials<br />& Global Trading
-                                </div>
-                            </div>
-                            <div className="pt-2">
-                                <span className="text-[9px] text-[#C9A86C] font-bold tracking-widest uppercase">www.jinsungco.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Right Column: 65% - Full Bleed Image */}
-                <div className="w-[65%] h-full relative">
-                    <Image
-                        src="/images/uvstone-interior/travertine-beige-main.jpg"
-                        alt="Travertine Beige Premium Interior"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    {/* Subtle Gradient Overlay for depth */}
-                    <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black/10 to-transparent pointer-events-none mix-blend-multiply" />
-
-                    {/* Optional: 'Material Art' Tag/Floating Element */}
-                    <div className="absolute bottom-12 right-12 text-right z-10">
-                        <p className="text-white/80 text-[10px] tracking-[0.2em] uppercase font-light drop-shadow-md">
-                            Architectural<br />Collection
-                        </p>
-                    </div>
-                </div>
-            </section>
+            {/* PAGE 1: COVER - TYPOGRAPHIC PREMIUM (COVER C) */}
+            <CoverC />
 
             {/* PAGE 2: COMPANY INTRODUCTION */}
             <section className="catalog-page bg-[#1a1a2e] text-white p-12">
@@ -376,108 +301,102 @@ export default function PrintCatalog() {
                         <div className="w-full h-[2px] bg-[#1a1a2e] mt-3" />
                     </div>
 
-                    {/* HEATING BOARD MODULE */}
-                    <div className="pb-5 mb-5 border-b-[2px] border-gray-200" style={{ height: '42%' }}>
+                    {/* HEATING BOARD MODULE - Expanded Bottom Breathing Room */}
+                    <div className="pb-12 mb-12" style={{ height: '46%' }}>
 
-                        {/* Title Row - Baseline Aligned */}
-                        <div className="flex items-baseline justify-between mb-4">
-                            <div className="flex items-baseline gap-3">
-                                <h2 className="text-[24px] font-bold text-[#1a1a2e] tracking-[-0.01em]">온수보드</h2>
-                                <span className="text-[15px] font-light text-gray-400 tracking-[0.02em]">Heating Board</span>
-                            </div>
-                            <span className="text-[10px] font-bold text-[#C9A86C] uppercase tracking-[0.15em]">Energy Saving Dry Heating System</span>
+                        {/* Title Row - Simplified */}
+                        <div className="flex items-baseline mb-4">
+                            <h2 className="text-[24px] font-bold text-[#1a1a2e] tracking-[-0.01em]">온수보드</h2>
+                            <span className="text-[15px] font-light text-gray-400 tracking-[0.02em] ml-3">Heating Board</span>
                         </div>
 
-                        {/* Hero Image - Clean Framing */}
-                        <div className="relative w-full overflow-hidden mb-4" style={{ height: '55%' }}>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="relative w-full h-full" style={{ transform: 'scale(1.15)', transformOrigin: 'center center' }}>
-                                    <Image src="/images/heatingboard/hb-product.png" alt="Heating Board" fill className="object-contain" />
+                        {/* Hero Image Block with Specification on Top Right */}
+                        <div className="flex flex-col mb-6" style={{ height: '65%' }}>
+                            <div className="flex justify-end mb-4 pr-1">
+                                <div className="flex items-center gap-4">
+                                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Dimension</span>
+                                    <div className="w-8 h-[1px] bg-[#C9A86C]" />
+                                    <span className="text-[17px] font-black text-[#1a1a2e] tabular-nums tracking-tight">25 × 600 × 1200 mm</span>
                                 </div>
                             </div>
-                            {/* Watermark cover */}
-                            <div className="absolute bottom-0 right-0 w-8 h-8 bg-white" />
+                            <div className="relative flex-1">
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="relative w-full h-full" style={{ transform: 'scale(1.1)', transformOrigin: 'center center' }}>
+                                        <Image src="/images/heatingboard/hb-product.png" alt="Heating Board" fill className="object-contain" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        {/* Features + Specs - Grid Aligned */}
+                        {/* Features - Premium 2×2 Portfolio Grid */}
                         <div className="flex">
-                            {/* Features - 2×2 Grid */}
-                            <div className="flex-1 pr-8">
-                                <div className="grid grid-cols-2 gap-x-10 gap-y-4">
+                            <div className="flex-1">
+                                <div className="grid grid-cols-2 gap-x-16 gap-y-8">
                                     {[
                                         { title: '에너지 절감', desc: '특수 알루미늄 코팅으로 난방비 절감' },
                                         { title: '초고속 난방', desc: '뛰어난 열 전도율로 즉각 온도 상승' },
                                         { title: '고강도 지지력', desc: '꿀렁임 없는 견고한 바닥 지지' },
                                         { title: '간편 시공', desc: '건식 공법으로 공기 단축' }
                                     ].map((item, i) => (
-                                        <div key={i} className="flex flex-col">
-                                            <span className="text-[13px] font-bold text-[#1a1a2e] mb-1 tracking-[-0.01em]">{item.title}</span>
-                                            <span className="text-[11px] text-gray-600 leading-[1.5]">{item.desc}</span>
+                                        <div key={i} className="flex items-start gap-4">
+                                            <div className="w-1.5 h-4 bg-[#C9A86C] shrink-0 mt-0.5" />
+                                            <div className="flex flex-col">
+                                                <span className="text-[15px] font-black text-[#1a1a2e] mb-1.5 tracking-tight">{item.title}</span>
+                                                <span className="text-[12px] text-gray-500 leading-relaxed break-keep font-medium">{item.desc}</span>
+                                            </div>
                                         </div>
                                     ))}
-                                </div>
-                            </div>
-
-                            {/* Specs - Right Aligned Block */}
-                            <div className="w-[180px] border-l-[2px] border-[#1a1a2e] pl-6">
-                                <div className="flex flex-col gap-4">
-                                    <div className="flex flex-col">
-                                        <span className="text-[10px] font-bold text-[#C9A86C] uppercase tracking-[0.1em] mb-1">규격</span>
-                                        <span className="text-[13px] font-semibold text-[#1a1a2e] tabular-nums">25 × 600 × 1200 mm</span>
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <span className="text-[10px] font-bold text-[#C9A86C] uppercase tracking-[0.1em] mb-1">강도</span>
-                                        <span className="text-[13px] font-semibold text-[#1a1a2e] tabular-nums">800 ~ 1000 kPa</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* NUDE BOARD MODULE */}
-                    <div className="flex-1 flex gap-8">
+                    {/* NUDE BOARD MODULE - Shifted Down with Stronger Divider */}
+                    <div className="flex-1 flex gap-8 pt-12 border-t-[3px] border-[#1a1a2e]">
 
                         {/* Left: Content - Same Master Left Edge */}
                         <div className="w-[40%] flex flex-col">
 
-                            {/* Title - Baseline Aligned */}
-                            <div className="mb-4">
-                                <div className="flex items-baseline gap-3 mb-1">
-                                    <h2 className="text-[24px] font-bold text-[#1a1a2e] tracking-[-0.01em]">누드보드</h2>
-                                    <span className="text-[15px] font-light text-gray-400 tracking-[0.02em]">Nude Board</span>
-                                </div>
-                                <div className="flex flex-col gap-3 mt-1">
-                                    <span className="text-[10px] font-bold text-[#C9A86C] uppercase tracking-[0.15em]">온수보드 위 안정판</span>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <span className="text-[9px] text-gray-400 uppercase tracking-widest font-bold">Size</span>
-                                        <div className="w-6 h-[1px] bg-[#C9A86C]" />
-                                        <span className="text-[14px] font-black text-[#1a1a2e] tabular-nums tracking-tight">4.5 × 570 × 970 mm</span>
-                                    </div>
-                                </div>
+                            {/* Title Row - Simplified */}
+                            <div className="flex items-baseline mb-8">
+                                <h2 className="text-[24px] font-bold text-[#1a1a2e] tracking-[-0.01em]">누드보드</h2>
+                                <span className="text-[15px] font-light text-gray-400 tracking-[0.02em] ml-3">Nude Board</span>
                             </div>
 
-                            {/* Features - Consistent Bullet System */}
-                            <div className="flex flex-col gap-3 mb-5">
+                            {/* Tagline */}
+                            <div className="mb-6">
+                                <span className="text-[10px] font-bold text-[#C9A86C] uppercase tracking-[0.15em]">온수보드 위 안정판</span>
+                            </div>
+
+                            {/* Features - Premium Vertical List */}
+                            <div className="flex flex-col gap-6 mb-5">
                                 {[
                                     { title: '안정성 확보', desc: '온수보드와 바닥재 사이의 견고한 지지층 역할' },
                                     { title: '내구성 강화', desc: '장기간 사용에도 변형 없는 고밀도 소재' },
                                     { title: '열 전도 최적화', desc: '온수 난방 효율을 극대화하는 열 전달 성능' },
                                     { title: '간편 시공', desc: '바닥재 하부에 간편하게 설치 가능' }
                                 ].map((item, i) => (
-                                    <div key={i} className="flex items-start gap-3">
-                                        <div className="w-[6px] h-[2px] bg-[#C9A86C] mt-[9px] shrink-0" />
+                                    <div key={i} className="flex items-start gap-4">
+                                        <div className="w-1.5 h-4 bg-[#C9A86C] shrink-0 mt-0.5" />
                                         <div className="flex flex-col">
-                                            <span className="text-[13px] font-bold text-[#1a1a2e] mb-1 tracking-[-0.01em]">{item.title}</span>
-                                            <span className="text-[11px] text-gray-600 leading-[1.5]">{item.desc}</span>
+                                            <span className="text-[14px] font-bold text-[#1a1a2e] mb-1.5 tracking-tight">{item.title}</span>
+                                            <span className="text-[11.5px] text-gray-400 font-medium leading-relaxed">{item.desc}</span>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
-                        {/* Right: Product Image */}
-                        <div className="w-[60%] flex flex-col">
-                            <div className="flex-1 relative bg-gray-50/30 rounded-xl overflow-hidden">
+                        {/* Right: Product Image with Dimension on Top Right */}
+                        <div className="w-[60%] flex flex-col pt-1">
+                            <div className="flex justify-end mb-4 pr-1">
+                                <div className="flex items-center gap-4">
+                                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Dimension</span>
+                                    <div className="w-8 h-[1px] bg-[#C9A86C]" />
+                                    <span className="text-[17px] font-black text-[#1a1a2e] tabular-nums tracking-tight">4.5 × 570 × 970 mm</span>
+                                </div>
+                            </div>
+                            <div className="flex-1 relative">
                                 <Image src="/images/nudeboard/nbb-product.png" alt="Nude Board Product" fill className="object-contain" priority />
                             </div>
                         </div>
@@ -729,12 +648,12 @@ export default function PrintCatalog() {
                             </div>
                         </div>
 
-                        {/* Product Photos: Main + Side Detail */}
-                        <div className="flex-1 flex gap-6 mb-6">
-                            <div className="flex-[3] relative overflow-hidden rounded-xl bg-gray-50/50">
+                        {/* Product Photos: Main + Side Detail - Frameless */}
+                        <div className="flex-1 flex gap-10 mb-6">
+                            <div className="flex-[3.5] relative">
                                 <Image src="/images/ffpanel/ff-product-user-v2.png" alt="FF BOARD Main" fill className="object-contain" priority />
                             </div>
-                            <div className="flex-[2] relative overflow-hidden rounded-xl border border-gray-100 shadow-sm bg-white">
+                            <div className="flex-[2] relative">
                                 <Image src="/images/ffpanel/ff-side-detail.png" alt="FF BOARD Side Detail" fill className="object-contain" priority />
                             </div>
                         </div>
@@ -768,21 +687,18 @@ export default function PrintCatalog() {
                             <div className="flex-1 h-[1px] bg-gray-200 ml-6" />
                         </div>
 
-                        <div className="flex-1 flex flex-col gap-4">
-                            {/* Row 1: 1 large centered image */}
-                            <div className="flex justify-center h-[62%]">
-                                <div className="w-full relative rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div className="flex-1 flex flex-col gap-6">
+                            {/* Row 1: 1 large centered image - Frameless */}
+                            <div className="flex justify-center h-[65%]">
+                                <div className="w-full relative">
                                     <Image src="/images/ffpanel/ff-case-new.jpg" alt="FF Main Installation" fill className="object-cover" priority />
-                                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-6">
-                                        <span className="text-[11px] text-white font-bold tracking-tight">외벽 단열 시스템 시공 사례</span>
-                                    </div>
                                 </div>
                             </div>
 
-                            {/* Row 2: 4 small images in a row */}
-                            <div className="grid grid-cols-4 gap-4 h-[35%]">
-                                {['ff-case-3-new.jpg', 'case-1.jpg', 'case-2.jpg', 'case-3.jpg'].map((img, idx) => (
-                                    <div key={idx} className="relative rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+                            {/* Row 2: 4 small images in a row - Frameless */}
+                            <div className="grid grid-cols-4 gap-6 h-[32%]">
+                                {['ff-case-3-new.jpg', 'case-4.jpg', 'case-2.jpg', 'case-3.jpg'].map((img, idx) => (
+                                    <div key={idx} className="relative">
                                         <Image src={`/images/ffpanel/${img}`} alt={`FF Detail ${idx}`} fill className="object-cover" />
                                     </div>
                                 ))}
@@ -824,67 +740,80 @@ export default function PrintCatalog() {
                     </div>
 
                     {/* 2. PRODUCT GALLERY & SPEC MODULE */}
-                    <div className="flex gap-12 items-start mb-12">
-                        {/* Left: Product Hero (7/12) */}
-                        <div className="flex-[7] relative aspect-[4/4.2] rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm p-6 group">
-                            <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD" fill className="object-contain transition-transform duration-700 group-hover:scale-105" priority />
+                    <div className="flex gap-16 items-start mb-8">
+                        {/* Left: Product Hero (7/12) - Frameless Style */}
+                        <div className="flex-[7] relative aspect-square">
+                            <Image src="/images/ultraboard/ub-grid-v2.png" alt="ULTRA BOARD" fill className="object-contain" priority />
                         </div>
 
                         {/* Right: Technical Specification (5/12) */}
                         <div className="flex-[5] flex flex-col justify-center self-stretch py-2">
                             <div className="mb-10">
-                                <h3 className="text-[22px] font-black text-[#1a1a2e] tracking-tight mb-5 leading-tight break-keep border-l-[5px] border-[#C9A86C] pl-5 uppercase italic">
+                                <h3 className="text-[28px] font-black text-[#1a1a2e] tracking-tight mb-5 leading-tight break-keep border-l-[6px] border-[#C9A86C] pl-6 uppercase italic">
                                     건축용 프리미엄<br />고성능 단열 보드
                                 </h3>
-                                <p className="text-[12.5px] text-gray-500 font-medium leading-relaxed break-keep">
-                                    울트라보드는 최첨단 압축 기술로 탄생한 고성능 건축 소재입니다. 극한의 하중을 견디는 강력한 지지력과 친환경적인 구성 요소로 프리미엄 주거 및 상업 공간의 새로운 기준을 제시합니다.
+                                <p className="text-[14px] text-gray-500 font-medium leading-relaxed break-keep">
+                                    울트라보드는 최첨단 고밀도 압축 테크놀로지로 완성된 차세대 건축 소재입니다. 극한의 하중 지지력과 친환경성을 실현하여 프리미엄 공간의 새로운 기준을 제시합니다.
                                 </p>
                             </div>
 
-                            <div className="space-y-8">
+                            <div className="space-y-8 pl-1">
                                 {[
-                                    { title: '압도적인 구조적 강도', desc: '고밀도 압축 코어로 상하부의 강력한 지지력과 뛰어난 내충격성을 확보했습니다.' },
-                                    { title: '지속 가능한 친환경 소재', desc: '유해 물질이 없는 안전한 성분만을 사용하여 주거 환경의 품질을 높였습니다.' }
+                                    { title: '압도적인 구조적 강도', desc: '고강도 압축 코어 시스템으로 강력한 부하 지지력과 내충격성을 확보했습니다.' },
+                                    { title: '지속 가능한 친환경 소재', desc: '유해 물질 ZERO 구성을 통해 주거 환경의 가치와 안전성을 확보합니다.' }
                                 ].map((item, i) => (
-                                    <div key={i} className="flex flex-col">
-                                        <div className="flex items-center gap-3 mb-2">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-[#C9A86C]" />
-                                            <span className="text-[12px] font-black text-[#1a1a2e] tracking-tight uppercase leading-none">{item.title}</span>
+                                    <div key={i} className="flex flex-col group relative">
+                                        <div className="flex items-center gap-4 mb-2">
+                                            <div className="w-2 h-2 rounded-full bg-[#C9A86C]" />
+                                            <span className="text-[13px] font-black text-[#1a1a2e] tracking-tight uppercase leading-none">{item.title}</span>
                                         </div>
-                                        <p className="text-[11px] text-gray-400 font-medium leading-snug pl-4.5">{item.desc}</p>
+                                        <p className="text-[12px] text-gray-400 font-medium leading-relaxed pl-6">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
                         </div>
                     </div>
 
-                    {/* 3. INSTALLATION PORTFOLIO MODULE */}
-                    <div className="flex-1 flex flex-col min-h-0 pt-6 border-t border-gray-100">
-                        <div className="flex items-center gap-4 mb-6">
-                            <h2 className="text-[13px] font-extrabold text-[#1a1a2e] tracking-[0.25em] uppercase">Installation Example</h2>
+                    {/* 3. INSTALLATION PORTFOLIO MODULE - Expanded to fill vertical space */}
+                    <div className="flex-1 flex flex-col min-h-0 pt-4 border-t border-gray-100">
+                        <div className="flex items-center gap-4 mb-8">
+                            <h2 className="text-[13px] font-extrabold text-[#1a1a2e] tracking-[0.25em] uppercase leading-none">Installation Example</h2>
                             <div className="flex-1 h-[0.5px] bg-gray-200" />
                         </div>
 
-                        <div className="flex-1 flex flex-col gap-5 min-h-0">
-                            {/* Main Case Photo */}
-                            <div className="relative flex-[2] rounded-3xl overflow-hidden shadow-2xl group border border-gray-100">
-                                <Image src="/images/ultraboard/ub-site-2-new.jpg" alt="Installation Example" fill className="object-cover transition-transform duration-1000 group-hover:scale-110" priority />
-                                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-8 pt-20">
-                                    <div className="flex items-center gap-2 mb-2">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-[#C9A86C]" />
-                                        <span className="text-[11px] font-extrabold tracking-[0.3em] text-[#C9A86C] uppercase">Modular Project</span>
-                                    </div>
-                                    <h4 className="text-3xl text-white font-medium tracking-tight">모듈러 하우스 건축 현장</h4>
-                                </div>
+                        {/* 5-Photo Golden Ratio Designer Grid - Frameless Portfolio */}
+                        <div className="flex-1 grid grid-cols-12 grid-rows-2 gap-4 min-h-0">
+                            {/* 01. Main Hero Case (8/12) */}
+                            <div className="col-span-8 row-span-1 relative">
+                                {/* Pro Color Unification Layer: Subtle tint to normalize wall patches */}
+                                <div className="absolute inset-0 z-[5] bg-[#f2ede0]/15 mix-blend-soft-light pointer-events-none" />
+                                <Image
+                                    src="/images/ultraboard/ub-site-1.jpg"
+                                    alt="Nano Banana Pro Installation"
+                                    fill
+                                    className="object-cover object-[center_45%] brightness-[1.03] contrast-[1.02] saturate-[0.95] sepia-[0.05]"
+                                    priority
+                                />
                             </div>
 
-                            {/* Thumbnails Row */}
-                            <div className="grid grid-cols-4 gap-5 flex-1">
-                                {['ub-site-1.jpg', 'ub-site-3.jpg', 'ub-site-4.jpg', 'case-1.jpg'].map((img, idx) => (
-                                    <div key={idx} className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-gray-50 group">
-                                        <Image src={`/images/ultraboard/${img}`} alt={`Case Detail ${idx}`} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
-                                    </div>
-                                ))}
+                            {/* 02. Vertical Detail (4/12) */}
+                            <div className="col-span-4 row-span-1 relative">
+                                <Image src="/images/ultraboard/ub-site-2-new.jpg" alt="Detail 1" fill className="object-cover" />
+                            </div>
+
+                            {/* 03. Square Detail (4/12) */}
+                            <div className="col-span-4 row-span-1 relative">
+                                <Image src="/images/ultraboard/ub-site-3.jpg" alt="Detail 2" fill className="object-cover" />
+                            </div>
+
+                            {/* 04. Lower Wide (4/12) */}
+                            <div className="col-span-4 row-span-1 relative">
+                                <Image src="/images/ultraboard/ub-site-4.jpg" alt="Detail 3" fill className="object-cover" />
+                            </div>
+
+                            {/* 05. Highlight Case (4/12) */}
+                            <div className="col-span-4 row-span-1 relative">
+                                <Image src="/images/ultraboard/case-1.jpg" alt="Detail 4" fill className="object-cover" />
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Print-Ready Static Catalog
+This project is optimized for high-quality PDF export and physical printing. All pages are designed with fixed editorial layouts, premium typography, and static imagery to ensure consistency across print media. Web-specific animations and interactive hover effects have been intentionally excluded or removed to focus on the final printed result.
+
 ## Getting Started
 
 First, run the development server:
