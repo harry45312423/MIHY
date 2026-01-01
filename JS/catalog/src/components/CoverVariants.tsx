@@ -194,7 +194,7 @@ export function CoverC() {
                         fontWeight: 700,
                         color: '#1a1a2e',
                     }}>
-                        진성종합무역 주식회사
+                        주식회사 진성종합무역
                     </span>
                     <span style={{
                         fontSize: '10px',
@@ -206,6 +206,23 @@ export function CoverC() {
                         www.jinsungco.com
                     </span>
                 </div>
+            </div>
+
+            {/* Small QR Code - Bottom Right Corner */}
+            <div style={{
+                position: 'absolute',
+                bottom: '56px',
+                right: '48px',
+                width: '40px',
+                height: '40px',
+                opacity: 0.8,
+            }}>
+                <Image
+                    src="/images/qr-jinsung.png"
+                    alt="QR Code"
+                    fill
+                    className="object-contain"
+                />
             </div>
 
             {/* ========================================

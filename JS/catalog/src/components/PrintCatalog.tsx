@@ -196,7 +196,7 @@ export default function PrintCatalog() {
                 <div className="h-full flex flex-col">
                     <div className="mb-3">
                         <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">01</div>
-                        <h2 className="text-xl font-light text-[#1a1a2e]">SPC Flooring</h2>
+                        <h2 className="text-xl font-light text-[#1a1a2e]">SPC Stone Flooring</h2>
                         <p className="text-[10px] text-gray-500">Standard Collection - 7T x 150 x 900 mm</p>
                     </div>
 
@@ -244,7 +244,7 @@ export default function PrintCatalog() {
                 <div className="h-full flex flex-col">
                     <div className="mb-3">
                         <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">01</div>
-                        <h2 className="text-xl font-light text-[#1a1a2e]">SPC Flooring</h2>
+                        <h2 className="text-xl font-light text-[#1a1a2e]">SPC Stone Flooring</h2>
                         <p className="text-[10px] text-gray-500">Wide Collection - 7T x 310 x 870 mm</p>
                     </div>
 
@@ -255,10 +255,10 @@ export default function PrintCatalog() {
 
                     <div className="flex-1 grid grid-cols-2 grid-rows-4 gap-3 min-h-0">
                         {[
-                            { id: 'K747', name: '샴페인화이트', product: '/images/spc/K747_product.jpg', example: '/images/spc/ChampagneWhite_example_pic.png' },
-                            { id: 'K717S', name: '그리지오', product: '/images/spc/Grigio_product.jpg', example: '/images/spc/Grigio_example_pic.png' },
-                            { id: 'K740', name: '샤넬그레이', product: '/images/spc/Chanelgrey_Product.jpg', example: '/images/spc/ChanelGrey_example_pic.png' },
-                            { id: 'COCO', name: '코코베이지', product: '/images/spc/cocobaige_product.jpg', example: '/images/spc/CocoBeige_example_pic.png' },
+                            { id: 'K747', name: '샴페인화이트', nameEn: 'Champagne White', product: '/images/spc/K747_product.jpg', example: '/images/spc/ChampagneWhite_example_pic.png' },
+                            { id: 'K717S', name: '그리지오', nameEn: 'Grigio', product: '/images/spc/Grigio_product.jpg', example: '/images/spc/Grigio_example_pic.png' },
+                            { id: 'K740', name: '샤넬그레이', nameEn: 'Chanel Grey', product: '/images/spc/Chanelgrey_Product.jpg', example: '/images/spc/ChanelGrey_example_pic.png' },
+                            { id: 'COCO', name: '코코베이지', nameEn: 'Coco Beige', product: '/images/spc/cocobaige_product.jpg', example: '/images/spc/CocoBeige_example_pic.png' },
                         ].map((item) => (
                             <React.Fragment key={item.id}>
                                 {/* Product Sample - Overlay Style */}
@@ -268,6 +268,7 @@ export default function PrintCatalog() {
                                         <div className="flex justify-between items-end">
                                             <div>
                                                 <span className="text-[11px] font-bold text-white mr-1.5">{item.name}</span>
+                                                <span className="text-[9px] font-medium text-[#C9A86C]">{item.nameEn}</span>
                                             </div>
                                             <span className="text-[8px] text-white/70">7T</span>
                                         </div>
@@ -278,6 +279,7 @@ export default function PrintCatalog() {
                                     <Image src={item.example} alt={`${item.id} Installation`} fill priority className="object-cover" />
                                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/20 to-transparent px-3 py-2">
                                         <span className="text-[9px] text-white/90 font-medium">{item.name}</span>
+                                        <span className="text-[8px] font-medium text-[#C9A86C] ml-1">{item.nameEn}</span>
                                     </div>
                                 </div>
                             </React.Fragment>
@@ -322,7 +324,7 @@ export default function PrintCatalog() {
                             <div className="relative flex-1">
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="relative w-full h-full" style={{ transform: 'scale(1.1)', transformOrigin: 'center center' }}>
-                                        <Image src="/images/heatingboard/hb-product.png" alt="Heating Board" fill className="object-contain" />
+                                        <Image src="/images/heatingboard/hb-product-new.png" alt="Heating Board" fill className="object-contain" />
                                     </div>
                                 </div>
                             </div>
