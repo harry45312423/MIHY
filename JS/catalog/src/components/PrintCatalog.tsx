@@ -306,168 +306,169 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 4: BOARDS - POLISHED EDITORIAL LAYOUT */}
+            {/* PAGE 4: BOARDS - CLEAN EDITORIAL LAYOUT */}
             <section className="catalog-page bg-white p-0">
-                <div className="h-full flex flex-col" style={{ padding: '40px 48px 40px 48px' }}>
+                <div className="h-full flex flex-col" style={{ padding: '18mm 20mm 14mm 20mm' }}>
 
-                    {/* HEADER - Premium Editorial Style */}
-                    <div className="mb-8">
-                        <div className="flex items-center gap-5 mb-2">
-                            <span className="text-[10px] font-bold text-gray-400 tracking-[0.25em] uppercase">Selection 02</span>
+                    {/* ===== A. SYSTEM HEADER ===== */}
+                    <div className="mb-5">
+                        <div className="flex items-center gap-4 mb-2">
+                            <span className="text-[8px] font-bold text-[#9a9aaa] tracking-[0.25em] uppercase">Selection 02</span>
                             <div className="w-8 h-[1px] bg-[#C9A86C]" />
-                            <span className="text-[9px] font-medium text-gray-400 tracking-[0.15em] uppercase">Heating & Finishing</span>
+                            <span className="text-[8px] font-medium text-[#9a9aaa] tracking-[0.15em] uppercase">Heating & Finishing</span>
                         </div>
-                        <h1 className="text-[42px] font-black text-[#1a1a2e] tracking-[-0.03em] leading-none mb-1">BOARDS</h1>
-                        <div className="w-full h-[1px] bg-gray-100 mt-4" />
+                        <h1 className="text-[36px] font-black text-[#1a1a2e] tracking-[-0.02em] leading-none">BOARDS</h1>
+                        <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 mt-3" />
                     </div>
 
-                    {/* HEATING BOARD SECTION */}
-                    <div className="flex-1 flex flex-col justify-center mb-4">
-                        <div className="flex gap-8">
-                            {/* Left: Info Column (45%) */}
-                            <div className="w-[45%] flex flex-col pt-2">
-                                {/* Title Group */}
-                                <div className="mb-4">
-                                    <h2 className="text-[36px] font-bold text-[#1a1a2e] leading-[1.1] mb-1">온수보드</h2>
-                                    <span className="text-[13px] font-semibold text-[#C9A86C] tracking-wide uppercase">Heating Board</span>
+                    {/* ===== B. 온수보드 SECTION ===== */}
+                    <div className="flex-1 flex flex-col">
+                        {/* Title */}
+                        <div className="mb-3">
+                            <h2 className="text-[28px] font-bold text-[#1a1a2e] leading-[1.05] mb-[2px]">온수보드</h2>
+                            <span className="text-[10px] font-medium text-[#C9A86C] tracking-[0.15em] uppercase">Heating Board</span>
+                        </div>
+
+                        {/* Product Image - Full Width, Horizontal */}
+                        <div className="relative w-full h-[220px] mb-4">
+                            <Image
+                                src="/images/heatingboard/hb-product-editorial.png"
+                                alt="온수보드 제품"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </div>
+
+                        {/* Content Row: Description (Left) + Installation (Right) */}
+                        <div className="flex gap-6 flex-1">
+                            {/* Left: Description */}
+                            <div className="w-[55%] flex flex-col">
+                                {/* Value Proposition with Gold Accent */}
+                                <div className="mb-4 pl-3 border-l-2 border-[#C9A86C]">
+                                    <p className="text-[12px] text-[#3a3a4a] leading-[1.6] font-medium">
+                                        알루미늄 코팅 기술로 열 전도율을 극대화한<br />
+                                        <span className="text-[#1a1a2e] font-bold">고효율 난방 시스템의 핵심 소재</span>
+                                    </p>
                                 </div>
 
-                                {/* Product Tagline */}
-                                <p className="text-[13px] text-gray-600 leading-relaxed mb-6">
-                                    알루미늄 코팅 기술로 열 전도율을 극대화한<br />
-                                    고효율 난방 시스템의 핵심 소재입니다.
-                                </p>
-
-                                {/* Modern Spec Grid */}
-                                <div className="grid grid-cols-2 gap-y-3 gap-x-6 mb-6 pb-6 border-b border-gray-100">
-                                    {[
-                                        { l: '규격', v: '600 × 1200' },
-                                        { l: '두께', v: '25T' },
-                                        { l: '표면', v: '알루미늄 코팅' },
-                                        { l: '시공', v: '건식 공법' }
-                                    ].map((spec, i) => (
-                                        <div key={i} className="flex flex-col">
-                                            <span className="text-[10px] text-gray-400 font-bold mb-[2px] uppercase tracking-wide">{spec.l}</span>
-                                            <span className="text-[14px] font-bold text-[#1a1a2e]">{spec.v}</span>
-                                        </div>
-                                    ))}
+                                {/* Spec Block - Premium Card Style */}
+                                <div className="bg-[#FAFAF8] rounded-md p-3 mb-4">
+                                    <div className="grid grid-cols-2 gap-3">
+                                        {[
+                                            { l: '규격', v: '600 × 1200 mm' },
+                                            { l: '두께', v: '25T (25 mm)' },
+                                            { l: '표면', v: '알루미늄 코팅' },
+                                            { l: '시공', v: '건식 공법' }
+                                        ].map((spec, i) => (
+                                            <div key={i} className="flex flex-col">
+                                                <span className="text-[8px] text-[#9a9aaa] font-bold mb-1 uppercase tracking-[0.1em]">{spec.l}</span>
+                                                <span className="text-[12px] font-bold text-[#1a1a2e]">{spec.v}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
 
-                                {/* Benefits */}
-                                <div className="flex flex-col gap-4">
+                                {/* Benefits - Simple Style (matching Nude Board) */}
+                                <div className="flex flex-wrap gap-x-6 gap-y-2">
                                     {[
-                                        { title: '에너지 절감', desc: '알루미늄 코팅으로 열 손실 저감' },
-                                        { title: '초고속 난방', desc: '높은 열 전달로 빠른 온도 상승' },
-                                        { title: '간편 시공', desc: '건식 공법으로 공기 단축' }
+                                        { title: '에너지 절감', desc: '알루미늄 코팅으로 열 손실 최소화' },
+                                        { title: '초고속 난방', desc: '높은 열 전도율로 빠른 온도 상승' },
+                                        { title: '간편 시공', desc: '건식 공법으로 공사 기간 단축' }
                                     ].map((item, i) => (
                                         <div key={i} className="flex flex-col">
-                                            <div className="flex items-center gap-2 mb-1">
-                                                <div className="w-1.5 h-1.5 bg-[#C9A86C] rounded-full" />
-                                                <span className="text-[14px] font-bold text-[#1a1a2e]">{item.title}</span>
+                                            <div className="flex items-center gap-[5px] mb-[2px]">
+                                                <div className="w-[5px] h-[5px] bg-[#C9A86C] rounded-full" />
+                                                <span className="text-[11px] font-bold text-[#1a1a2e]">{item.title}</span>
                                             </div>
-                                            <p className="text-[12px] text-gray-500 pl-4 leading-relaxed">{item.desc}</p>
+                                            <p className="text-[9px] text-[#6a6a7a] pl-[10px] leading-[1.3]">{item.desc}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            {/* Right: Visual Column (55%) */}
-                            <div className="w-[55%] flex flex-col gap-5">
-                                {/* Main Hero Image */}
-                                <div className="relative flex-1 min-h-[180px]">
+                            {/* Right: Installation Photo */}
+                            <div className="w-[45%] flex flex-col">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <span className="text-[7px] font-bold text-[#1a1a2e] tracking-[0.2em] uppercase">Installation</span>
+                                    <div className="flex-1 h-[1px] bg-[#C9A86C] opacity-40" />
+                                </div>
+                                <div className="relative w-full aspect-[4/3] bg-[#FAFAF8] rounded-sm overflow-hidden">
                                     <Image
-                                        src="/images/heatingboard/hb-product-editorial.png"
-                                        alt="Heating Board Hero"
+                                        src="/images/heatingboard/hb-installation.png"
+                                        alt="온수보드 설치 현장"
                                         fill
-                                        className="object-contain object-right-bottom"
-                                        priority
+                                        className="object-cover"
+                                        style={{ filter: 'saturate(0.95) contrast(0.98)' }}
                                     />
                                 </div>
-
-                                {/* Installation Strip */}
-                                <div>
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <span className="text-[10px] font-bold text-[#1a1a2e] tracking-[0.2em] uppercase">Installation</span>
-                                        <div className="flex-1 h-[1px] bg-[#C9A86C] opacity-50" />
-                                    </div>
-                                    <div className="relative w-full aspect-[16/9] bg-gray-50 rounded-sm overflow-hidden">
-                                        <Image
-                                            src="/images/heatingboard/hb-installation.png"
-                                            alt="Installation"
-                                            fill
-                                            className="object-cover"
-                                            style={{ filter: 'saturate(0.9) contrast(0.95)' }}
-                                        />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Gold Divider */}
-                    <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 my-5" />
+                    {/* ===== DIVIDER ===== */}
+                    <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 my-4" />
 
-                    {/* NUDE BOARD SECTION */}
-                    <div className="flex-1 flex flex-col justify-center">
-                        <div className="flex gap-8 items-center">
-                            {/* Left: Info */}
-                            <div className="w-[45%] flex flex-col">
-                                <div className="mb-4">
-                                    <h2 className="text-[36px] font-bold text-[#1a1a2e] leading-[1.1] mb-1">누드보드</h2>
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-[13px] font-semibold text-[#C9A86C] tracking-wide uppercase">Nude Board</span>
-                                        <div className="w-4 h-[1px] bg-gray-300" />
-                                        <span className="text-[11px] text-gray-500">온수보드 위 안정판</span>
+                    {/* ===== C. 누드보드 SECTION (Option) ===== */}
+                    <div className="flex-1 flex gap-8 items-center">
+                        {/* Left: Description */}
+                        <div className="w-[55%] flex flex-col">
+                            {/* Option Label + Title */}
+                            <div className="flex items-center gap-2 mb-2">
+                                <span className="text-[7px] font-bold text-[#C9A86C] tracking-[0.15em] uppercase px-2 py-[2px] border border-[#C9A86C] rounded-sm">
+                                    Option
+                                </span>
+                                <span className="text-[8px] text-[#9a9aaa]">Reinforcement Layer</span>
+                            </div>
+
+                            <div className="mb-4">
+                                <h3 className="text-[28px] font-bold text-[#1a1a2e] leading-[1.1] mb-[2px]">누드보드</h3>
+                                <span className="text-[11px] font-medium text-[#C9A86C] tracking-[0.12em] uppercase">Nude Board</span>
+                            </div>
+
+                            {/* Description */}
+                            <p className="text-[14px] text-[#4a4a5a] leading-[1.5] mb-5">
+                                온수보드 위에 설치하여 바닥재를 안정적으로 지지하는 고밀도 보강판
+                            </p>
+
+                            {/* Inline Specs */}
+                            <div className="flex items-center gap-6 mb-5 pb-4 border-b border-gray-200">
+                                <div className="flex items-center gap-3">
+                                    <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">규격</span>
+                                    <span className="text-[15px] font-bold text-[#1a1a2e]">570 × 970 mm</span>
+                                </div>
+                                <div className="w-[1px] h-4 bg-gray-300" />
+                                <div className="flex items-center gap-3">
+                                    <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">두께</span>
+                                    <span className="text-[15px] font-bold text-[#1a1a2e]">4.5T</span>
+                                </div>
+                            </div>
+
+                            {/* Benefits */}
+                            <div className="flex gap-6">
+                                {[
+                                    { title: '지지력 강화', desc: '바닥재 사이 견고한 지지층 형성' },
+                                    { title: '변형 방지', desc: '고밀도 소재로 장기 사용 시 변형 없음' }
+                                ].map((item, i) => (
+                                    <div key={i} className="flex flex-col">
+                                        <div className="flex items-center gap-[4px] mb-[1px]">
+                                            <div className="w-[4px] h-[4px] bg-[#C9A86C] rounded-full" />
+                                            <span className="text-[11px] font-bold text-[#1a1a2e]">{item.title}</span>
+                                        </div>
+                                        <p className="text-[9px] text-[#6a6a7a] pl-[12px] leading-[1.3]">{item.desc}</p>
                                     </div>
-                                </div>
-
-                                {/* Product Tagline */}
-                                <p className="text-[13px] text-gray-600 leading-relaxed mb-6">
-                                    온수보드 위에 설치되어 바닥재를 견고하게<br />
-                                    지지하는 고밀도 안정판입니다.
-                                </p>
-
-                                {/* Specs */}
-                                <div className="flex gap-10 mb-6 pb-6 border-b border-gray-100">
-                                    {[
-                                        { l: '규격', v: '570 × 970' },
-                                        { l: '두께', v: '4.5T' },
-                                    ].map((spec, i) => (
-                                        <div key={i} className="flex flex-col">
-                                            <span className="text-[10px] text-gray-400 font-bold mb-[2px] uppercase tracking-wide">{spec.l}</span>
-                                            <span className="text-[14px] font-bold text-[#1a1a2e]">{spec.v}</span>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Benefits */}
-                                <div className="flex flex-col gap-4">
-                                    {[
-                                        { title: '안정성 확보', desc: '바닥재 사이 견고한 지지층' },
-                                        { title: '내구성 강화', desc: '변형 없는 고밀도 소재' },
-                                        { title: '간편 시공', desc: '하부에 간편하게 설치' }
-                                    ].map((item, i) => (
-                                        <div key={i} className="flex flex-col">
-                                            <div className="flex items-center gap-2 mb-1">
-                                                <div className="w-1.5 h-1.5 bg-[#C9A86C] rounded-full" />
-                                                <span className="text-[14px] font-bold text-[#1a1a2e]">{item.title}</span>
-                                            </div>
-                                            <p className="text-[12px] text-gray-500 pl-4 leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    ))}
-                                </div>
+                                ))}
                             </div>
+                        </div>
 
-                            {/* Right: Product Image */}
-                            <div className="w-[55%] relative h-[300px]">
-                                <Image
-                                    src="/images/nudeboard/nbb-product.png"
-                                    alt="Nude Board"
-                                    fill
-                                    className="object-contain object-right"
-                                    priority
-                                />
-                            </div>
+                        {/* Right: Product Image */}
+                        <div className="w-[50%] relative h-[300px]">
+                            <Image
+                                src="/images/nudeboard/nbb-product.png"
+                                alt="누드보드 제품"
+                                fill
+                                className="object-contain"
+                            />
                         </div>
                     </div>
                 </div>
