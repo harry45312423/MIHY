@@ -11,44 +11,7 @@ export default function PrintCatalog() {
             {/* PAGE 1: COVER - TYPOGRAPHIC PREMIUM (COVER C) */}
             <CoverC />
 
-            {/* PAGE 2: COMPANY INTRODUCTION */}
-            <section className="catalog-page bg-[#1a1a2e] text-white p-12">
-                <div className="h-full flex flex-col justify-center max-w-4xl mx-auto">
-                    <div className="mb-12">
-                        <div className="text-[#C9A86C] text-[12px] tracking-[0.4em] mb-4 uppercase font-bold">About Jinsung</div>
-                        <h2 className="text-5xl font-light mb-8 leading-tight">
-                            인테리어 자재의 <br />
-                            <span className="font-semibold text-[#C9A86C]">새로운 혁신을 만듭니다</span>
-                        </h2>
-                        <div className="w-20 h-1 bg-[#C9A86C] mb-8" />
-                        <p className="text-xl text-gray-300 leading-relaxed break-keep">
-                            진성(JINSUNG)은 고품질 인테리어 자재 전문 기업으로서, <br />
-                            끊임없는 기술 혁신과 디자인 연구를 통해 주거 및 상업 공간의 새로운 가치를 창조합니다. <br />
-                            우리는 단순한 자재 공급을 넘어, 공간의 철학을 완성하는 파트너가 되겠습니다.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-8 mt-12">
-                        <div className="space-y-2">
-                            <div className="text-4xl font-bold text-[#C9A86C]">01</div>
-                            <div className="text-lg font-bold">최고의 품질</div>
-                            <p className="text-sm text-gray-400">국제 표준을 준수하는 엄격한 품질 관리 시스템</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="text-4xl font-bold text-[#C9A86C]">02</div>
-                            <div className="text-lg font-bold">혁신적 디자인</div>
-                            <p className="text-sm text-gray-400">트렌드를 앞서가는 패턴과 감각적인 질감 구현</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="text-4xl font-bold text-[#C9A86C]">03</div>
-                            <div className="text-lg font-bold">지속 가능성</div>
-                            <p className="text-sm text-gray-400">자연과 인간을 생각하는 친환경 소재 사용</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* PAGE 3: SPC FLOORING - REFINED EDITORIAL LAYOUT */}
+            {/* PAGE 2: SPC FLOORING - REFINED EDITORIAL LAYOUT */}
             <section className="catalog-page bg-white p-12">
                 <div className="h-full flex flex-col pt-4">
                     {/* 1. HEADER */}
@@ -888,6 +851,60 @@ export default function PrintCatalog() {
                             <div className="col-span-4 row-span-1 relative">
                                 <Image src="/images/ultraboard/case-1.jpg" alt="Detail 4" fill className="object-cover" />
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* PAGE 11: ABOUT JINSUNG - PREMIUM EDITORIAL LAYOUT */}
+            <section className="catalog-page bg-white p-0">
+                <div className="h-full flex flex-col" style={{ padding: '80px 56px 56px 56px' }}>
+
+                    {/* Section Label */}
+                    <div className="mb-16">
+                        <span className="text-[11px] font-bold text-[#C9A86C] tracking-[0.35em] uppercase">
+                            A B O U T &nbsp; J I N S U N G
+                        </span>
+                    </div>
+
+                    {/* Main Headline */}
+                    <div className="mb-auto">
+                        <h1 className="text-[52px] font-bold text-[#C9A86C] leading-[1.15] tracking-[-0.01em] mb-6">
+                            새로운 혁신을 만듭니다
+                        </h1>
+
+                        {/* Accent Line */}
+                        <div className="w-16 h-[3px] bg-[#C9A86C] mb-10" />
+
+                        {/* Description */}
+                        <div className="max-w-xl">
+                            <p className="text-[15px] text-[#5a5a6a] leading-[1.9] break-keep">
+                                진성(JINSUNG)은 고품질 인테리어 자재 전문 기업으로서,<br />
+                                끊임없는 기술 혁신과 디자인 연구를 통해 주거 및 상업 공간의 새로운 가치를 창조합니다.<br />
+                                우리는 단순한 자재 공급을 넘어, 공간의 철학을 완성하는 파트너가 되겠습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 3 Pillars */}
+                    <div className="grid grid-cols-3 gap-12 mt-16">
+                        <div>
+                            <span className="text-[56px] font-bold text-[#C9A86C] leading-none block mb-4">01</span>
+                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6]">
+                                국제 표준을 준수하는 엄격한 품질 관리 시스템
+                            </p>
+                        </div>
+                        <div>
+                            <span className="text-[56px] font-bold text-[#C9A86C] leading-none block mb-4">02</span>
+                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6]">
+                                트렌드를 앞서가는 패턴과 감각적인 질감 구현
+                            </p>
+                        </div>
+                        <div>
+                            <span className="text-[56px] font-bold text-[#C9A86C] leading-none block mb-4">03</span>
+                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6]">
+                                자연과 인간을 생각하는 친환경 소재 사용
+                            </p>
                         </div>
                     </div>
                 </div>
