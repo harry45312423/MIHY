@@ -18,7 +18,7 @@ export default function PrintCatalog() {
                     <div className="flex justify-between items-end border-b-[4px] border-[#1a1a2e] pb-6 mb-8">
                         <div>
                             <span className="text-[#C9A86C] text-[10px] font-bold tracking-[0.3em] uppercase block mb-1">
-                                Product Series 01
+                                Selection 01
                             </span>
                             <h1 className="text-5xl font-black text-[#1a1a2e] tracking-tighter leading-none mb-1">
                                 SPC 돌마루
@@ -48,7 +48,7 @@ export default function PrintCatalog() {
                                 <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-4">Key Features</h3>
                                 <div className="flex flex-col gap-4">
                                     {[
-                                        { id: '01', title: '친환경 인증', desc: '유해물질 미검출로 입증된 인체에 무해한 건강한 바닥재' },
+                                        { id: '01', title: '친환경 인증', desc: '유해물질 검사를 통과한 안전한 바닥재' },
                                         { id: '02', title: '친환경 클릭 시공', desc: '접착제 없이 결합하는 Unilin Click 시스템' },
                                         { id: '03', title: '생활방수, 습기에 강함', desc: '습기에 의한 변형이나 뒤틀림이 없는 뛰어난 내수성' }
                                     ].map((feat) => (
@@ -154,12 +154,12 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 4: SPC - Standard Collection */}
+            {/* PAGE 3: SPC - Standard Collection */}
             <section className="catalog-page bg-white p-6">
                 <div className="h-full flex flex-col">
                     <div className="flex justify-between items-end mb-3">
                         <div>
-                            <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">01</div>
+                            <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">Standard Collection</div>
                             <h2 className="text-xl font-light text-[#1a1a2e]">SPC Stone Flooring</h2>
                         </div>
                         <div className="flex items-center gap-3 self-end">
@@ -211,12 +211,12 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 5: SPC - Wide Collection */}
+            {/* PAGE 4: SPC - Wide Collection */}
             <section className="catalog-page bg-white p-6">
                 <div className="h-full flex flex-col">
                     <div className="flex justify-between items-end mb-3">
                         <div>
-                            <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">01</div>
+                            <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">Wide Collection</div>
                             <h2 className="text-xl font-light text-[#1a1a2e]">SPC Stone Flooring</h2>
                         </div>
                         <div className="flex items-center gap-3 self-end">
@@ -269,7 +269,7 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 4: BOARDS - CLEAN EDITORIAL LAYOUT */}
+            {/* PAGE 5: BOARDS - CLEAN EDITORIAL LAYOUT */}
             <section className="catalog-page bg-white p-0">
                 <div className="h-full flex flex-col" style={{ padding: '18mm 20mm 14mm 20mm' }}>
 
@@ -309,7 +309,7 @@ export default function PrintCatalog() {
                             <div className="w-[55%] flex flex-col">
                                 {/* Value Proposition with Gold Accent */}
                                 <div className="mb-4 pl-3 border-l-2 border-[#C9A86C]">
-                                    <p className="text-[12px] text-[#3a3a4a] leading-[1.6] font-medium">
+                                    <p className="text-[12px] text-[#3a3a4a] leading-[1.6] font-medium break-keep">
                                         알루미늄 코팅 기술로 열 전도율을 극대화한<br />
                                         <span className="text-[#1a1a2e] font-bold">고효율 난방 시스템의 핵심 소재</span>
                                     </p>
@@ -344,7 +344,7 @@ export default function PrintCatalog() {
                                                 <div className="w-[5px] h-[5px] bg-[#C9A86C] rounded-full" />
                                                 <span className="text-[11px] font-bold text-[#1a1a2e]">{item.title}</span>
                                             </div>
-                                            <p className="text-[9px] text-[#6a6a7a] pl-[10px] leading-[1.3]">{item.desc}</p>
+                                            <p className="text-[9px] text-[#6a6a7a] pl-[10px] leading-[1.3] break-keep">{item.desc}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -370,14 +370,14 @@ export default function PrintCatalog() {
                     </div>
 
                     {/* ===== DIVIDER ===== */}
-                    <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 my-4" />
+                    <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 my-3" />
 
                     {/* ===== C. 누드보드 SECTION (Option) ===== */}
-                    <div className="flex-1 flex gap-8 items-center">
+                    <div className="flex-1 flex gap-8 items-start pt-6">
                         {/* Left: Description */}
                         <div className="w-[55%] flex flex-col">
                             {/* Option Label + Title */}
-                            <div className="flex items-center gap-2 mb-2">
+                            <div className="flex items-center gap-2 mb-1">
                                 <span className="text-[7px] font-bold text-[#C9A86C] tracking-[0.15em] uppercase px-2 py-[2px] border border-[#C9A86C] rounded-sm">
                                     Option
                                 </span>
@@ -389,21 +389,26 @@ export default function PrintCatalog() {
                                 <span className="text-[11px] font-medium text-[#C9A86C] tracking-[0.12em] uppercase">Nude Board</span>
                             </div>
 
-                            {/* Description */}
-                            <p className="text-[14px] text-[#4a4a5a] leading-[1.5] mb-5">
-                                온수보드 위에 설치하여 바닥재를 안정적으로 지지하는 고밀도 보강판
-                            </p>
+                            {/* Value Proposition with Gold Accent */}
+                            <div className="mb-4 pl-3 border-l-2 border-[#C9A86C]">
+                                <p className="text-[12px] text-[#3a3a4a] leading-[1.6] font-medium break-keep">
+                                    온수보드 위에 설치하여 바닥재를 안정적으로 지지하는<br />
+                                    <span className="text-[#1a1a2e] font-bold">고밀도 보강판의 핵심 소재</span>
+                                </p>
+                            </div>
 
-                            {/* Inline Specs */}
-                            <div className="flex items-center gap-6 mb-5 pb-4 border-b border-gray-200">
-                                <div className="flex items-center gap-3">
-                                    <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">규격</span>
-                                    <span className="text-[15px] font-bold text-[#1a1a2e]">570 × 970 mm</span>
-                                </div>
-                                <div className="w-[1px] h-4 bg-gray-300" />
-                                <div className="flex items-center gap-3">
-                                    <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">두께</span>
-                                    <span className="text-[15px] font-bold text-[#1a1a2e]">4.5T</span>
+                            {/* Spec Block - Premium Card Style (matching Heating Board) */}
+                            <div className="bg-[#FAFAF8] rounded-md p-3 mb-4">
+                                <div className="flex items-center gap-6">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">규격</span>
+                                        <span className="text-[15px] font-bold text-[#1a1a2e]">570 × 970 mm</span>
+                                    </div>
+                                    <div className="w-[1px] h-4 bg-gray-300" />
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">두께</span>
+                                        <span className="text-[15px] font-bold text-[#1a1a2e]">4.5T</span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -418,7 +423,7 @@ export default function PrintCatalog() {
                                             <div className="w-[4px] h-[4px] bg-[#C9A86C] rounded-full" />
                                             <span className="text-[11px] font-bold text-[#1a1a2e]">{item.title}</span>
                                         </div>
-                                        <p className="text-[9px] text-[#6a6a7a] pl-[12px] leading-[1.3]">{item.desc}</p>
+                                        <p className="text-[9px] text-[#6a6a7a] pl-[12px] leading-[1.3] break-keep">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
@@ -437,7 +442,7 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 7: UV STONE WALL - BALANCED PROPORTIONS (Option A: 5/7) */}
+            {/* PAGE 6: UV STONE WALL - BALANCED PROPORTIONS (Option A: 5/7) */}
             <section className="catalog-page bg-white p-0">
                 <div className="h-full flex flex-col" style={{ padding: '44px 44px 32px 44px' }}>
 
@@ -456,7 +461,7 @@ export default function PrintCatalog() {
                     <div className="flex gap-8" style={{ height: '55%' }}>
 
                         {/* Left Column (42% = 5 cols): Features + Tech Data */}
-                        <div className="w-[42%] flex flex-col justify-between">
+                        <div className="w-[42%] flex flex-col justify-evenly">
 
                             {/* Key Features */}
                             <div>
@@ -474,7 +479,7 @@ export default function PrintCatalog() {
                                             <span className="text-[11px] font-black text-[#C9A86C] tabular-nums">{feat.id}</span>
                                             <div className="flex flex-col">
                                                 <h4 className="text-[14px] font-bold text-[#1a1a2e] mb-1 tracking-[-0.01em]">{feat.title}</h4>
-                                                <p className="text-[11px] text-gray-600 leading-[1.6]">{feat.desc}</p>
+                                                <p className="text-[11px] text-gray-600 leading-[1.6] break-keep">{feat.desc}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -576,11 +581,11 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 8: UV STONE 라인업 1 */}
+            {/* PAGE 7: UV STONE 라인업 1 */}
             <section className="catalog-page bg-white p-6">
                 <div className="h-full flex flex-col">
                     <div className="mb-3">
-                        <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">02</div>
+                        <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">Product Lineup 1/2</div>
                         <h2 className="text-xl font-light text-[#1a1a2e]">UV Stone 벽체</h2>
                         <p className="text-[10px] text-gray-500">Natural Pattern - UV Coating - 580 x 2400 mm</p>
                     </div>
@@ -607,6 +612,9 @@ export default function PrintCatalog() {
                             <div key={item.name + '-example'} className="flex flex-col h-full">
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
                                     <Image src={item.example} alt={`${item.name} 시공사례`} fill priority className="object-cover" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-3 py-2">
+                                        <span className="text-[10px] text-white font-medium">{item.name}</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -614,11 +622,11 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 9: UV STONE 라인업 2 */}
+            {/* PAGE 8: UV STONE 라인업 2 */}
             <section className="catalog-page bg-white p-6">
                 <div className="h-full flex flex-col">
                     <div className="mb-3">
-                        <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">02</div>
+                        <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">Product Lineup 2/2</div>
                         <h2 className="text-xl font-light text-[#1a1a2e]">UV Stone 벽체</h2>
                         <p className="text-[10px] text-gray-500">Natural Pattern - UV Coating - 580 x 2400 mm</p>
                     </div>
@@ -645,6 +653,9 @@ export default function PrintCatalog() {
                             <div key={item.name + '-example'} className="flex flex-col h-full">
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
                                     <Image src={item.example} alt={`${item.name} 시공사례`} fill priority className="object-cover" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-3 py-2">
+                                        <span className="text-[10px] text-white font-medium">{item.name}</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -652,12 +663,12 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 10: FF 보드 (FFB) */}
+            {/* PAGE 9: FF 보드 (FFB) */}
             <section className="catalog-page bg-white p-12">
                 <div className="h-full flex flex-col justify-between">
                     {/* TOP: Header & Product Photo */}
-                    <div className="h-[50%] flex flex-col pt-4">
-                        <div className="flex justify-between items-end mb-12">
+                    <div className="h-[45%] flex flex-col pt-2">
+                        <div className="flex justify-between items-end mb-8">
                             <div>
                                 <div className="text-xs text-[#C9A86C] tracking-[0.3em] mb-2 uppercase font-bold">Selection 04</div>
                                 <h1 className="text-7xl font-black text-[#1a1a2e] tracking-tighter leading-none">FF <span className="text-[#C9A86C]">BOARD</span></h1>
@@ -682,17 +693,17 @@ export default function PrintCatalog() {
                         </div>
 
                         {/* Product Photos: Main + Side Detail - Frameless */}
-                        <div className="flex-1 flex gap-10 mb-6">
-                            <div className="flex-[3.5] relative">
+                        <div className="flex-1 flex gap-8 mb-4">
+                            <div className="flex-[4] relative">
                                 <Image src="/images/ffpanel/ff-product-user-v2.png" alt="FF BOARD Main" fill className="object-contain" priority />
                             </div>
-                            <div className="flex-[2] relative">
-                                <Image src="/images/ffpanel/ff-side-detail.png" alt="FF BOARD Side Detail" fill className="object-contain" priority />
+                            <div className="flex-[1.5] relative">
+                                <Image src="/images/ffpanel/ff-side-detail.png" alt="FF BOARD Side Detail" fill className="object-contain object-bottom" priority />
                             </div>
                         </div>
 
                         {/* Product Description Grid */}
-                        <div className="grid grid-cols-3 gap-8 border-t border-gray-100 pt-6">
+                        <div className="grid grid-cols-3 gap-8 border-t border-gray-100 pt-4">
                             {[
                                 { title: '준불연 성능', desc: '화재 시 유독가스 발생을 최소화하여 인명과 자산을 안전하게 보호합니다.' },
                                 { title: '고성능 단열', desc: '낮은 열전도율을 가진 심재를 사용하여 냉난방 에너지를 혁신적으로 절감합니다.' },
@@ -711,7 +722,7 @@ export default function PrintCatalog() {
 
 
                     {/* INSTALLATION PORTFOLIO - Enhanced Heading */}
-                    <div className="h-[42%] flex flex-col pt-8">
+                    <div className="h-[50%] flex flex-col pt-4">
                         <div className="flex items-center justify-between mb-4">
                             <div className="flex items-baseline gap-3">
                                 <h2 className="text-[18px] font-bold text-[#1a1a2e] tracking-tight">시공 사례</h2>
@@ -741,7 +752,7 @@ export default function PrintCatalog() {
                 </div>
             </section>
 
-            {/* PAGE 11: 울트라보드 (ULTRA BOARD) */}
+            {/* PAGE 10: 울트라보드 (ULTRA BOARD) */}
             <section className="catalog-page bg-white p-12 overflow-hidden">
                 <div className="h-full flex flex-col">
 
@@ -796,7 +807,7 @@ export default function PrintCatalog() {
                             <div className="space-y-8 pl-1">
                                 {[
                                     { title: '압도적인 구조적 강도', desc: '고강도 압축 코어 시스템으로 강력한 부하 지지력과 내충격성을 확보했습니다.' },
-                                    { title: '지속 가능한 친환경 소재', desc: '유해 물질 ZERO 구성을 통해 주거 환경의 가치와 안전성을 확보합니다.' }
+                                    { title: '지속 가능한 친환경 소재', desc: '유해 물질 저감 설계를 통해 쾌적한 주거 환경 조성에 기여합니다.' }
                                 ].map((item, i) => (
                                     <div key={i} className="flex flex-col group relative">
                                         <div className="flex items-center gap-4 mb-2">
@@ -890,19 +901,19 @@ export default function PrintCatalog() {
                     <div className="grid grid-cols-3 gap-12 mt-16">
                         <div>
                             <span className="text-[56px] font-bold text-[#C9A86C] leading-none block mb-4">01</span>
-                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6]">
+                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6] break-keep">
                                 국제 표준을 준수하는 엄격한 품질 관리 시스템
                             </p>
                         </div>
                         <div>
                             <span className="text-[56px] font-bold text-[#C9A86C] leading-none block mb-4">02</span>
-                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6]">
+                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6] break-keep">
                                 트렌드를 앞서가는 패턴과 감각적인 질감 구현
                             </p>
                         </div>
                         <div>
                             <span className="text-[56px] font-bold text-[#C9A86C] leading-none block mb-4">03</span>
-                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6]">
+                            <p className="text-[13px] text-[#4a4a5a] leading-[1.6] break-keep">
                                 자연과 인간을 생각하는 친환경 소재 사용
                             </p>
                         </div>
@@ -926,8 +937,8 @@ export default function PrintCatalog() {
                         </div>
                         <div className="flex flex-col items-center space-y-5 w-full border-t border-gray-100 pt-8">
                             <div className="flex flex-col items-center mb-2">
-                                <div className="w-24 h-24 p-0.5 border border-gray-100 rounded-xl bg-white shadow-sm mb-2 overflow-hidden">
-                                    <Image src="/images/qr-jinsung.png" alt="QR" width={96} height={96} />
+                                <div className="w-20 h-20 mb-3">
+                                    <Image src="/images/qr-jinsung.png" alt="QR" width={80} height={80} />
                                 </div>
                                 <div className="flex items-center gap-2"><Globe className="w-3.5 h-3.5 text-[#C9A86C]" /><div className="text-[12px] font-semibold text-[#1a1a2e]">www.jinsungco.com</div></div>
                             </div>
@@ -940,7 +951,7 @@ export default function PrintCatalog() {
                     </div>
                 </div>
                 <div className="h-[25%] w-full grid grid-cols-3 gap-1 p-1 bg-gray-50">
-                    {['/images/uvstone-interior/lime-antique.png', '/images/uvstone-interior/gray-antique.png', '/images/ultraboard/case-1.jpg'].map((src, idx) => (
+                    {['/images/backcover/backcover-living.png', '/images/backcover/backcover-bathroom.png', '/images/uvstone-interior/travertine-beige-interior.png'].map((src, idx) => (
                         <div key={idx} className="relative w-full h-full"><Image src={src} alt={`Back Bottom ${idx}`} fill className="object-cover" /></div>
                     ))}
                 </div>
