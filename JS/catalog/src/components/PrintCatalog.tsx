@@ -33,8 +33,8 @@ export default function PrintCatalog() {
                                 <div className="w-8 h-[1px] bg-[#C9A86C]" />
                             </div>
                             <div className="flex flex-col items-end">
-                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">150 x 900, 7T</span>
-                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">310 x 870, 7T</span>
+                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">150 x 900, (6+1)T</span>
+                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">310 x 870, (6+1)T</span>
                             </div>
                         </div>
                     </div>
@@ -48,9 +48,9 @@ export default function PrintCatalog() {
                                 <h3 className="text-[11px] font-bold text-[#1a1a2e] uppercase tracking-[0.2em] mb-4">Key Features</h3>
                                 <div className="flex flex-col gap-4">
                                     {[
-                                        { id: '01', title: '친환경 인증', desc: '유해물질 검사를 통과한 안전한 바닥재' },
+                                        { id: '01', title: '친환경 인증 (27709)', desc: '유해물질 검사를 통과한 안전한 바닥재' },
                                         { id: '02', title: '친환경 클릭 시공', desc: '접착제 없이 결합하는 Unilin Click 시스템' },
-                                        { id: '03', title: '생활방수, 습기에 강함', desc: '습기에 의한 변형이나 뒤틀림이 없는 뛰어난 내수성' }
+                                        { id: '03', title: '뛰어난 열전도율', desc: '빠른 열전달로 난방비 절감 효과' }
                                     ].map((feat) => (
                                         <div key={feat.id} className="flex flex-col border-l-2 border-[#C9A86C] pl-4">
                                             <span className="text-[10px] text-[#C9A86C] font-bold mb-0.5">{feat.id}</span>
@@ -109,7 +109,7 @@ export default function PrintCatalog() {
                                 <div className="grid grid-cols-3 gap-6">
                                     {[
                                         { img: '1727056621369.png', label: '유해물질 미검출', sub: 'Non-Hazardous' },
-                                        { img: '1727056630493.png', label: '친환경 인증', sub: 'Eco-Label' },
+                                        { img: '1727056694350.png', label: '친환경 인증', sub: 'Eco-Label' },
                                         { img: 'kc-certificate.png', label: 'KC 인증마크', sub: 'Korea Cert.' }
                                     ].map((cert, idx) => (
                                         <div key={idx} className="flex flex-col items-center text-center">
@@ -127,7 +127,7 @@ export default function PrintCatalog() {
                             <div className="w-[58%] pl-10 border-l border-gray-200">
                                 <div className="flex justify-between items-baseline mb-5">
                                     <h3 className="text-[10px] font-bold text-[#1a1a2e] uppercase tracking-[0.15em]">Pattern Lineup</h3>
-                                    <span className="text-[8px] text-gray-400">8 Variants / 7T 돌마루 컬렉션</span>
+                                    <span className="text-[8px] text-gray-400">8 Variants / (6+1)T 돌마루 컬렉션</span>
                                 </div>
                                 <div className="grid grid-cols-4 gap-x-4 gap-y-4">
                                     {[
@@ -166,8 +166,8 @@ export default function PrintCatalog() {
                             <span className="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Size</span>
                             <div className="w-6 h-[1px] bg-[#C9A86C]" />
                             <div className="flex flex-col items-end">
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 150 x 900, 7T</p>
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 310 x 870, 7T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 150 x 900, (6+1)T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 310 x 870, (6+1)T</p>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ export default function PrintCatalog() {
                                                 <span className="text-[11px] font-bold text-white mr-1.5">{item.id}</span>
                                                 <span className="text-[9px] text-[#C9A86C] font-medium tracking-tight">{item.name}</span>
                                             </div>
-                                            <span className="text-[8px] text-white/70">7T</span>
+                                            <span className="text-[8px] text-white/70">(6+1)T</span>
                                         </div>
                                     </div>
                                 </div>
@@ -223,8 +223,8 @@ export default function PrintCatalog() {
                             <span className="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Size</span>
                             <div className="w-6 h-[1px] bg-[#C9A86C]" />
                             <div className="flex flex-col items-end">
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 150 x 900, 7T</p>
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 310 x 870, 7T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 150 x 900, (6+1)T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 310 x 870, (6+1)T</p>
                             </div>
                         </div>
                     </div>
@@ -251,7 +251,7 @@ export default function PrintCatalog() {
                                                 <span className="text-[11px] font-bold text-white mr-1.5">{item.name}</span>
                                                 <span className="text-[9px] font-medium text-[#C9A86C]">{item.nameEn}</span>
                                             </div>
-                                            <span className="text-[8px] text-white/70">7T</span>
+                                            <span className="text-[8px] text-white/70">(6+1)T</span>
                                         </div>
                                     </div>
                                 </div>
@@ -271,10 +271,10 @@ export default function PrintCatalog() {
 
             {/* PAGE 5: BOARDS - CLEAN EDITORIAL LAYOUT */}
             <section className="catalog-page bg-white p-0">
-                <div className="h-full flex flex-col" style={{ padding: '18mm 20mm 14mm 20mm' }}>
+                <div className="h-full flex flex-col" style={{ padding: '16mm 20mm 14mm 20mm' }}>
 
                     {/* ===== A. SYSTEM HEADER ===== */}
-                    <div className="mb-5">
+                    <div className="mb-4">
                         <div className="flex items-center gap-4 mb-2">
                             <span className="text-[8px] font-bold text-[#9a9aaa] tracking-[0.25em] uppercase">Selection 02</span>
                             <div className="w-8 h-[1px] bg-[#C9A86C]" />
@@ -288,12 +288,12 @@ export default function PrintCatalog() {
                     <div className="flex-1 flex flex-col">
                         {/* Title */}
                         <div className="mb-3">
-                            <h2 className="text-[28px] font-bold text-[#1a1a2e] leading-[1.05] mb-[2px]">온수보드</h2>
+                            <h2 className="text-[26px] font-bold text-[#1a1a2e] leading-[1.05] mb-[2px]">온수보드</h2>
                             <span className="text-[10px] font-medium text-[#C9A86C] tracking-[0.15em] uppercase">Heating Board</span>
                         </div>
 
                         {/* Product Image - Full Width, Horizontal */}
-                        <div className="relative w-full h-[220px] mb-4">
+                        <div className="relative w-full h-[200px] mb-4">
                             <Image
                                 src="/images/heatingboard/hb-product-editorial.png"
                                 alt="온수보드 제품"
@@ -317,23 +317,24 @@ export default function PrintCatalog() {
 
                                 {/* Spec Block - Premium Card Style */}
                                 <div className="bg-[#FAFAF8] rounded-md p-3 mb-4">
-                                    <div className="grid grid-cols-2 gap-3">
+                                    <div className="grid grid-cols-3 gap-3">
                                         {[
                                             { l: '규격', v: '600 × 1200 mm' },
                                             { l: '두께', v: '25T (25 mm)' },
                                             { l: '표면', v: '알루미늄 코팅' },
-                                            { l: '시공', v: '건식 공법' }
+                                            { l: '시공', v: '건식 공법' },
+                                            { l: '압축강도', v: '1000 kPa' }
                                         ].map((spec, i) => (
                                             <div key={i} className="flex flex-col">
                                                 <span className="text-[8px] text-[#9a9aaa] font-bold mb-1 uppercase tracking-[0.1em]">{spec.l}</span>
-                                                <span className="text-[12px] font-bold text-[#1a1a2e]">{spec.v}</span>
+                                                <span className="text-[11px] font-bold text-[#1a1a2e]">{spec.v}</span>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
 
-                                {/* Benefits - Simple Style (matching Nude Board) */}
-                                <div className="flex flex-wrap gap-x-6 gap-y-2">
+                                {/* Benefits - Simple Style */}
+                                <div className="grid grid-cols-3 gap-x-4 gap-y-2">
                                     {[
                                         { title: '에너지 절감', desc: '알루미늄 코팅으로 열 손실 최소화' },
                                         { title: '초고속 난방', desc: '높은 열 전도율로 빠른 온도 상승' },
@@ -344,7 +345,7 @@ export default function PrintCatalog() {
                                                 <div className="w-[5px] h-[5px] bg-[#C9A86C] rounded-full" />
                                                 <span className="text-[11px] font-bold text-[#1a1a2e]">{item.title}</span>
                                             </div>
-                                            <p className="text-[9px] text-[#6a6a7a] pl-[10px] leading-[1.3] break-keep">{item.desc}</p>
+                                            <p className="text-[9px] text-[#6a6a7a] pl-[10px] leading-[1.4] break-keep">{item.desc}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -356,7 +357,7 @@ export default function PrintCatalog() {
                                     <span className="text-[7px] font-bold text-[#1a1a2e] tracking-[0.2em] uppercase">Installation</span>
                                     <div className="flex-1 h-[1px] bg-[#C9A86C] opacity-40" />
                                 </div>
-                                <div className="relative w-full aspect-[4/3] bg-[#FAFAF8] rounded-sm overflow-hidden">
+                                <div className="relative w-full flex-1 bg-[#FAFAF8] rounded-sm overflow-hidden">
                                     <Image
                                         src="/images/heatingboard/hb-installation.png"
                                         alt="온수보드 설치 현장"
@@ -370,10 +371,10 @@ export default function PrintCatalog() {
                     </div>
 
                     {/* ===== DIVIDER ===== */}
-                    <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 my-3" />
+                    <div className="w-full h-[1px] bg-[#C9A86C] opacity-30 my-4" />
 
                     {/* ===== C. 누드보드 SECTION (Option) ===== */}
-                    <div className="flex-1 flex gap-8 items-start pt-6">
+                    <div className="flex-1 flex gap-6">
                         {/* Left: Description */}
                         <div className="w-[55%] flex flex-col">
                             {/* Option Label + Title */}
@@ -385,7 +386,7 @@ export default function PrintCatalog() {
                             </div>
 
                             <div className="mb-4">
-                                <h3 className="text-[28px] font-bold text-[#1a1a2e] leading-[1.1] mb-[2px]">누드보드</h3>
+                                <h3 className="text-[26px] font-bold text-[#1a1a2e] leading-[1.1] mb-[2px]">누드보드</h3>
                                 <span className="text-[11px] font-medium text-[#C9A86C] tracking-[0.12em] uppercase">Nude Board</span>
                             </div>
 
@@ -397,45 +398,47 @@ export default function PrintCatalog() {
                                 </p>
                             </div>
 
-                            {/* Spec Block - Premium Card Style (matching Heating Board) */}
+                            {/* Spec Block - Premium Card Style */}
                             <div className="bg-[#FAFAF8] rounded-md p-3 mb-4">
                                 <div className="flex items-center gap-6">
                                     <div className="flex items-center gap-3">
                                         <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">규격</span>
-                                        <span className="text-[15px] font-bold text-[#1a1a2e]">570 × 970 mm</span>
+                                        <span className="text-[14px] font-bold text-[#1a1a2e]">570 × 970 mm</span>
                                     </div>
-                                    <div className="w-[1px] h-4 bg-gray-300" />
+                                    <div className="w-[1px] h-5 bg-gray-300" />
                                     <div className="flex items-center gap-3">
                                         <span className="text-[10px] text-[#9a9aaa] font-bold uppercase">두께</span>
-                                        <span className="text-[15px] font-bold text-[#1a1a2e]">4.5T</span>
+                                        <span className="text-[14px] font-bold text-[#1a1a2e]">4.5T</span>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Benefits */}
-                            <div className="flex gap-6">
+                            {/* Benefits - 2x2 Grid */}
+                            <div className="grid grid-cols-2 gap-x-6 gap-y-3">
                                 {[
                                     { title: '지지력 강화', desc: '바닥재 사이 견고한 지지층 형성' },
-                                    { title: '변형 방지', desc: '고밀도 소재로 장기 사용 시 변형 없음' }
+                                    { title: '변형 방지', desc: '고밀도 소재로 장기 사용 시 변형 없음' },
+                                    { title: '열전도 강화', desc: '효율적인 열 전달로 난방 효과 극대화' },
+                                    { title: '원적외선 방출', desc: '건강에 유익한 원적외선 방출 효과' }
                                 ].map((item, i) => (
                                     <div key={i} className="flex flex-col">
-                                        <div className="flex items-center gap-[4px] mb-[1px]">
-                                            <div className="w-[4px] h-[4px] bg-[#C9A86C] rounded-full" />
+                                        <div className="flex items-center gap-[5px] mb-[2px]">
+                                            <div className="w-[5px] h-[5px] bg-[#C9A86C] rounded-full" />
                                             <span className="text-[11px] font-bold text-[#1a1a2e]">{item.title}</span>
                                         </div>
-                                        <p className="text-[9px] text-[#6a6a7a] pl-[12px] leading-[1.3] break-keep">{item.desc}</p>
+                                        <p className="text-[9px] text-[#6a6a7a] pl-[10px] leading-[1.4] break-keep">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
                         {/* Right: Product Image */}
-                        <div className="w-[50%] relative h-[300px]">
+                        <div className="w-[45%] relative">
                             <Image
                                 src="/images/nudeboard/nbb-product.png"
                                 alt="누드보드 제품"
                                 fill
-                                className="object-contain"
+                                className="object-contain object-center"
                             />
                         </div>
                     </div>
@@ -473,7 +476,7 @@ export default function PrintCatalog() {
                                         { id: '01', title: '강력한 표면 코팅', desc: '특수 UV 처리를 통한 생활 오염 및 스크래치 방지' },
                                         { id: '02', title: '리얼 대리석 질감', desc: '천연석의 깊이감과 텍스처를 완벽하게 구현' },
                                         { id: '03', title: '간편한 건식 시공', desc: '경량화된 소재로 접착 시공이 가능하여 공기 단축' },
-                                        { id: '04', title: '대형 규격 사이즈', desc: '580×2400mm 광폭 사이즈로 웅장한 공간 연출' }
+                                        { id: '04', title: '대형 규격 사이즈', desc: '585×2400mm 광폭 사이즈로 웅장한 공간 연출' }
                                     ].map((feat) => (
                                         <div key={feat.id} className="flex gap-3">
                                             <span className="text-[11px] font-black text-[#C9A86C] tabular-nums">{feat.id}</span>
@@ -493,7 +496,7 @@ export default function PrintCatalog() {
                                 </h3>
                                 <div className="flex flex-col gap-2.5">
                                     {[
-                                        { l: '규격', v: '580 × 2400 mm' },
+                                        { l: '규격', v: '585 × 2400 mm' },
                                         { l: '두께', v: '4.5T' },
                                         { l: '표면', v: 'High Gloss UV Coating' },
                                         { l: '소재', v: 'Stone Powder Composite' },
@@ -539,15 +542,15 @@ export default function PrintCatalog() {
                                 </div>
                             </div>
 
-                            {/* Center: Description (30%) */}
+                            {/* Center: Clip Installation Photo (30%) */}
                             <div className="w-[30%] flex flex-col px-8 border-l border-gray-200">
-                                <span className="text-[9px] text-[#C9A86C] font-bold uppercase tracking-[0.15em] mb-4">Test Result</span>
-                                <div className="flex-1 flex flex-col justify-center">
-                                    <h4 className="text-[17px] font-bold text-[#1a1a2e] mb-1.5 tracking-tight">방염 시험 성적서</h4>
-                                    <span className="text-[9px] text-gray-400 font-bold uppercase tracking-[0.2em] mb-4 block">Fire Retardant Test Report</span>
-                                    <p className="text-[11px] text-gray-600 leading-[1.6] break-keep font-medium">
-                                        환경친화적 소재에 강력한 방염 성능을 더했습니다. KFI의 엄격한 성능 검증을 통해 화재 안전성을 입증받아 최상의 품질과 안전한 공간을 보장합니다.
-                                    </p>
+                                <span className="text-[9px] text-[#C9A86C] font-bold uppercase tracking-[0.15em] mb-4">Clip Installation</span>
+                                <div className="flex-1 relative overflow-hidden bg-[#FAFAF8]">
+                                    <Image src="/images/uvstone/clip_installation.png" alt="클립 시공 사진" fill className="object-cover" />
+                                </div>
+                                <div className="flex items-center gap-2 pt-2 mt-2 border-t border-gray-100">
+                                    <span className="text-[10px] font-bold text-[#1a1a2e]">클립 시공</span>
+                                    <span className="text-[8px] text-gray-400">Clip Mounting System</span>
                                 </div>
                             </div>
 
@@ -587,7 +590,7 @@ export default function PrintCatalog() {
                     <div className="mb-3">
                         <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">Product Lineup 1/2</div>
                         <h2 className="text-xl font-light text-[#1a1a2e]">UV Stone 벽체</h2>
-                        <p className="text-[10px] text-gray-500">Natural Pattern - UV Coating - 580 x 2400 mm</p>
+                        <p className="text-[10px] text-gray-500">Natural Pattern - UV Coating - 585 x 2400 mm</p>
                     </div>
                     <div className="flex-1 grid grid-cols-3 grid-rows-2 gap-2 min-h-0">
                         {[
@@ -596,11 +599,11 @@ export default function PrintCatalog() {
                             { name: '보티치노', product: '/images/uvstone-products/botticino-final.png' },
                         ].map((item) => (
                             <div key={item.name + '-product'} className="flex flex-col h-full">
-                                <div className="pb-1.5 text-center">
-                                    <span className="text-[10px] font-medium text-[#1a1a2e] uppercase tracking-wider">{item.name}</span>
-                                </div>
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
                                     <Image src={item.product} alt={item.name} fill priority className="object-cover" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/5 to-transparent px-3 py-2">
+                                        <span className="text-[10px] text-white font-medium">{item.name}</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -612,7 +615,7 @@ export default function PrintCatalog() {
                             <div key={item.name + '-example'} className="flex flex-col h-full">
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
                                     <Image src={item.example} alt={`${item.name} 시공사례`} fill priority className="object-cover" />
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-3 py-2">
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/25 to-transparent px-3 py-2">
                                         <span className="text-[10px] text-white font-medium">{item.name}</span>
                                     </div>
                                 </div>
@@ -628,7 +631,7 @@ export default function PrintCatalog() {
                     <div className="mb-3">
                         <div className="text-[10px] text-[#C9A86C] tracking-[0.3em] mb-0.5">Product Lineup 2/2</div>
                         <h2 className="text-xl font-light text-[#1a1a2e]">UV Stone 벽체</h2>
-                        <p className="text-[10px] text-gray-500">Natural Pattern - UV Coating - 580 x 2400 mm</p>
+                        <p className="text-[10px] text-gray-500">Natural Pattern - UV Coating - 585 x 2400 mm</p>
                     </div>
                     <div className="flex-1 grid grid-cols-3 grid-rows-2 gap-2 min-h-0">
                         {[
@@ -637,11 +640,11 @@ export default function PrintCatalog() {
                             { name: '트라브틴 베이지', product: '/images/uvstone-products/travertine-beige-v3.jpg' },
                         ].map((item) => (
                             <div key={item.name + '-product'} className="flex flex-col h-full">
-                                <div className="pb-1.5 text-center">
-                                    <span className="text-[10px] font-medium text-[#1a1a2e] uppercase tracking-wider">{item.name}</span>
-                                </div>
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
                                     <Image src={item.product} alt={item.name} fill priority className="object-cover" />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/5 to-transparent px-3 py-2">
+                                        <span className="text-[10px] text-white font-medium">{item.name}</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -653,7 +656,7 @@ export default function PrintCatalog() {
                             <div key={item.name + '-example'} className="flex flex-col h-full">
                                 <div className="flex-1 relative aspect-[3/4] overflow-hidden">
                                     <Image src={item.example} alt={`${item.name} 시공사례`} fill priority className="object-cover" />
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-3 py-2">
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/25 to-transparent px-3 py-2">
                                         <span className="text-[10px] text-white font-medium">{item.name}</span>
                                     </div>
                                 </div>
@@ -721,31 +724,49 @@ export default function PrintCatalog() {
                     </div>
 
 
-                    {/* INSTALLATION PORTFOLIO - Enhanced Heading */}
-                    <div className="h-[50%] flex flex-col pt-4">
-                        <div className="flex items-center justify-between mb-4">
-                            <div className="flex items-baseline gap-3">
-                                <h2 className="text-[18px] font-bold text-[#1a1a2e] tracking-tight">시공 사례</h2>
-                                <span className="text-[10px] text-[#C9A86C] font-bold uppercase tracking-widest">Installation Example</span>
+                    {/* BOTTOM: Installation + Certificates */}
+                    <div className="h-[50%] flex gap-6 pt-4">
+                        {/* Left: 시공 사례 (80%) */}
+                        <div className="w-[80%] flex flex-col">
+                            <div className="flex items-center gap-3 mb-3">
+                                <h2 className="text-[16px] font-bold text-[#1a1a2e] tracking-tight">시공 사례</h2>
+                                <span className="text-[9px] text-[#C9A86C] font-bold uppercase tracking-widest">Installation</span>
+                                <div className="flex-1 h-[1px] bg-gray-200" />
                             </div>
-                            <div className="flex-1 h-[1px] bg-gray-200 ml-6" />
-                        </div>
-
-                        <div className="flex-1 flex flex-col gap-6">
-                            {/* Row 1: 1 large centered image - Frameless */}
-                            <div className="flex justify-center h-[65%]">
-                                <div className="w-full relative">
+                            <div className="flex-1 flex flex-col gap-3">
+                                {/* Main Image */}
+                                <div className="flex-1 relative">
                                     <Image src="/images/ffpanel/ff-case-new.jpg" alt="FF Main Installation" fill className="object-cover" priority />
                                 </div>
+                                {/* Small Images Row */}
+                                <div className="grid grid-cols-4 gap-3 h-[30%]">
+                                    {['ff-case-3-new.jpg', 'case-4.jpg', 'case-2.jpg', 'case-3.jpg'].map((img, idx) => (
+                                        <div key={idx} className="relative">
+                                            <Image src={`/images/ffpanel/${img}`} alt={`FF Detail ${idx}`} fill className="object-cover" />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
+                        </div>
 
-                            {/* Row 2: 4 small images in a row - Frameless */}
-                            <div className="grid grid-cols-4 gap-6 h-[32%]">
-                                {['ff-case-3-new.jpg', 'case-4.jpg', 'case-2.jpg', 'case-3.jpg'].map((img, idx) => (
-                                    <div key={idx} className="relative">
-                                        <Image src={`/images/ffpanel/${img}`} alt={`FF Detail ${idx}`} fill className="object-cover" />
+                        {/* Right: 시험 성적서 (20%) */}
+                        <div className="w-[20%] flex flex-col border-l border-gray-200 pl-6">
+                            <h3 className="text-[10px] font-bold text-[#1a1a2e] uppercase tracking-[0.15em] mb-3">Certified Quality</h3>
+                            <div className="flex flex-col gap-3 flex-1">
+                                {/* Certificate 1 */}
+                                <div className="flex flex-col flex-1">
+                                    <div className="flex-1 relative border border-gray-100 bg-white shadow-sm">
+                                        <Image src="/images/certificates/ff-cert-1.jpg" alt="준불연 시험성적서" fill className="object-contain p-1" />
                                     </div>
-                                ))}
+                                    <span className="text-[7px] text-gray-400 text-center mt-1.5">준불연 시험성적서</span>
+                                </div>
+                                {/* Certificate 2 */}
+                                <div className="flex flex-col flex-1">
+                                    <div className="flex-1 relative border border-gray-100 bg-white shadow-sm">
+                                        <Image src="/images/certificates/ff-cert-2.jpg" alt="단열 시험성적서" fill className="object-contain p-1" />
+                                    </div>
+                                    <span className="text-[7px] text-gray-400 text-center mt-1.5">단열 시험성적서</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -861,6 +882,9 @@ export default function PrintCatalog() {
                             {/* 05. Highlight Case (4/12) */}
                             <div className="col-span-4 row-span-1 relative">
                                 <Image src="/images/ultraboard/case-1.jpg" alt="Detail 4" fill className="object-cover" />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-3 py-2">
+                                    <span className="text-[10px] text-white font-medium">기초공사 사례</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -943,7 +967,7 @@ export default function PrintCatalog() {
                                 <div className="flex items-center gap-2"><Globe className="w-3.5 h-3.5 text-[#C9A86C]" /><div className="text-[12px] font-semibold text-[#1a1a2e]">www.jinsungco.com</div></div>
                             </div>
                             <div className="grid grid-cols-3 gap-8 w-full pt-2">
-                                <div className="flex flex-col items-center text-center"><Phone className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">031-794-0489</div></div>
+                                <div className="flex flex-col items-center text-center"><Phone className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">TEL : 031-794-0489</div><div className="text-[11px] font-medium text-[#1a1a2e]">FAX : 031-794-0490</div></div>
                                 <div className="flex flex-col items-center text-center"><Mail className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">jinsungco0489@gmail.com</div></div>
                                 <div className="flex flex-col items-center text-center"><MapPin className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">경기도 광주시 초월읍 도평리 56-2</div></div>
                             </div>

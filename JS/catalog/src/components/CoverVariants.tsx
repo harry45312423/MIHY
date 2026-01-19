@@ -49,12 +49,12 @@ export function CoverC() {
                 overflow: 'hidden',
             }}>
                 <Image
-                    src="/images/cover-livingroom.png"
+                    src="/images/cover-livingroom-new.png"
                     alt="Premium Living Space"
                     fill
                     className="object-cover"
                     style={{
-                        objectPosition: '50% 45%',
+                        objectPosition: '50% 40%',
                     }}
                     priority
                 />
