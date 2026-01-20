@@ -37,29 +37,29 @@ export default function ProductPageLayout({
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--navy)]/90 via-[var(--navy)]/70 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent" />
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4">
             <Link
               href="/#products"
-              className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[var(--text-secondary)] hover:text-[var(--primary)] mb-6 transition-colors"
             >
               <ArrowLeft size={18} />
               제품 목록으로
             </Link>
-            <p className="text-[var(--gold)] font-medium mb-2">{categoryNameEn}</p>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <p className="text-[var(--primary)] font-medium mb-2">{categoryNameEn}</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-[var(--text)] mb-4">
               {categoryName}
             </h1>
-            <p className="text-gray-300 max-w-xl">
+            <p className="text-[var(--text-secondary)] max-w-xl">
               {categoryDescription}
             </p>
           </div>
         </section>
 
         {/* Features Section */}
-        <section className="py-12 bg-gray-50">
+        <section className="py-12 bg-[var(--bg-secondary)]">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-6">
               {features.map((feature) => (
@@ -67,8 +67,8 @@ export default function ProductPageLayout({
                   key={feature}
                   className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm"
                 >
-                  <Check size={18} className="text-[var(--gold)]" />
-                  <span className="text-[var(--navy)] font-medium">{feature}</span>
+                  <Check size={18} className="text-[var(--primary)]" />
+                  <span className="text-[var(--text)] font-medium">{feature}</span>
                 </div>
               ))}
             </div>
@@ -76,16 +76,16 @@ export default function ProductPageLayout({
         </section>
 
         {/* Products Grid */}
-        <section className="py-20">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-2xl font-bold text-[var(--navy)] mb-8">
+            <h2 className="text-2xl font-bold text-[var(--text)] mb-8">
               제품 라인업
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                  className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
                 >
                   <div className="relative h-56">
                     <Image
@@ -96,28 +96,28 @@ export default function ProductPageLayout({
                     />
                   </div>
                   <div className="p-6">
-                    <span className="text-xs text-gray-500 font-medium">{product.id}</span>
-                    <h3 className="text-lg font-bold text-[var(--navy)] mt-1 mb-2">
+                    <span className="text-xs text-[var(--text-secondary)] font-medium">{product.id}</span>
+                    <h3 className="text-lg font-bold text-[var(--text)] mt-1 mb-2">
                       {product.nameKr}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4">
+                    <p className="text-[var(--text-secondary)] text-sm mb-4">
                       {product.description}
                     </p>
 
                     {/* Specs */}
-                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                    <div className="bg-[var(--bg-secondary)] rounded-lg p-4 mb-4">
                       <div className="grid grid-cols-3 gap-2 text-sm">
                         <div>
-                          <span className="text-gray-500">두께</span>
-                          <p className="font-semibold text-[var(--navy)]">{product.specs.thickness}</p>
+                          <span className="text-[var(--text-secondary)]">두께</span>
+                          <p className="font-semibold text-[var(--text)]">{product.specs.thickness}</p>
                         </div>
                         <div>
-                          <span className="text-gray-500">폭</span>
-                          <p className="font-semibold text-[var(--navy)]">{product.specs.width}</p>
+                          <span className="text-[var(--text-secondary)]">폭</span>
+                          <p className="font-semibold text-[var(--text)]">{product.specs.width}</p>
                         </div>
                         <div>
-                          <span className="text-gray-500">길이</span>
-                          <p className="font-semibold text-[var(--navy)]">{product.specs.length}</p>
+                          <span className="text-[var(--text-secondary)]">길이</span>
+                          <p className="font-semibold text-[var(--text)]">{product.specs.length}</p>
                         </div>
                       </div>
                     </div>
@@ -127,7 +127,7 @@ export default function ProductPageLayout({
                       {product.features.slice(0, 3).map((f) => (
                         <span
                           key={f}
-                          className="text-xs bg-[var(--gold)]/10 text-[var(--gold)] px-2 py-1 rounded"
+                          className="text-xs bg-[var(--primary)]/10 text-[var(--primary)] px-2 py-1 rounded"
                         >
                           {f}
                         </span>
@@ -141,24 +141,24 @@ export default function ProductPageLayout({
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-[var(--navy)]">
+        <section className="py-16 bg-[var(--bg-secondary)]">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[var(--text)] mb-4">
               {categoryName}에 대해 더 알고 싶으신가요?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[var(--text-secondary)] mb-8">
               전문 상담사가 프로젝트에 맞는 최적의 제품을 추천해 드립니다.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-white px-8 py-3 rounded-full font-medium hover:bg-[#b8975b] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[var(--primary)] text-white px-8 py-3 rounded-full font-medium hover:bg-[var(--primary-light)] transition-colors"
               >
                 온라인 문의하기
               </Link>
               <a
                 href={`tel:${contactInfo.phone}`}
-                className="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-3 rounded-full font-medium hover:bg-white/20 transition-colors border border-white/30"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[var(--text)] px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors border border-gray-300"
               >
                 <Phone size={18} />
                 {contactInfo.phone}

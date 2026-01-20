@@ -16,7 +16,7 @@ export const contactInfo = {
 export const coreValues = [
   {
     number: '01',
-    title: '최고의 품질',
+    title: '엄격한 품질',
     description: '국제 표준을 준수하는 엄격한 품질 관리 시스템',
     icon: 'Shield',
   },

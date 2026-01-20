@@ -7,11 +7,11 @@ export default function CertificationsSection() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-[var(--gold)] font-medium mb-2">CERTIFICATIONS</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
+          <p className="text-[var(--primary)] font-medium mb-2">CERTIFICATIONS</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--text)] mb-4">
             공인 인증 현황
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
             진성종합무역의 모든 제품은 국내외 공인 기관의 엄격한 검증을 통해 인증을 획득하였습니다.
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function CertificationsSection() {
           {certifications.map((cert) => (
             <div
               key={cert.id}
-              className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-md transition-shadow group"
+              className="bg-[var(--bg-secondary)] rounded-xl p-6 text-center hover:shadow-md transition-shadow group"
             >
               <div className="relative w-20 h-20 mx-auto mb-4 bg-white rounded-lg p-2 shadow-sm">
                 <Image
@@ -31,10 +31,10 @@ export default function CertificationsSection() {
                   className="object-contain p-1"
                 />
               </div>
-              <h3 className="font-semibold text-[var(--navy)] text-sm mb-1">
+              <h3 className="font-semibold text-[var(--text)] text-sm mb-1">
                 {cert.name}
               </h3>
-              <p className="text-gray-500 text-xs">
+              <p className="text-[var(--text-secondary)] text-xs">
                 {cert.nameEn}
               </p>
             </div>
@@ -43,7 +43,7 @@ export default function CertificationsSection() {
 
         {/* Trust Badge */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-[var(--gold)]/10 text-[var(--gold)] px-6 py-3 rounded-full">
+          <div className="inline-flex items-center gap-2 bg-[var(--primary)]/10 text-[var(--primary)] px-6 py-3 rounded-full">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>

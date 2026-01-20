@@ -9,13 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: {
-          DEFAULT: '#C9A86C',
-          light: '#E8D4B8',
+        primary: {
+          DEFAULT: '#8B7355',  // 월넛 브라운
+          light: '#B8A089',    // 토프
         },
-        navy: {
-          DEFAULT: '#1a1a2e',
-          light: '#2d2d44',
+        background: {
+          DEFAULT: '#FAFAF8',  // 웜 화이트
+          secondary: '#F5F3EF', // 아이보리
+        },
+        text: {
+          DEFAULT: '#2C2C2C',  // 차콜
+          secondary: '#6B6B6B', // 미디엄 그레이
         },
       },
     },

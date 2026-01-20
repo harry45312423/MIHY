@@ -14,13 +14,13 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       {/* Top Bar */}
-      <div className="bg-[var(--navy)] text-white text-sm py-2">
+      <div className="bg-[var(--bg-secondary)] text-[var(--text-secondary)] text-sm py-2 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 flex justify-end items-center gap-6">
-          <a href={`tel:${contactInfo.phone}`} className="flex items-center gap-1 hover:text-[var(--gold)] transition-colors">
+          <a href={`tel:${contactInfo.phone}`} className="flex items-center gap-1 hover:text-[var(--primary)] transition-colors">
             <Phone size={14} />
             <span>{contactInfo.phone}</span>
           </a>
-          <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-1 hover:text-[var(--gold)] transition-colors">
+          <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-1 hover:text-[var(--primary)] transition-colors">
             <Mail size={14} />
             <span>{contactInfo.email}</span>
           </a>
@@ -43,7 +43,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/#about" className="text-[var(--navy)] hover:text-[var(--gold)] font-medium transition-colors">
+            <Link href="/#about" className="text-[var(--text)] hover:text-[var(--primary)] font-medium transition-colors">
               회사소개
             </Link>
 
@@ -53,7 +53,7 @@ export default function Header() {
               onMouseEnter={() => setIsProductsOpen(true)}
               onMouseLeave={() => setIsProductsOpen(false)}
             >
-              <button className="text-[var(--navy)] hover:text-[var(--gold)] font-medium transition-colors flex items-center gap-1">
+              <button className="text-[var(--text)] hover:text-[var(--primary)] font-medium transition-colors flex items-center gap-1">
                 제품
                 <svg className={`w-4 h-4 transition-transform ${isProductsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -66,20 +66,20 @@ export default function Header() {
                     <Link
                       key={category.id}
                       href={category.href}
-                      className="block px-4 py-2 text-[var(--navy)] hover:bg-[var(--gold-light)] hover:text-[var(--navy)] transition-colors"
+                      className="block px-4 py-2 text-[var(--text)] hover:bg-[var(--bg-secondary)] hover:text-[var(--primary)] transition-colors"
                     >
                       {category.name}
-                      <span className="text-xs text-gray-500 ml-2">{category.nameEn}</span>
+                      <span className="text-xs text-[var(--text-secondary)] ml-2">{category.nameEn}</span>
                     </Link>
                   ))}
                 </div>
               )}
             </div>
 
-            <Link href="/#certifications" className="text-[var(--navy)] hover:text-[var(--gold)] font-medium transition-colors">
+            <Link href="/#certifications" className="text-[var(--text)] hover:text-[var(--primary)] font-medium transition-colors">
               인증서
             </Link>
-            <Link href="/contact" className="bg-[var(--gold)] text-white px-6 py-2 rounded-full font-medium hover:bg-[#b8975b] transition-colors">
+            <Link href="/contact" className="bg-[var(--primary)] text-white px-6 py-2 rounded-full font-medium hover:bg-[var(--primary-light)] transition-colors">
               문의하기
             </Link>
           </div>
@@ -98,17 +98,17 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
             <div className="flex flex-col gap-4">
-              <Link href="/#about" className="text-[var(--navy)] hover:text-[var(--gold)] font-medium" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#about" className="text-[var(--text)] hover:text-[var(--primary)] font-medium" onClick={() => setIsMenuOpen(false)}>
                 회사소개
               </Link>
 
               <div className="border-t border-gray-100 pt-4">
-                <p className="text-sm text-gray-500 mb-2">제품</p>
+                <p className="text-sm text-[var(--text-secondary)] mb-2">제품</p>
                 {productCategories.map((category) => (
                   <Link
                     key={category.id}
                     href={category.href}
-                    className="block py-2 text-[var(--navy)] hover:text-[var(--gold)]"
+                    className="block py-2 text-[var(--text)] hover:text-[var(--primary)]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {category.name}
@@ -116,10 +116,10 @@ export default function Header() {
                 ))}
               </div>
 
-              <Link href="/#certifications" className="text-[var(--navy)] hover:text-[var(--gold)] font-medium border-t border-gray-100 pt-4" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#certifications" className="text-[var(--text)] hover:text-[var(--primary)] font-medium border-t border-gray-100 pt-4" onClick={() => setIsMenuOpen(false)}>
                 인증서
               </Link>
-              <Link href="/contact" className="bg-[var(--gold)] text-white px-6 py-2 rounded-full font-medium text-center hover:bg-[#b8975b] transition-colors" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/contact" className="bg-[var(--primary)] text-white px-6 py-2 rounded-full font-medium text-center hover:bg-[var(--primary-light)] transition-colors" onClick={() => setIsMenuOpen(false)}>
                 문의하기
               </Link>
             </div>

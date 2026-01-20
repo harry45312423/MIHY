@@ -1,70 +1,121 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { productCategories } from '@/data/products';
 
 export default function ProductsSection() {
+  // Split products: first 2 as featured, rest as regular
+  const featuredProducts = productCategories.slice(0, 2);
+  const regularProducts = productCategories.slice(2);
+
   return (
-    <section id="products" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="products" className="py-24 bg-[#FAFAFA]">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <p className="text-[var(--gold)] font-medium mb-2">PRODUCTS</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-            프리미엄 제품 라인업
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-8 h-[1px] bg-[var(--primary)]" />
+            <span className="text-[var(--primary)] text-sm font-medium tracking-widest">
+              PRODUCTS
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-light text-[#1a1a1a] mb-4 tracking-tight">
+            제품 라인업
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            국제 표준을 준수하는 엄격한 품질 관리와 혁신적인 디자인으로 최고의 인테리어 자재를 제공합니다.
+          <p className="text-[#666] max-w-xl text-lg font-light leading-relaxed">
+            공간의 가치를 높이는 프리미엄 인테리어 솔루션
           </p>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productCategories.map((category) => (
+        {/* Featured Products - 2 Large Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          {featuredProducts.map((category, index) => (
             <Link
               key={category.id}
               href={category.href}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+              className="group relative bg-black overflow-hidden aspect-[4/3] md:aspect-[16/10]"
             >
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <Image
+                src={category.image}
+                alt={category.name}
+                fill
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
+              />
+
+              {/* Stronger Gradient Overlay for readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+
+              {/* Content */}
+              <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                <span className="text-white/70 text-xs tracking-widest mb-2 uppercase font-medium">
+                  {category.nameEn}
+                </span>
+                <h3 className="text-white text-2xl md:text-3xl font-normal mb-4 tracking-tight">
+                  {category.name}
+                </h3>
+
+                {/* CTA */}
+                <div className="flex items-center gap-2 text-white text-sm font-medium group-hover:gap-3 transition-all duration-300">
+                  자세히 보기
+                  <ArrowUpRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </div>
+              </div>
+
+
+            </Link>
+          ))}
+        </div>
+
+        {/* Regular Products - 3 Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {regularProducts.map((category, index) => (
+            <Link
+              key={category.id}
+              href={category.href}
+              className="group relative bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
+            >
+              {/* Image Container with subtle border */}
+              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
                 <Image
                   src={category.image}
                   alt={category.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-white/80 text-sm">{category.nameEn}</span>
-                </div>
+
+                {/* Subtle overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />
+
+
+
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--navy)] mb-2 group-hover:text-[var(--gold)] transition-colors">
+              <div className="p-6 bg-white">
+                <h3 className="text-[#1a1a1a] text-xl font-light mb-2 tracking-tight group-hover:text-[var(--primary)] transition-colors duration-300">
                   {category.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <p className="text-[#555] text-sm font-light leading-relaxed mb-4 line-clamp-2">
                   {category.description}
                 </p>
 
-                {/* Features */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {category.features.slice(0, 3).map((feature) => (
-                    <span
-                      key={feature}
-                      className="inline-flex items-center gap-1 text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
-                    >
-                      <Check size={12} className="text-[var(--gold)]" />
+                {/* Features - Minimal Text Style */}
+                <div className="flex items-center gap-2 text-[#666] text-xs mb-4">
+                  {category.features.slice(0, 2).map((feature, idx) => (
+                    <span key={feature} className="flex items-center gap-2">
+                      {idx > 0 && <span className="text-[#999]">·</span>}
                       {feature}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-2 text-[var(--gold)] font-medium text-sm">
+                {/* CTA */}
+                <div className="flex items-center gap-2 text-[var(--primary)] text-sm font-light group-hover:gap-3 transition-all duration-300">
                   자세히 보기
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </div>
             </Link>
