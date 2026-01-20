@@ -109,7 +109,7 @@ export default function PrintCatalog() {
                                 <div className="grid grid-cols-3 gap-6">
                                     {[
                                         { img: '1727056621369.png', label: '유해물질 미검출', sub: 'Non-Hazardous' },
-                                        { img: '1727056694350.png', label: '친환경 인증', sub: 'Eco-Label' },
+                                        { img: 'eco-certification.png', label: '친환경 인증', sub: 'Eco-Label' },
                                         { img: 'kc-certificate.png', label: 'KC 인증마크', sub: 'Korea Cert.' }
                                     ].map((cert, idx) => (
                                         <div key={idx} className="flex flex-col items-center text-center">
@@ -753,17 +753,17 @@ export default function PrintCatalog() {
                         <div className="w-[20%] flex flex-col border-l border-gray-200 pl-6">
                             <h3 className="text-[10px] font-bold text-[#1a1a2e] uppercase tracking-[0.15em] mb-3">Certified Quality</h3>
                             <div className="flex flex-col gap-3 flex-1">
-                                {/* Certificate 1 */}
+                                {/* Certificate 1 - FF판넬 준불연 시험성적서 */}
                                 <div className="flex flex-col flex-1">
                                     <div className="flex-1 relative border border-gray-100 bg-white shadow-sm">
-                                        <Image src="/images/certificates/ff-cert-1.jpg" alt="준불연 시험성적서" fill className="object-contain p-1" />
+                                        <Image src="/images/certificates/ff-cert-new-1.png" alt="FF판넬 준불연 시험성적서" fill className="object-contain p-1" />
                                     </div>
                                     <span className="text-[7px] text-gray-400 text-center mt-1.5">준불연 시험성적서</span>
                                 </div>
-                                {/* Certificate 2 */}
+                                {/* Certificate 2 - XPS 단열 시험성적서 */}
                                 <div className="flex flex-col flex-1">
                                     <div className="flex-1 relative border border-gray-100 bg-white shadow-sm">
-                                        <Image src="/images/certificates/ff-cert-2.jpg" alt="단열 시험성적서" fill className="object-contain p-1" />
+                                        <Image src="/images/certificates/ff-cert-new-2.png" alt="XPS 단열 시험성적서" fill className="object-contain p-1" />
                                     </div>
                                     <span className="text-[7px] text-gray-400 text-center mt-1.5">단열 시험성적서</span>
                                 </div>

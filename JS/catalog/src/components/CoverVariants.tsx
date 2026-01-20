@@ -3,15 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-/* ============================================
-   KCC-STYLE CORPORATE CATALOG COVER
-   
-   대기업 인테리어 자재 카탈로그 스타일
-   - 사진이 지면의 대부분을 차지
-   - 브랜드 아이덴티티 명확
-   - 클린하고 자신감 있는 레이아웃
-   ============================================ */
-
 const PAGE_WIDTH = 794;
 const PAGE_HEIGHT = 1123;
 
