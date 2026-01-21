@@ -33,8 +33,8 @@ export default function PrintCatalog() {
                                 <div className="w-8 h-[1px] bg-[#C9A86C]" />
                             </div>
                             <div className="flex flex-col items-end">
-                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">150 x 900, (6+1)T</span>
-                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">310 x 870, (6+1)T</span>
+                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">7Tx 150 x 900, (6+1)T</span>
+                                <span className="text-[18px] font-black text-[#1a1a2e] tabular-nums tracking-tight leading-none">7Tx 310 x 870, (6+1)T</span>
                             </div>
                         </div>
                     </div>
@@ -166,8 +166,8 @@ export default function PrintCatalog() {
                             <span className="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Size</span>
                             <div className="w-6 h-[1px] bg-[#C9A86C]" />
                             <div className="flex flex-col items-end">
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 150 x 900, (6+1)T</p>
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 310 x 870, (6+1)T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 7Tx 150 x 900, (6+1)T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 7Tx 310 x 870, (6+1)T</p>
                             </div>
                         </div>
                     </div>
@@ -223,8 +223,8 @@ export default function PrintCatalog() {
                             <span className="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Size</span>
                             <div className="w-6 h-[1px] bg-[#C9A86C]" />
                             <div className="flex flex-col items-end">
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 150 x 900, (6+1)T</p>
-                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 310 x 870, (6+1)T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Standard - 7Tx 150 x 900, (6+1)T</p>
+                                <p className="text-[11px] font-medium text-[#1a1a2e]">Wide - 7Tx 310 x 870, (6+1)T</p>
                             </div>
                         </div>
                     </div>
@@ -546,7 +546,7 @@ export default function PrintCatalog() {
                             <div className="w-[30%] flex flex-col px-8 border-l border-gray-200">
                                 <span className="text-[9px] text-[#C9A86C] font-bold uppercase tracking-[0.15em] mb-4">Clip Installation</span>
                                 <div className="flex-1 relative overflow-hidden bg-[#FAFAF8]">
-                                    <Image src="/images/uvstone/clip_installation.png" alt="클립 시공 사진" fill className="object-cover" />
+                                    <Image src="/images/uvstone/clip_installation_v2.png" alt="클립 시공 사진" fill className="object-cover" />
                                 </div>
                                 <div className="flex items-center gap-2 pt-2 mt-2 border-t border-gray-100">
                                     <span className="text-[10px] font-bold text-[#1a1a2e]">클립 시공</span>
@@ -947,40 +947,65 @@ export default function PrintCatalog() {
 
             {/* PAGE 12: BACK COVER */}
             <section className="catalog-page relative flex flex-col bg-white overflow-hidden">
-                <div className="h-[25%] w-full grid grid-cols-3 gap-1 p-1 bg-gray-50">
-                    {['/images/uvstone-interior/bianco.png', '/images/uvstone-interior/travertine-studio.png', '/images/uvstone-interior/botticino.png'].map((src, idx) => (
-                        <div key={idx} className="relative w-full h-full"><Image src={src} alt={`Back ${idx}`} fill className="object-cover" /></div>
-                    ))}
-                </div>
-                <div className="flex-1 w-full flex flex-col items-center justify-center bg-white px-12 relative">
-                    <div className="flex flex-col items-center w-full max-w-2xl">
-                        <div className="mb-8"><Image src="/images/logo.png" alt="Logo" width={140} height={140} priority className="object-contain" /></div>
-                        <div className="text-center mb-8">
-                            <h2 className="text-2xl font-bold text-[#1a1a2e] tracking-[0.3em]">JINSUNG</h2>
-                            <div className="text-[#C9A86C] text-[9px] tracking-[0.5em] mt-1 uppercase font-semibold">Premium Interior Materials</div>
+                {/* 1. Main Content Zone (Information & QR) */}
+                <div className="flex-1 w-full flex flex-col items-center justify-center bg-white px-12 pt-16">
+                    <div className="flex flex-col items-center w-full max-w-2xl px-6">
+                        {/* Logo */}
+                        <div className="mb-10">
+                            <Image src="/images/logo.png" alt="Logo" width={160} height={160} priority className="object-contain" />
                         </div>
-                        <div className="flex flex-col items-center space-y-5 w-full border-t border-gray-100 pt-8">
-                            <div className="flex flex-col items-center mb-2">
-                                <div className="w-20 h-20 mb-3">
-                                    <Image src="/images/qr-jinsung.png" alt="QR" width={80} height={80} />
+
+                        {/* Brand Identity */}
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-bold text-[#1a1a2e] tracking-[0.4em]">JINSUNG</h2>
+                            <div className="text-[#C9A86C] text-[10px] tracking-[0.6em] mt-2 uppercase font-bold">Premium Interior Materials</div>
+                        </div>
+
+                        {/* Contact Information & QR */}
+                        <div className="flex flex-col items-center space-y-10 w-full border-t border-gray-100 pt-12">
+                            {/* QR & Web */}
+                            <div className="flex flex-col items-center mb-4">
+                                <div className="w-24 h-24 mb-4 bg-white p-2 border border-gray-100 shadow-sm rounded-lg">
+                                    <Image src="/images/qr-jinsung.png" alt="QR" width={96} height={96} />
                                 </div>
-                                <div className="flex items-center gap-2"><Globe className="w-3.5 h-3.5 text-[#C9A86C]" /><div className="text-[12px] font-semibold text-[#1a1a2e]">www.jinsungco.com</div></div>
+                                <div className="flex items-center gap-2">
+                                    <Globe className="w-4 h-4 text-[#C9A86C]" />
+                                    <div className="text-[14px] font-bold text-[#1a1a2e]">www.jinsungco.com</div>
+                                </div>
                             </div>
-                            <div className="grid grid-cols-3 gap-8 w-full pt-2">
-                                <div className="flex flex-col items-center text-center"><Phone className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">TEL : 031-794-0489</div><div className="text-[11px] font-medium text-[#1a1a2e]">FAX : 031-794-0490</div></div>
-                                <div className="flex flex-col items-center text-center"><Mail className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">jinsungco0489@gmail.com</div></div>
-                                <div className="flex flex-col items-center text-center"><MapPin className="w-4 h-4 text-[#C9A86C] mb-2" /><div className="text-[11px] font-medium text-[#1a1a2e]">경기도 광주시 초월읍 도평리 56-2</div></div>
+
+                            {/* Contact Grid */}
+                            <div className="grid grid-cols-3 gap-12 w-full pt-4">
+                                <div className="flex flex-col items-center text-center">
+                                    <Phone className="w-5 h-5 text-[#C9A86C] mb-3" />
+                                    <div className="text-[11px] font-bold text-[#1a1a2e]">TEL : 031-794-0489</div>
+                                    <div className="text-[11px] font-bold text-[#1a1a2e]">FAX : 031-794-0490</div>
+                                </div>
+                                <div className="flex flex-col items-center text-center">
+                                    <Mail className="w-5 h-5 text-[#C9A86C] mb-3" />
+                                    <div className="text-[11px] font-bold text-[#1a1a2e]">jinsungco0489@gmail.com</div>
+                                </div>
+                                <div className="flex flex-col items-center text-center">
+                                    <MapPin className="w-5 h-5 text-[#C9A86C] mb-3" />
+                                    <div className="text-[11px] font-bold text-[#1a1a2e]">경기도 광주시 초월읍 도평리 56-2</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="h-[25%] w-full grid grid-cols-3 gap-1 p-1 bg-gray-50">
-                    {['/images/backcover/backcover-living.png', '/images/backcover/backcover-bathroom.png', '/images/uvstone-interior/travertine-beige-interior.png'].map((src, idx) => (
-                        <div key={idx} className="relative w-full h-full"><Image src={src} alt={`Back Bottom ${idx}`} fill className="object-cover" /></div>
+
+                {/* 2. Portfolio Gallery (Unified Bottom Area) */}
+                <div className="h-[32%] w-full grid grid-cols-3 gap-[2px] bg-[#FAFAF8] border-t-[4px] border-[#C9A86C]">
+                    {['/images/uvstone-interior/bianco.png', '/images/uvstone-interior/travertine-studio.png', '/images/uvstone-interior/botticino.png'].map((src, idx) => (
+                        <div key={idx} className="relative w-full h-full"><Image src={src} alt={`Back ${idx}`} fill className="object-cover" /></div>
                     ))}
                 </div>
-                <div className="absolute bottom-2 left-0 w-full text-center z-10">
-                    <div className="text-[7px] text-gray-400 tracking-[0.2em]">COPYRIGHT © 2025 JINSUNG. ALL RIGHTS RESERVED.</div>
+
+                {/* 3. Footer Bar (Copyright) - Refined Premium Style */}
+                <div className="w-full bg-white py-8 text-center">
+                    <div className="text-[9px] text-[#1a1a2e]/30 tracking-[0.5em] font-bold uppercase">
+                        COPYRIGHT © 2025 JINSUNG. ALL RIGHTS RESERVED.
+                    </div>
                 </div>
             </section>
         </div>
