@@ -42,7 +42,7 @@ export default function Footer() {
                             친환경 프리미엄 인테리어 자재를 공급합니다.
                         </p>
                         <div className="text-xs text-[#C9A86C] font-medium">
-                            2025-2027 Premium Catalog
+                            2026-2027 Premium Catalog
                         </div>
                     </div>
 
@@ -123,7 +123,7 @@ export default function Footer() {
                 <div className="container mx-auto px-4 py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#A69580]">
                         <div>
-                            © 2025 JINSUNG. All Rights Reserved.
+                            © 2026 JINSUNG. All Rights Reserved.
                         </div>
                         <div className="flex items-center gap-4">
                             <a href="https://www.jinsungco.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#C9A86C] transition-colors">

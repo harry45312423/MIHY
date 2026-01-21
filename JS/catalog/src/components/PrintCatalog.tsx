@@ -1004,7 +1004,7 @@ export default function PrintCatalog() {
                 {/* 3. Footer Bar (Copyright) - Refined Premium Style */}
                 <div className="w-full bg-white py-8 text-center">
                     <div className="text-[9px] text-[#1a1a2e]/30 tracking-[0.5em] font-bold uppercase">
-                        COPYRIGHT © 2025 JINSUNG. ALL RIGHTS RESERVED.
+                        COPYRIGHT © 2026 JINSUNG. ALL RIGHTS RESERVED.
                     </div>
                 </div>
             </section>
