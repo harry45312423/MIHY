@@ -6,33 +6,33 @@ export interface SuggestedQuestion {
 
 export const suggestedQuestions: SuggestedQuestion[] = [
   {
-    label: '근로장학금 신청 방법 알려주세요',
+    label: '장학금 종류랑 금액 알려주세요',
     icon: 'GraduationCap',
     category: 'scholarship',
   },
   {
-    label: '비콘 출결은 어떻게 하나요?',
-    icon: 'Smartphone',
+    label: '학습활동서 작성 방법이 뭐예요?',
+    icon: 'FileText',
     category: 'beacon',
   },
   {
-    label: '급여 지급일이 언제인가요?',
+    label: '외부평가 합격하면 뭐가 좋아요?',
     icon: 'Wallet',
     category: 'salary',
   },
   {
-    label: '필요 서류가 뭐가 있나요?',
+    label: '종합결과보고서 제출 일정 알려주세요',
     icon: 'FileText',
     category: 'documents',
   },
   {
-    label: '비콘이 안 찍혔어요 어떻게 하죠?',
+    label: 'OJT 기간에 보험은 어떻게 되나요?',
     icon: 'AlertCircle',
     category: 'beacon',
   },
   {
-    label: '장학금 언제 들어오나요?',
-    icon: 'Wallet',
-    category: 'salary',
+    label: '담당 선생님 연락처 알려주세요',
+    icon: 'Smartphone',
+    category: 'general',
   },
 ];
