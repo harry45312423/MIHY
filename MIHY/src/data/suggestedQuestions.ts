@@ -26,9 +26,9 @@ export const suggestedQuestions: SuggestedQuestion[] = [
     category: 'documents',
   },
   {
-    label: 'OJT 기간에 보험은 어떻게 되나요?',
+    label: '일학습병행 훈련기간이 어떻게 되나요?',
     icon: 'AlertCircle',
-    category: 'beacon',
+    category: 'scholarship',
   },
   {
     label: '담당 선생님 연락처 알려주세요',
