@@ -5,11 +5,14 @@ import ChatHeader from './ChatHeader';
 import MessageList from './MessageList';
 import ChatInput from './ChatInput';
 import WelcomeScreen from './WelcomeScreen';
+import type { Source } from '@/types/chat';
 
 interface ChatMessage {
   id: string;
   role: 'user' | 'assistant';
   content: string;
+  isEscalated?: boolean;
+  sources?: Source[];
 }
 
 export default function ChatContainer() {
@@ -68,6 +71,20 @@ export default function ChatContainer() {
         throw new Error(err?.error || `서버 오류 (${res.status})`);
       }
 
+      // Check escalation header
+      const isEscalated = res.headers.get('X-Escalated') === 'true';
+
+      // Parse sources header
+      let sources: Source[] = [];
+      const sourcesHeader = res.headers.get('X-Sources');
+      if (sourcesHeader) {
+        try {
+          sources = JSON.parse(decodeURIComponent(sourcesHeader));
+        } catch {
+          sources = [];
+        }
+      }
+
       const reader = res.body?.getReader();
       if (!reader) throw new Error('스트림을 읽을 수 없습니다.');
 
@@ -91,12 +108,16 @@ export default function ChatContainer() {
       const remaining = decoder.decode();
       if (remaining) {
         fullText += remaining;
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantId ? { ...m, content: fullText } : m
-          )
-        );
       }
+
+      // Final update with escalation flag and sources
+      setMessages((prev) =>
+        prev.map((m) =>
+          m.id === assistantId
+            ? { ...m, content: fullText, isEscalated, sources }
+            : m
+        )
+      );
 
       console.log('[MIHY] Stream complete, length:', fullText.length);
     } catch (error) {
@@ -138,6 +159,8 @@ export default function ChatContainer() {
     id: m.id,
     role: m.role,
     parts: [{ type: 'text' as const, text: m.content }],
+    isEscalated: m.isEscalated,
+    sources: m.sources,
   }));
 
   return (

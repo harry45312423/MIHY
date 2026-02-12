@@ -1,9 +1,11 @@
 import { openai } from '@ai-sdk/openai';
 import { streamText } from 'ai';
+import { after } from 'next/server';
 import { searchKnowledge } from '@/lib/vectorStore';
 import { buildPrompt, extractSources } from '@/lib/promptBuilder';
 import { sanitizeUserInput, detectPromptInjection } from '@/lib/sanitizer';
 import { checkRateLimit, getClientIp } from '@/lib/rateLimiter';
+import { shouldEscalate, createEscalation } from '@/lib/escalation';
 import { FALLBACK_RESPONSE } from '@/data/systemPrompt';
 
 export const maxDuration = 30;
@@ -29,7 +31,7 @@ export async function POST(req: Request) {
     }
 
     const body = await req.json();
-    const { messages } = body;
+    const { messages, email } = body;
 
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       return new Response(
@@ -83,6 +85,9 @@ export async function POST(req: Request) {
       searchResults = [];
     }
 
+    // Check if escalation is needed
+    const isEscalated = shouldEscalate(searchResults);
+
     // Build prompt with context
     const { system, messages: promptMessages } = buildPrompt(
       userQuery,
@@ -104,9 +109,21 @@ export async function POST(req: Request) {
       maxOutputTokens: 1000,
     });
 
+    // Create escalation after response (non-blocking, serverless-safe)
+    after(async () => {
+      if (isEscalated) {
+        await createEscalation(
+          userQuery,
+          searchResults,
+          typeof email === 'string' ? email : undefined
+        ).catch((err) => console.error('Escalation creation failed:', err));
+      }
+    });
+
     return result.toTextStreamResponse({
       headers: {
         'X-Sources': encodeURIComponent(JSON.stringify(sources)),
+        ...(isEscalated && { 'X-Escalated': 'true' }),
       },
     });
   } catch (error) {
