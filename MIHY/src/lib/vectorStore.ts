@@ -23,7 +23,7 @@ export async function searchKnowledge(
   });
 
   if (error) {
-    console.error('Vector search error:', error);
+    console.error('Vector search failed');
     return [];
   }
 
@@ -92,7 +92,7 @@ export async function upsertChunks(
       .upsert(batch, { onConflict: 'page_id,chunk_index' });
 
     if (error) {
-      console.error('Upsert error:', error);
+      console.error('Upsert failed');
       throw error;
     }
   }
@@ -106,7 +106,7 @@ export async function deletePageChunks(pageId: string): Promise<void> {
     .eq('page_id', pageId);
 
   if (error) {
-    console.error('Delete error:', error);
+    console.error('Delete failed');
     throw error;
   }
 }

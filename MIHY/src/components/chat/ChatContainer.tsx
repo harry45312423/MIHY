@@ -56,7 +56,10 @@ export default function ChatContainer() {
     setIsLoading(true);
 
     try {
-      console.log('[MIHY] Sending to /api/chat:', apiMessages.length, 'messages');
+      // Debug: message count only (no sensitive data)
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[MIHY] Sending to /api/chat:', apiMessages.length, 'messages');
+      }
 
       const res = await fetch('/api/chat', {
         method: 'POST',
@@ -64,7 +67,9 @@ export default function ChatContainer() {
         body: JSON.stringify({ messages: apiMessages }),
       });
 
-      console.log('[MIHY] Response status:', res.status);
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[MIHY] Response status:', res.status);
+      }
 
       if (!res.ok) {
         const err = await res.json().catch(() => null);
@@ -119,9 +124,11 @@ export default function ChatContainer() {
         )
       );
 
-      console.log('[MIHY] Stream complete, length:', fullText.length);
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[MIHY] Stream complete, length:', fullText.length);
+      }
     } catch (error) {
-      console.error('[MIHY] Chat error:', error);
+      console.error('[MIHY] Chat error occurred');
       const errText =
         error instanceof Error
           ? error.message

@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { jwtVerify } from 'jose';
 
-const JWT_SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET || 'default-dev-secret-min-32-characters!'
-);
+const jwtSecret = process.env.JWT_SECRET;
+if (!jwtSecret) throw new Error('JWT_SECRET environment variable is required');
+const JWT_SECRET = new TextEncoder().encode(jwtSecret);
 
 const PUBLIC_ADMIN_PATHS = ['/admin', '/api/admin/auth'];
 

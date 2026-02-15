@@ -46,7 +46,7 @@ export async function POST() {
       try {
         pages = await getDatabase(dbId);
       } catch {
-        console.error(`Failed to fetch database ${category}:`, dbId);
+        console.error(`Failed to fetch database: ${category}`);
         continue;
       }
 
@@ -93,7 +93,7 @@ export async function POST() {
           totalChunks += chunks.length;
           totalPages++;
         } catch (error) {
-          console.error(`Failed to process page ${page.id}:`, error);
+          console.error(`Failed to process page: ${page.id}`);
         }
       }
     }

@@ -116,7 +116,7 @@ export async function POST(req: Request) {
           userQuery,
           searchResults,
           typeof email === 'string' ? email : undefined
-        ).catch((err) => console.error('Escalation creation failed:', err));
+        ).catch(() => console.error('Escalation creation failed'));
       }
     });
 
@@ -127,7 +127,7 @@ export async function POST(req: Request) {
       },
     });
   } catch (error) {
-    console.error('Chat API error:', error);
+    console.error('Chat API error occurred');
     return new Response(
       JSON.stringify({ error: FALLBACK_RESPONSE }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
