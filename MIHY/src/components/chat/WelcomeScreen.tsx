@@ -5,6 +5,7 @@ import SuggestedQuestions from './SuggestedQuestions';
 
 interface WelcomeScreenProps {
   onSelectQuestion: (question: string) => void;
+  onAction?: (action: string) => void;
 }
 
 function getGreeting(): string {
@@ -16,6 +17,7 @@ function getGreeting(): string {
 
 export default function WelcomeScreen({
   onSelectQuestion,
+  onAction,
 }: WelcomeScreenProps) {
   return (
     <div className="flex flex-1 flex-col items-center justify-center px-5 py-8 sm:py-12 animate-fade-in-up">
@@ -34,7 +36,7 @@ export default function WelcomeScreen({
         <p className="mb-3 text-sm font-semibold text-muted-foreground">
           자주 묻는 질문
         </p>
-        <SuggestedQuestions onSelect={onSelectQuestion} />
+        <SuggestedQuestions onSelect={onSelectQuestion} onAction={onAction} />
       </div>
     </div>
   );

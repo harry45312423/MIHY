@@ -5,6 +5,7 @@ import ChatHeader from './ChatHeader';
 import MessageList from './MessageList';
 import ChatInput from './ChatInput';
 import WelcomeScreen from './WelcomeScreen';
+import BeaconRequestForm from './BeaconRequestForm';
 import type { Source } from '@/types/chat';
 
 interface ChatMessage {
@@ -13,12 +14,16 @@ interface ChatMessage {
   content: string;
   isEscalated?: boolean;
   sources?: Source[];
+  beaconInfo?: { studentName: string; studentPhone: string };
 }
+
+type ActiveView = 'chat' | 'beacon-form';
 
 export default function ChatContainer() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [activeView, setActiveView] = useState<ActiveView>('chat');
   const messagesRef = useRef<ChatMessage[]>([]);
   const loadingRef = useRef(false);
 
@@ -155,8 +160,31 @@ export default function ChatContainer() {
     sendMessage(question);
   };
 
+  const handleAction = useCallback((action: string) => {
+    if (action === 'beacon-request') {
+      setActiveView('beacon-form');
+    }
+  }, []);
+
+  const handleBeaconComplete = useCallback((message: string, studentName: string, studentPhone: string) => {
+    const now = Date.now();
+    const assistantMsg: ChatMessage = {
+      id: `assistant-beacon-${now}`,
+      role: 'assistant',
+      content: message,
+      beaconInfo: { studentName, studentPhone },
+    };
+    setMessages((prev) => [...prev, assistantMsg]);
+    setActiveView('chat');
+  }, []);
+
+  const handleBeaconCancel = useCallback(() => {
+    setActiveView('chat');
+  }, []);
+
   const handleNewChat = () => {
     setMessages([]);
+    setActiveView('chat');
   };
 
   const status = isLoading ? 'streaming' : 'ready';
@@ -168,16 +196,21 @@ export default function ChatContainer() {
     parts: [{ type: 'text' as const, text: m.content }],
     isEscalated: m.isEscalated,
     sources: m.sources,
+    beaconInfo: m.beaconInfo,
   }));
 
   return (
     <div className="flex h-full flex-col">
       <ChatHeader onNewChat={handleNewChat} status={status} />
 
-      {hasMessages ? (
+      {activeView === 'beacon-form' ? (
+        <div className="flex flex-1 flex-col justify-center">
+          <BeaconRequestForm onComplete={handleBeaconComplete} onCancel={handleBeaconCancel} />
+        </div>
+      ) : hasMessages ? (
         <MessageList messages={uiMessages} isLoading={isLoading} />
       ) : (
-        <WelcomeScreen onSelectQuestion={handleSelectQuestion} />
+        <WelcomeScreen onSelectQuestion={handleSelectQuestion} onAction={handleAction} />
       )}
 
       <ChatInput

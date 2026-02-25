@@ -9,6 +9,7 @@ import { RefreshCw } from 'lucide-react';
 
 export default function AdminDashboardPage() {
   const [pendingCount, setPendingCount] = useState(0);
+  const [beaconPendingCount, setBeaconPendingCount] = useState(0);
   const [chunkCount, setChunkCount] = useState(0);
   const [recentEscalations, setRecentEscalations] = useState<Escalation[]>([]);
   const [isSyncing, setIsSyncing] = useState(false);
@@ -18,9 +19,10 @@ export default function AdminDashboardPage() {
     async function load() {
       setIsLoading(true);
       try {
-        const [statsRes, listRes] = await Promise.all([
+        const [statsRes, listRes, beaconCountRes] = await Promise.all([
           fetch('/api/admin/escalations?stats=true'),
           fetch('/api/admin/escalations?status=pending&limit=5'),
+          fetch('/api/admin/beacon-requests?count=true'),
         ]);
 
         if (statsRes.ok) {
@@ -32,6 +34,11 @@ export default function AdminDashboardPage() {
         if (listRes.ok) {
           const data = await listRes.json();
           setRecentEscalations(data.data ?? []);
+        }
+
+        if (beaconCountRes.ok) {
+          const data = await beaconCountRes.json();
+          setBeaconPendingCount(data.count ?? 0);
         }
       } catch {
         // Silently handle
@@ -66,8 +73,8 @@ export default function AdminDashboardPage() {
     return (
       <div className="space-y-6">
         <h1 className="text-2xl font-bold">대시보드</h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {[1, 2, 3].map((i) => (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {[1, 2, 3, 4].map((i) => (
             <div key={i} className="h-28 animate-pulse rounded-xl border bg-card" />
           ))}
         </div>
@@ -80,7 +87,7 @@ export default function AdminDashboardPage() {
       <h1 className="text-2xl font-bold">대시보드</h1>
 
       {/* Stats cards */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Link
           href="/admin/escalations"
           className="rounded-xl border border-border/60 bg-card p-5 transition-all hover:border-primary/30 hover:shadow-sm"
@@ -89,6 +96,16 @@ export default function AdminDashboardPage() {
             대기 중 에스컬레이션
           </p>
           <p className="mt-1 text-3xl font-bold">{pendingCount}</p>
+        </Link>
+
+        <Link
+          href="/admin/beacon-requests"
+          className="rounded-xl border border-border/60 bg-card p-5 transition-all hover:border-primary/30 hover:shadow-sm"
+        >
+          <p className="text-sm font-medium text-muted-foreground">
+            대기 중 비콘 요청
+          </p>
+          <p className="mt-1 text-3xl font-bold">{beaconPendingCount}</p>
         </Link>
 
         <div className="rounded-xl border border-border/60 bg-card p-5">

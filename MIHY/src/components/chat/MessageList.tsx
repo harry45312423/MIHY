@@ -11,6 +11,7 @@ interface ChatMessageUI {
   parts: { type: string; text: string }[];
   isEscalated?: boolean;
   sources?: Source[];
+  beaconInfo?: { studentName: string; studentPhone: string };
 }
 
 interface MessageListProps {
@@ -57,6 +58,7 @@ export default function MessageList({
               isEscalated={message.isEscalated}
               sources={message.sources}
               userQuestion={userQuestion}
+              beaconInfo={message.beaconInfo}
               isStreaming={
                 isLoading &&
                 message.role === 'assistant' &&

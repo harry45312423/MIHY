@@ -2,6 +2,7 @@ export interface SuggestedQuestion {
   label: string;
   icon: string;
   category: string;
+  action?: string;
 }
 
 export const suggestedQuestions: SuggestedQuestion[] = [
@@ -34,5 +35,11 @@ export const suggestedQuestions: SuggestedQuestion[] = [
     label: '담당 선생님 연락처 알려주세요',
     icon: 'Smartphone',
     category: 'general',
+  },
+  {
+    label: '비콘 직권처리 요청',
+    icon: 'Radio',
+    category: 'beacon',
+    action: 'beacon-request',
   },
 ];

@@ -8,17 +8,21 @@ import Logo from '@/components/shared/Logo';
 import { Button } from '@/components/ui/button';
 import { LogOut } from 'lucide-react';
 
-async function fetchCount(): Promise<number> {
+async function fetchCounts(): Promise<{ escalation: number; beacon: number }> {
   try {
-    const res = await fetch('/api/admin/escalations?count=true');
-    if (res.ok) {
-      const data = await res.json();
-      return data.count ?? 0;
-    }
+    const [escRes, beaconRes] = await Promise.all([
+      fetch('/api/admin/escalations?count=true'),
+      fetch('/api/admin/beacon-requests?count=true'),
+    ]);
+    const escData = escRes.ok ? await escRes.json() : { count: 0 };
+    const beaconData = beaconRes.ok ? await beaconRes.json() : { count: 0 };
+    return {
+      escalation: escData.count ?? 0,
+      beacon: beaconData.count ?? 0,
+    };
   } catch {
-    // Silently fail
+    return { escalation: 0, beacon: 0 };
   }
-  return 0;
 }
 
 export default function AdminDashboardLayout({
@@ -29,14 +33,21 @@ export default function AdminDashboardLayout({
   const pathname = usePathname();
   const router = useRouter();
   const [pendingCount, setPendingCount] = useState(0);
+  const [beaconPendingCount, setBeaconPendingCount] = useState(0);
 
   // Refetch on mount, pathname change (e.g. after resolving), and tab refocus
   useEffect(() => {
-    fetchCount().then(setPendingCount);
+    fetchCounts().then((c) => {
+      setPendingCount(c.escalation);
+      setBeaconPendingCount(c.beacon);
+    });
 
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'visible') {
-        fetchCount().then(setPendingCount);
+        fetchCounts().then((c) => {
+          setPendingCount(c.escalation);
+          setBeaconPendingCount(c.beacon);
+        });
       }
     };
 
@@ -57,6 +68,11 @@ export default function AdminDashboardLayout({
       href: '/admin/escalations',
       label: '에스컬레이션',
       badge: pendingCount > 0 ? pendingCount : undefined,
+    },
+    {
+      href: '/admin/beacon-requests',
+      label: '비콘 요청',
+      badge: beaconPendingCount > 0 ? beaconPendingCount : undefined,
     },
   ];
 

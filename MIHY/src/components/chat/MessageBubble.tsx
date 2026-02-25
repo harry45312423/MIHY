@@ -1,6 +1,6 @@
 'use client';
 
-import { User, ThumbsUp, ThumbsDown, Copy, Check } from 'lucide-react';
+import { User, ThumbsUp, ThumbsDown, Copy, Check, AlertTriangle } from 'lucide-react';
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -18,6 +18,7 @@ interface MessageBubbleProps {
   isEscalated?: boolean;
   sources?: Source[];
   userQuestion?: string;
+  beaconInfo?: { studentName: string; studentPhone: string };
 }
 
 export default function MessageBubble({
@@ -28,11 +29,13 @@ export default function MessageBubble({
   isEscalated = false,
   sources,
   userQuestion,
+  beaconInfo,
 }: MessageBubbleProps) {
   const [copied, setCopied] = useState(false);
   const [feedback, setFeedback] = useState<'positive' | 'negative' | null>(
     null
   );
+  const [consentStatus, setConsentStatus] = useState<'idle' | 'submitting' | 'done'>('idle');
   const isUser = role === 'user';
 
   const handleCopy = async () => {
@@ -97,6 +100,40 @@ export default function MessageBubble({
         {/* Source citation */}
         {!isUser && !isStreaming && sources && sources.length > 0 && (
           <SourceCitation sources={sources} />
+        )}
+
+        {/* Beacon consent issue button */}
+        {!isUser && !isStreaming && beaconInfo && consentStatus !== 'done' && (
+          <button
+            onClick={async () => {
+              setConsentStatus('submitting');
+              try {
+                await fetch('/api/beacon-requests/consent-issue', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    name: beaconInfo.studentName,
+                    phone: beaconInfo.studentPhone,
+                  }),
+                });
+              } catch {
+                // best-effort
+              }
+              setConsentStatus('done');
+            }}
+            disabled={consentStatus === 'submitting'}
+            className="mt-2 flex items-center gap-1.5 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-700 transition-colors hover:bg-amber-100 dark:border-amber-900 dark:bg-amber-950/30 dark:text-amber-400 dark:hover:bg-amber-950/50"
+          >
+            <AlertTriangle className="h-3.5 w-3.5" />
+            {consentStatus === 'submitting' ? '전달 중...' : '훈련생 동의가 안 되시나요?'}
+          </button>
+        )}
+
+        {!isUser && !isStreaming && beaconInfo && consentStatus === 'done' && (
+          <div className="mt-2 flex items-center gap-1.5 rounded-lg bg-emerald-50 px-3 py-2 text-xs text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400">
+            <Check className="h-3.5 w-3.5" />
+            <span>동의 불가 상태가 담당자에게 전달되었습니다.</span>
+          </div>
         )}
 
         {/* Escalation notice + email prompt */}
