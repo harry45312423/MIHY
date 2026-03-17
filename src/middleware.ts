@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { jwtVerify } from 'jose';
 
-const jwtSecret = process.env.JWT_SECRET;
-if (!jwtSecret) throw new Error('JWT_SECRET environment variable is required');
-const JWT_SECRET = new TextEncoder().encode(jwtSecret);
-
 const PUBLIC_ADMIN_PATHS = ['/admin', '/api/admin/auth'];
+
+function getJwtSecret() {
+  const secret = process.env.JWT_SECRET;
+  if (!secret) return null;
+  return new TextEncoder().encode(secret);
+}
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -26,6 +28,11 @@ export async function middleware(request: NextRequest) {
     if (pathname.startsWith('/api/')) {
       return NextResponse.json({ error: '인증이 필요합니다.' }, { status: 401 });
     }
+    return NextResponse.redirect(new URL('/admin', request.url));
+  }
+
+  const JWT_SECRET = getJwtSecret();
+  if (!JWT_SECRET) {
     return NextResponse.redirect(new URL('/admin', request.url));
   }
 
